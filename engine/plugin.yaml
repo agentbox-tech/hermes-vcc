@@ -1,0 +1,7 @@
+name: hermes-vcc
+version: 0.1.0
+kind: context-engine
+description: >-
+  Algorithmic (no-LLM) compaction summarizer for Hermes — a port of pi-vcc's
+  extraction/formatter core onto the built-in ContextCompressor. Deterministic,
+  zero-token summaries; compacted turns stay searchable via session_search.
