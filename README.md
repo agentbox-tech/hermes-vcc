@@ -22,10 +22,9 @@ Compacted turns are archived (`active=0, compacted=1`), never deleted, and stay 
 - `query` finds compacted content by keyword (archived rows are included in FTS by default)
 - every brief line carries a `(#N)` ref that is the **DB message id** → `session_search(session_id=..., around_message_id=N)` scrolls the full original text
 
-pi-vcc's `touched` mode and `#N:path` drill-down are deliberately NOT ported in v0 —
-no additional engine tools ship; recall surface is `session_search` only.
+The recall surface is `session_search` only — this engine registers no tools of its own.
 
-## Install (pxl pattern)
+## Install
 
 ```bash
 git clone https://github.com/agentbox-tech/hermes-vcc.git ~/projects/hermes-vcc
