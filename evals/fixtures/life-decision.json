@@ -1,0 +1,1280 @@
+{
+  "name": "life-decision",
+  "description": "~118-round invented major-decision conversation (Lisbon fellowship); prose-only, late ids, defer-pivot.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm deciding whether to move to Lisbon for the research fellowship.\n\nTwo years, his contract is here, and the fellowship may not knock twice.",
+      "_row_id": 1415
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1416,
+      "content": "What does each version of the next two years feel like when you say it out loud?"
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1417
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1418,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1419
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1420,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1421
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1422,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1423
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1424,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1425
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1426,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1427
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1428,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1429
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1430,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "Rent there runs 1150 euro, and the stipend barely clears it with the visa fees. My application number is FP-7781.",
+      "_row_id": 1431
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1432,
+      "content": "The insurance office window is annoying but small next to the ship-question."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1433
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1434,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1435
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1436,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1437
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1438,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1439
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1440,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1441
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1442,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1443
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1444,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1445
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1446,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1447
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1448,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1449
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1450,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1451
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1452,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1453
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1454,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1455
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1456,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1457
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1458,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1459
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1460,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1461
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1462,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1463
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1464,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1465
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1466,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1467
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1468,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1469
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1470,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1471
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1472,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1473
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1474,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1475
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1476,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "Please keep the budget under 1600 euro per month, all in.",
+      "_row_id": 1477
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1478
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1479,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1480
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1481,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1482
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1483,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1484
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1485,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1486
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1487,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1488
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1489,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1490
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1491,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1492
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1493,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1494
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1495,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1496
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1497,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1498
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1499,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1500
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1501,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1502
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1503,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1504
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1505,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1506
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1507,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1508
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1509,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1510
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1511,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1512
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1513,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1514
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1515,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1516
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1517,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1518
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1519,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1520
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1521,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1522
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1523,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1524
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1525,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1526
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1527,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "Never send me drafts on Sundays; that's when I stop thinking clearly.",
+      "_row_id": 1528
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1529
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1530,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1531
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1532,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1533
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1534,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1535
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1536,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1537
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1538,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1539
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1540,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1541
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1542,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1543
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1544,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1545
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1546,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1547
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1548,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1549
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1550,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1551
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1552,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1553
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1554,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1555
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1556,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1557
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1558,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1559
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1560,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1561
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1562,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1563
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1564,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1565
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1566,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1567
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1568,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1569
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1570,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1571
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1572,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1573
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1574,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1575
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1576,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1577
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1578,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "Always include my partner in lease decisions, even the small ones.",
+      "_row_id": 1579
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1580
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1581,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1582
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1583,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1584
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1585,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1586
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1587,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1588
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1589,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1590
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1591,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1592
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1593,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1594
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1595,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1596
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1597,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1598
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1599,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1600
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1601,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1602
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1603,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1604
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1605,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1606
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1607,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1608
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1609,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1610
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1611,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1612
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1613,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1614
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1615,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1616
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1617,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1618
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1619,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "The visa portal is still blocked for new appointment requests.",
+      "_row_id": 1620
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1621
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1622,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1623
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1624,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1625
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1626,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1627
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1628,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1629
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1630,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1631
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1632,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1633
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1634,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1635
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1636,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1637
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1638,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1639
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1640,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1641
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1642,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1643
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1644,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "user",
+      "content": "Reference number for the housing allowance is HA-90210.",
+      "_row_id": 1645
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1646
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1647,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1648
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1649,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1650
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1651,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1652
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1653,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "user",
+      "content": "Actually, the plan now is to defer the move and stay one more year.",
+      "_row_id": 1654
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1655
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1656,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1657
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1658,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "I'm deciding whether to move to Lisbon for the research fellowship"
+    },
+    {
+      "id": "ident-app-early",
+      "category": "identifier",
+      "text": "FP-7781",
+      "score": false,
+      "note": "round 8 — REQ-idiom id planted early; pre-tail drop"
+    },
+    {
+      "id": "volatile-insurance",
+      "category": "blocker_volatile",
+      "text": "The insurance transfer still doesn't work online and the office only opens after nine.",
+      "score": false,
+      "note": "early — outside the last-20-block scan"
+    },
+    {
+      "id": "pref-budget",
+      "category": "preference",
+      "text": "Please keep the budget under 1600 euro per month, all in."
+    },
+    {
+      "id": "pref-sunday",
+      "category": "preference",
+      "text": "Never send me drafts on Sundays; that's when I stop thinking clearly."
+    },
+    {
+      "id": "pref-partner",
+      "category": "preference",
+      "text": "Always include my partner in lease decisions, even the small ones."
+    },
+    {
+      "id": "blocker-visa",
+      "category": "blocker",
+      "text": "The visa portal is still blocked for new appointment requests.",
+      "note": "round 100 of 118 — inside last-20 scan at fold"
+    },
+    {
+      "id": "ident-allow",
+      "category": "identifier",
+      "text": "HA-90210",
+      "note": "late REQ-idiom id — survives if inside tail window"
+    },
+    {
+      "id": "scope-1",
+      "category": "scope_change",
+      "text": "Actually, the plan now is to defer the move and stay one more year.",
+      "note": "last scope line — [Scope change] section"
+    }
+  ]
+}

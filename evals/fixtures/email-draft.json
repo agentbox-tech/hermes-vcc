@@ -1,0 +1,1501 @@
+{
+  "name": "email-draft",
+  "description": "~55-round invented email-drafting session (landlord deposit); prose+files, tone prefs, late scope pivot.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a firm but friendly email to my landlord about the deposit.\n\nHe says part of it went to repainting; the move-out checklist says otherwise.",
+      "_row_id": 1001
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1002,
+      "content": "I can draft that. What tone and length are you aiming for?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1003,
+      "content": "Drafting now."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1005,
+      "content": "Writing the draft.",
+      "tool_calls": [
+        {
+          "id": "call_1004",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "Dear Herr Vogel,\n\nDraft paragraph 00: It keeps circling back to the same two things honestly.\n\nDraft paragraph 01: I went over the whole thread again last night.\n\nDraft paragraph 02: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 03: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 04: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 05: I keep drafting open tabs I never finish.\n\nDraft paragraph 06: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 07: I asked two friends and got opposite answers.\n\nDraft paragraph 08: There's a small admin task I keep postponing every day.\n\nDraft paragraph 09: Most of it is fine day to day; it's the edges that fray.\n\nDraft paragraph 10: It keeps circling back to the same two things honestly.\n\nDraft paragraph 11: I went over the whole thread again last night.\n\nDraft paragraph 12: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 13: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 14: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 15: I keep drafting open tabs I never finish.\n\nDraft paragraph 16: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 17: I asked two friends and got opposite answers.\n\nKind regards,\nMika",
+      "_row_id": 1006
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1007
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1008,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1010,
+      "content": "Writing the draft.",
+      "tool_calls": [
+        {
+          "id": "call_1009",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "Dear Herr Vogel,\n\nDraft paragraph 00: It keeps circling back to the same two things honestly.\n\nDraft paragraph 01: I went over the whole thread again last night.\n\nDraft paragraph 02: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 03: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 04: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 05: I keep drafting open tabs I never finish.\n\nDraft paragraph 06: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 07: I asked two friends and got opposite answers.\n\nDraft paragraph 08: There's a small admin task I keep postponing every day.\n\nDraft paragraph 09: Most of it is fine day to day; it's the edges that fray.\n\nDraft paragraph 10: It keeps circling back to the same two things honestly.\n\nDraft paragraph 11: I went over the whole thread again last night.\n\nDraft paragraph 12: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 13: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 14: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 15: I keep drafting open tabs I never finish.\n\nDraft paragraph 16: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 17: I asked two friends and got opposite answers.\n\nKind regards,\nMika",
+      "_row_id": 1011
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1012
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1013,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1015,
+      "content": "Writing the draft.",
+      "tool_calls": [
+        {
+          "id": "call_1014",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "Dear Herr Vogel,\n\nDraft paragraph 00: It keeps circling back to the same two things honestly.\n\nDraft paragraph 01: I went over the whole thread again last night.\n\nDraft paragraph 02: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 03: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 04: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 05: I keep drafting open tabs I never finish.\n\nDraft paragraph 06: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 07: I asked two friends and got opposite answers.\n\nDraft paragraph 08: There's a small admin task I keep postponing every day.\n\nDraft paragraph 09: Most of it is fine day to day; it's the edges that fray.\n\nDraft paragraph 10: It keeps circling back to the same two things honestly.\n\nDraft paragraph 11: I went over the whole thread again last night.\n\nDraft paragraph 12: The paperwork side of it is quieter than I expected.\n\nDraft paragraph 13: People around me keep asking and I keep giving short answers.\n\nDraft paragraph 14: Some mornings it feels decided and some it doesn't.\n\nDraft paragraph 15: I keep drafting open tabs I never finish.\n\nDraft paragraph 16: The timing overlaps with everything else on the calendar.\n\nDraft paragraph 17: I asked two friends and got opposite answers.\n\nKind regards,\nMika",
+      "_row_id": 1016
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1017
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1018,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "user",
+      "content": "Please keep it under 150 words.",
+      "_row_id": 1019
+    },
+    {
+      "role": "user",
+      "content": "Never include the word eviction anywhere in it.",
+      "_row_id": 1020
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1021,
+      "content": "Shorter, and the hard word stays out."
+    },
+    {
+      "role": "user",
+      "content": "My deadline for a reply is 2026-11-20.",
+      "_row_id": 1022
+    },
+    {
+      "role": "user",
+      "content": "The heating ticket from last winter still isn't fixed and I don't want to lose that leverage. It's listed as ticket HT-4410 in the portal.",
+      "_row_id": 1023
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1024,
+      "content": "Noted — the heating history is worth one calm line, not a paragraph."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1026,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1025",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nSome mornings it feels decided and some it doesn't.",
+      "_row_id": 1027
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1028
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1029,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1031,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1030",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI keep drafting open tabs I never finish.",
+      "_row_id": 1032
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1033
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1034,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1036,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1035",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe timing overlaps with everything else on the calendar.",
+      "_row_id": 1037
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1038
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1039,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1041,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1040",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI asked two friends and got opposite answers.",
+      "_row_id": 1042
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1043
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1044,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1046,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1045",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThere's a small admin task I keep postponing every day.",
+      "_row_id": 1047
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1048
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1049,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1051,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1050",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nMost of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1052
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1053
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1054,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1056,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1055",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nIt keeps circling back to the same two things honestly.",
+      "_row_id": 1057
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1058
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1059,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1061,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1060",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI went over the whole thread again last night.",
+      "_row_id": 1062
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1063
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1064,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1066,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1065",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe paperwork side of it is quieter than I expected.",
+      "_row_id": 1067
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1068
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1069,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1071,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1070",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nPeople around me keep asking and I keep giving short answers.",
+      "_row_id": 1072
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1073
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1074,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1076,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1075",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nSome mornings it feels decided and some it doesn't.",
+      "_row_id": 1077
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1078
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1079,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1081,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1080",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI keep drafting open tabs I never finish.",
+      "_row_id": 1082
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1083
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1084,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1086,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1085",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe timing overlaps with everything else on the calendar.",
+      "_row_id": 1087
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1088
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1089,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1091,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1090",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI asked two friends and got opposite answers.",
+      "_row_id": 1092
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1093
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1094,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1096,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1095",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThere's a small admin task I keep postponing every day.",
+      "_row_id": 1097
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1098
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1099,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1101,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1100",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nMost of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1102
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1103
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1104,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1106,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1105",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nIt keeps circling back to the same two things honestly.",
+      "_row_id": 1107
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1108
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1109,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1111,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1110",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI went over the whole thread again last night.",
+      "_row_id": 1112
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1113
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1114,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1116,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1115",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe paperwork side of it is quieter than I expected.",
+      "_row_id": 1117
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1118
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1119,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1121,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1120",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nPeople around me keep asking and I keep giving short answers.",
+      "_row_id": 1122
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1123
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1124,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1126,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1125",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nSome mornings it feels decided and some it doesn't.",
+      "_row_id": 1127
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1128
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1129,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1131,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1130",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI keep drafting open tabs I never finish.",
+      "_row_id": 1132
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1133
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1134,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1136,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1135",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe timing overlaps with everything else on the calendar.",
+      "_row_id": 1137
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1138
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1139,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1141,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1140",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI asked two friends and got opposite answers.",
+      "_row_id": 1142
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1143
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1144,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1146,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1145",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThere's a small admin task I keep postponing every day.",
+      "_row_id": 1147
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1148
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1149,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1151,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1150",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nMost of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1152
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1153
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1154,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1156,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1155",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nIt keeps circling back to the same two things honestly.",
+      "_row_id": 1157
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1158
+    },
+    {
+      "role": "user",
+      "content": "Always keep emoji out of it.\nNever send follow-ups before Friday.",
+      "_row_id": 1159
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1160,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1162,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1161",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI went over the whole thread again last night.",
+      "_row_id": 1163
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1164
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1165,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1167,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1166",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe paperwork side of it is quieter than I expected.",
+      "_row_id": 1168
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1169
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1170,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1172,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1171",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nPeople around me keep asking and I keep giving short answers.",
+      "_row_id": 1173
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1174
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1175,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1177,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1176",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nSome mornings it feels decided and some it doesn't.",
+      "_row_id": 1178
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1179
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1180,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1182,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1181",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI keep drafting open tabs I never finish.",
+      "_row_id": 1183
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1184
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1185,
+      "content": "It sounds like the timing is doing half the work here. What would you do if nobody else's read mattered?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1187,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1186",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe timing overlaps with everything else on the calendar.",
+      "_row_id": 1188
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1189
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1190,
+      "content": "What would you do if nobody else's read mattered? Name the part you'd want settled first."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1192,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1191",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI asked two friends and got opposite answers.",
+      "_row_id": 1193
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1194
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1195,
+      "content": "Name the part you'd want settled first. How big is that number next to the whole picture?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1197,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1196",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThere's a small admin task I keep postponing every day.",
+      "_row_id": 1198
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1199
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1200,
+      "content": "How big is that number next to the whole picture? And what happens if you simply wait a week?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1202,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1201",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nMost of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1203
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1204
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1205,
+      "content": "And what happens if you simply wait a week? What would it look like if that went well for you?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1207,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1206",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nIt keeps circling back to the same two things honestly.",
+      "_row_id": 1208
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1209
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1210,
+      "content": "What would it look like if that went well for you? Say more about the part that keeps coming back."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1212,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1211",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nI went over the whole thread again last night.",
+      "_row_id": 1213
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1214
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1215,
+      "content": "Say more about the part that keeps coming back. That tracks — it makes sense you'd weigh it twice."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1217,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1216",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nThe paperwork side of it is quieter than I expected.",
+      "_row_id": 1218
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1219
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1220,
+      "content": "That tracks — it makes sense you'd weigh it twice. What are you hoping they hear underneath the wording?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1222,
+      "content": "Revising.",
+      "tool_calls": [
+        {
+          "id": "call_1221",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/mika/apartment/draft_to_landlord.md\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched draft_to_landlord.md ok\nPeople around me keep asking and I keep giving short answers.",
+      "_row_id": 1223
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1224
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1225,
+      "content": "What are you hoping they hear underneath the wording? Where does that leave you today?"
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1226,
+      "content": "The portal still rejects attachments over 5 MB, so the photos won't go through."
+    },
+    {
+      "role": "user",
+      "content": "Always add my partner to any cc on apartment threads.",
+      "_row_id": 1227
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1228,
+      "content": "Where does that leave you today? It sounds like the timing is doing half the work here."
+    },
+    {
+      "role": "user",
+      "content": "Actually, let's switch the ask to the maintenance deposit instead.",
+      "_row_id": 1229
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1230,
+      "content": "Rewriting the ask around the maintenance deposit."
+    },
+    {
+      "role": "user",
+      "content": "Send it to Herr Vogel.\n\nReply by 2026-12-04 if I don't confirm first.",
+      "_row_id": 1231
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Write a firm but friendly email to my landlord about the deposit"
+    },
+    {
+      "id": "pref-tone",
+      "category": "preference",
+      "text": "Please keep it under 150 words"
+    },
+    {
+      "id": "pref-eviction",
+      "category": "preference",
+      "text": "Never include the word eviction anywhere in it.",
+      "note": "own block — extraction is one-pref-per-block; bundled second prefs are dropped"
+    },
+    {
+      "id": "ident-deadline-early",
+      "category": "identifier",
+      "text": "2026-11-20",
+      "score": false,
+      "note": "round ~6, long past USER_TEXT_CLIP window by fold time"
+    },
+    {
+      "id": "volatile-heating",
+      "category": "blocker_volatile",
+      "text": "The heating ticket from last winter still isn't fixed and I don't want to lose that leverage.",
+      "score": false,
+      "note": "measured SURVIVOR-in-header despite early placement — 'don't want' hit the pref whitelist, so the whole message rode into Preferences (prefs smuggle operational facts). unscored: survival is accidental (whitelist), not the fresh-only path probed"
+    },
+    {
+      "id": "ident-ticket",
+      "category": "identifier",
+      "text": "HT-4410",
+      "score": false,
+      "note": "measured survivor-in-header via the same pref-smuggle clip (200c span reaches it)"
+    },
+    {
+      "id": "pref-emoji",
+      "category": "preference",
+      "text": "Always keep emoji out of it.",
+      "note": "first line of its block — extracted to header (whitelist 'always keep')"
+    },
+    {
+      "id": "pref-followups",
+      "category": "preference",
+      "text": "Never send follow-ups before Friday.",
+      "score": false,
+      "note": "second LINE of a two-pref block — NOT extracted to header (one-pref-per-block rule); survives only verbatim in the brief tail, so at bulk past the tail cut it would drop. score=False flags the structural fragility, measured: present here at tail."
+    },
+    {
+      "id": "blocker-portal",
+      "category": "blocker",
+      "text": "The portal still rejects attachments over 5 MB, so the photos won't go through."
+    },
+    {
+      "id": "pref-cc",
+      "category": "preference",
+      "text": "Always add my partner to any cc on apartment threads",
+      "note": "late — also rides the brief tail"
+    },
+    {
+      "id": "scope-1",
+      "category": "scope_change",
+      "text": "Actually, let's switch the ask to the maintenance deposit instead.",
+      "note": "last scope line — lands under [Scope change]"
+    },
+    {
+      "id": "name-vogel",
+      "category": "identifier",
+      "text": "Herr Vogel",
+      "score": false,
+      "note": "person name — v0 has no entity extractor; MEASURED survivor in the brief tail (late 'Send it to Herr Vogel' rides verbatim); not guaranteed by extraction"
+    },
+    {
+      "id": "ident-newdeadline",
+      "category": "identifier",
+      "text": "2026-12-04",
+      "note": "late — brief tail carries it verbatim"
+    }
+  ]
+}

@@ -24,6 +24,22 @@
       "recall": 0.945,
       "reduction": 0.7
     },
+    "conflict-talk:pure": {
+      "recall": 0.98,
+      "reduction": 0.152
+    },
+    "conflict-talk:engine": {
+      "recall": 0.98,
+      "reduction": 0.04
+    },
+    "email-draft:pure": {
+      "recall": 0.98,
+      "reduction": 0.491
+    },
+    "email-draft:engine": {
+      "recall": 0.98,
+      "reduction": 0.388
+    },
     "error-recovery:pure": {
       "recall": 0.98,
       "reduction": 0.881
@@ -31,6 +47,14 @@
     "error-recovery:engine": {
       "recall": 0.98,
       "reduction": 0.782
+    },
+    "life-decision:pure": {
+      "recall": 0.98,
+      "reduction": 0.366
+    },
+    "life-decision:engine": {
+      "recall": 0.98,
+      "reduction": 0.282
     },
     "long-cap-session:pure": {
       "recall": 0.98,
