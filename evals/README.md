@@ -65,7 +65,8 @@ both.
   injected into `_vcc_options`, `previous_summary` seeded for chain fixtures).
 - `baseline` — host `ContextCompressor._generate_summary` against the live
   route from pxl config (`model:` block → providers registry). One real aux
-  call per fixture. Non-deterministic by nature: **reported, never gated.**
+  call per fixture round (chain fixtures fold iteratively). Non-deterministic
+  by nature: **reported, never gated.**
 
 Interpreter: run under `~/.hermes/hermes-agent/venv/bin/python` (the runtime
 that owns the host tree). The runner self-checks for `ruamel.yaml` at startup
