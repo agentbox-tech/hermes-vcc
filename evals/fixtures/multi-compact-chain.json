@@ -1,0 +1,132 @@
+{
+  "name": "multi-compact-chain",
+  "description": "Second compaction over a previous_summary: cumulative header merge + volatile Outstanding Context.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Keep going on the parser work: add chunked read support now.",
+      "_row_id": 1098
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1100,
+      "content": "Extending.",
+      "tool_calls": [
+        {
+          "id": "call_1099",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/rain/projects/legacy/legacy/parser.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "ok",
+      "_row_id": 1101
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1103,
+      "content": "New file for chunking.",
+      "tool_calls": [
+        {
+          "id": "call_1102",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/rain/projects/legacy/legacy/chunks.py\", \"content\": \"...\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "ok",
+      "_row_id": 1104
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1106,
+      "content": "Committing.",
+      "tool_calls": [
+        {
+          "id": "call_1105",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"chunked read for streaming parser\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 4f7aa10] chunked read for streaming parser",
+      "_row_id": 1107
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1108,
+      "content": "Chunked read still fails the fuzz corpus on nested quotes — needs an escape state."
+    }
+  ],
+  "facts": [
+    {
+      "id": "prev-goal",
+      "category": "goal",
+      "text": "Rewrite the legacy parser to stream input",
+      "note": "from previous_summary — cumulative merge must keep it"
+    },
+    {
+      "id": "prev-commit",
+      "category": "commit",
+      "text": "add streaming parser core",
+      "hash": "a1b2c3d"
+    },
+    {
+      "id": "prev-pref",
+      "category": "preference",
+      "text": "Always cite line numbers in review comments"
+    },
+    {
+      "id": "prev-blocker",
+      "category": "blocker_volatile",
+      "text": "Parser fails on multi-line strings",
+      "note": "Outstanding Context is fresh-only; prev blocker drops by design"
+    },
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "add chunked read support now"
+    },
+    {
+      "id": "mod-prev",
+      "category": "modified_file",
+      "text": "legacy/parser.py",
+      "note": "modified in previous compaction; merge must carry it"
+    },
+    {
+      "id": "mod-1",
+      "category": "modified_file",
+      "text": "legacy/chunks.py"
+    },
+    {
+      "id": "commit-1",
+      "category": "commit",
+      "text": "chunked read for streaming parser",
+      "hash": "4f7aa10"
+    },
+    {
+      "id": "blocker-1",
+      "category": "blocker",
+      "text": "still fails the fuzz corpus"
+    }
+  ],
+  "previous_summary": "[Session Goal]\n- Rewrite the legacy parser to stream input instead of slurping files\n\n[Files And Changes]\n- Modified: legacy/parser.py\n\n[Commits]\n- a1b2c3d: add streaming parser core\n\n[User Preferences]\n- Always cite line numbers in review comments\n\n[Outstanding Context]\n- Parser fails on multi-line strings\n\n---\n\nCompacted turns remain searchable with session_search — query() to search this session's history, or session_id + around_message_id to scroll the full text around any #id reference below. Do not redo work already completed.\n"
+}

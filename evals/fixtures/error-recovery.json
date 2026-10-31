@@ -1,0 +1,278 @@
+{
+  "name": "error-recovery",
+  "description": "Error-recovery session: deep blocker (expected drop) + late blocker + failed command + fix.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Debug why the nightly deploy job crashes on pxl every Sunday.",
+      "_row_id": 1038
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1040,
+      "content": "Reproducing.",
+      "tool_calls": [
+        {
+          "id": "call_1039",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"systemctl --user status deploy-nightly\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "× deploy-nightly.service - failed with result 'exit-code'",
+      "_row_id": 1041
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1042,
+      "content": "The unit fails before the upload step — the token file is missing at run time, so the job cannot authenticate."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1044,
+      "content": "Probing step 0.",
+      "tool_calls": [
+        {
+          "id": "call_1043",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -5\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1045
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1047,
+      "content": "Probing step 1.",
+      "tool_calls": [
+        {
+          "id": "call_1046",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -6\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1048
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1050,
+      "content": "Probing step 2.",
+      "tool_calls": [
+        {
+          "id": "call_1049",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -7\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1051
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1053,
+      "content": "Probing step 3.",
+      "tool_calls": [
+        {
+          "id": "call_1052",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -8\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1054
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1056,
+      "content": "Probing step 4.",
+      "tool_calls": [
+        {
+          "id": "call_1055",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -9\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1057
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1059,
+      "content": "Probing step 5.",
+      "tool_calls": [
+        {
+          "id": "call_1058",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"journalctl -u deploy-nightly | tail -10\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "-- logs slice --\njournal line 0000: returning buffered data from the worker pool for review and archival\njournal line 0001: returning buffered data from the worker pool for review and archival\njournal line 0002: returning buffered data from the worker pool for review and archival\njournal line 0003: returning buffered data from the worker pool for review and archival\njournal line 0004: returning buffered data from the worker pool for review and archival\njournal line 0005: returning buffered data from the worker pool for review and archival\njournal line 0006: returning buffered data from the worker pool for review and archival\njournal line 0007: returning buffered data from the worker pool for review and archival\njournal line 0008: returning buffered data from the worker pool for review and archival\njournal line 0009: returning buffered data from the worker pool for review and archival\njournal line 0010: returning buffered data from the worker pool for review and archival\njournal line 0011: returning buffered data from the worker pool for review and archival\njournal line 0012: returning buffered data from the worker pool for review and archival\njournal line 0013: returning buffered data from the worker pool for review and archival\njournal line 0014: returning buffered data from the worker pool for review and archival\njournal line 0015: returning buffered data from the worker pool for review and archival\njournal line 0016: returning buffered data from the worker pool for review and archival\njournal line 0017: returning buffered data from the worker pool for review and archival\njournal line 0018: returning buffered data from the worker pool for review and archival\njournal line 0019: returning buffered data from the worker pool for review and archival\njournal line 0020: returning buffered data from the worker pool for review and archival\njournal line 0021: returning buffered data from the worker pool for review and archival\njournal line 0022: returning buffered data from the worker pool for review and archival\njournal line 0023: returning buffered data from the worker pool for review and archival\njournal line 0024: returning buffered data from the worker pool for review and archival\njournal line 0025: returning buffered data from the worker pool for review and archival\njournal line 0026: returning buffered data from the worker pool for review and archival\njournal line 0027: returning buffered data from the worker pool for review and archival\njournal line 0028: returning buffered data from the worker pool for review and archival\njournal line 0029: returning buffered data from the worker pool for review and archival\njournal line 0030: returning buffered data from the worker pool for review and archival\njournal line 0031: returning buffered data from the worker pool for review and archival\njournal line 0032: returning buffered data from the worker pool for review and archival\njournal line 0033: returning buffered data from the worker pool for review and archival\njournal line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1060
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1062,
+      "content": "Failing again.",
+      "tool_calls": [
+        {
+          "id": "call_1061",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"bash scripts/deploy.sh --dry-run\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "error: could not lock config file /home/rain/.gitconfig: Permission denied",
+      "_row_id": 1063
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1064,
+      "content": "Deploy dry-run still fails on the gitconfig lock — that is the blocker to fix."
+    },
+    {
+      "role": "user",
+      "content": "Fix it by owning the file mode in the install step.",
+      "_row_id": 1065
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1067,
+      "content": "Fix applied.",
+      "tool_calls": [
+        {
+          "id": "call_1066",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/rain/services/deploy-nightly/install.sh\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "ok",
+      "_row_id": 1068
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1070,
+      "content": "Committing.",
+      "tool_calls": [
+        {
+          "id": "call_1069",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"own gitconfig mode in install step\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main e9b21cc] own gitconfig mode in install step",
+      "_row_id": 1071
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Debug why the nightly deploy job crashes"
+    },
+    {
+      "id": "blocker-deep",
+      "category": "blocker_volatile",
+      "text": "the token file is missing at run time",
+      "note": "deep blocker: Outstanding Context is fresh-only (last 20 blocks)"
+    },
+    {
+      "id": "fail-1",
+      "category": "failed_command",
+      "text": "bash scripts/deploy.sh --dry-run"
+    },
+    {
+      "id": "blocker-1",
+      "category": "blocker",
+      "text": "still fails on the gitconfig lock"
+    },
+    {
+      "id": "goal-2",
+      "category": "goal",
+      "text": "Fix it by owning the file mode in the install step"
+    },
+    {
+      "id": "mod-1",
+      "category": "modified_file",
+      "text": "services/deploy-nightly/install.sh"
+    },
+    {
+      "id": "commit-1",
+      "category": "commit",
+      "text": "own gitconfig mode in install step",
+      "hash": "e9b21cc"
+    }
+  ],
+  "track_commands": [
+    "deploy.sh"
+  ]
+}

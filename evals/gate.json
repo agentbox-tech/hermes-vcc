@@ -1,0 +1,45 @@
+{
+  "floors": {
+    "coding-session:pure": {
+      "recall": 0.945,
+      "reduction": 0.815
+    },
+    "coding-session:engine": {
+      "recall": 0.945,
+      "reduction": 0.7
+    },
+    "error-recovery:pure": {
+      "recall": 0.98,
+      "reduction": 0.881
+    },
+    "error-recovery:engine": {
+      "recall": 0.98,
+      "reduction": 0.782
+    },
+    "long-cap-session:pure": {
+      "recall": 0.98,
+      "reduction": 0.944
+    },
+    "long-cap-session:engine": {
+      "recall": 0.98,
+      "reduction": 0.934
+    },
+    "multi-compact-chain:pure": {
+      "recall": 0.875,
+      "reduction": -1.594
+    },
+    "multi-compact-chain:engine": {
+      "recall": 0.875,
+      "reduction": -5.762
+    },
+    "preference-heavy:pure": {
+      "recall": 0.98,
+      "reduction": -1.0
+    },
+    "preference-heavy:engine": {
+      "recall": 0.98,
+      "reduction": -2.623
+    }
+  },
+  "note": "floors = measured recall/reduction minus 0.02; re-bless only with a stated reason in the commit message"
+}

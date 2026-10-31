@@ -1,0 +1,203 @@
+{
+  "name": "preference-heavy",
+  "description": "12 preferences: PREF_CAP=10 trims the header — pref-11/12 survive only as [user] brief lines.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Review the pull request for the exporter rewrite and list every issue you find.",
+      "_row_id": 1072
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1073,
+      "content": "Noted, preference 1 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always use four-space indentation in YAML configs.",
+      "_row_id": 1074
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1075,
+      "content": "Noted, preference 2 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never push directly to main.",
+      "_row_id": 1076
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1077,
+      "content": "Noted, preference 3 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always cite line numbers in review comments.",
+      "_row_id": 1078
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1079,
+      "content": "Noted, preference 4 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never use emoji in commit messages.",
+      "_row_id": 1080
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1081,
+      "content": "Noted, preference 5 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always run pytest before declaring done.",
+      "_row_id": 1082
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1083,
+      "content": "Noted, preference 6 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never edit files under vendor without asking.",
+      "_row_id": 1084
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1085,
+      "content": "Noted, preference 7 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always keep changelog entries dated ISO 8601.",
+      "_row_id": 1086
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1087,
+      "content": "Noted, preference 8 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never log tokens or api keys.",
+      "_row_id": 1088
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1089,
+      "content": "Noted, preference 9 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always prefix branch names with feature or fix.",
+      "_row_id": 1090
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1091,
+      "content": "Noted, preference 10 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never delete archived sessions.",
+      "_row_id": 1092
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1093,
+      "content": "Noted, preference 11 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Always squash merge small PRs.",
+      "_row_id": 1094
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1095,
+      "content": "Noted, preference 12 registered in my working notes."
+    },
+    {
+      "role": "user",
+      "content": "Never commit lockfiles by hand.",
+      "_row_id": 1096
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1097,
+      "content": "Review complete: two naming issues and one missing test."
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Review the pull request for the exporter rewrite"
+    },
+    {
+      "id": "pref-1",
+      "category": "preference",
+      "text": "Always use four-space indentation in YAML configs"
+    },
+    {
+      "id": "pref-2",
+      "category": "preference",
+      "text": "Never push directly to main"
+    },
+    {
+      "id": "pref-3",
+      "category": "preference",
+      "text": "Always cite line numbers in review comments"
+    },
+    {
+      "id": "pref-4",
+      "category": "preference",
+      "text": "Never use emoji in commit messages"
+    },
+    {
+      "id": "pref-5",
+      "category": "preference",
+      "text": "Always run pytest before declaring done"
+    },
+    {
+      "id": "pref-6",
+      "category": "preference",
+      "text": "Never edit files under vendor without asking"
+    },
+    {
+      "id": "pref-7",
+      "category": "preference",
+      "text": "Always keep changelog entries dated ISO 8601"
+    },
+    {
+      "id": "pref-8",
+      "category": "preference",
+      "text": "Never log tokens or api keys"
+    },
+    {
+      "id": "pref-9",
+      "category": "preference",
+      "text": "Always prefix branch names with feature or fix"
+    },
+    {
+      "id": "pref-10",
+      "category": "preference",
+      "text": "Never delete archived sessions"
+    },
+    {
+      "id": "pref-11",
+      "category": "preference",
+      "text": "Always squash merge small PRs"
+    },
+    {
+      "id": "pref-12",
+      "category": "preference",
+      "text": "Never commit lockfiles by hand"
+    }
+  ]
+}

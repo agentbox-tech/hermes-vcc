@@ -1,0 +1,332 @@
+{
+  "name": "coding-session",
+  "description": "Happy-path coding session: goals, prefs, files, commit, one failure, scope change.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Port the OAuth refresh flow into the authgate service and make the existing tests pass.",
+      "_row_id": 1001
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1003,
+      "content": "I'll map the refresh flow first.",
+      "tool_calls": [
+        {
+          "id": "call_1002",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/src/refresh.py\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "read_file",
+      "content": "def refresh_token(session):\n    token = session.get('token')\nsrc line 0000: returning buffered data from the worker pool for review and archival\nsrc line 0001: returning buffered data from the worker pool for review and archival\nsrc line 0002: returning buffered data from the worker pool for review and archival\nsrc line 0003: returning buffered data from the worker pool for review and archival\nsrc line 0004: returning buffered data from the worker pool for review and archival\nsrc line 0005: returning buffered data from the worker pool for review and archival\nsrc line 0006: returning buffered data from the worker pool for review and archival\nsrc line 0007: returning buffered data from the worker pool for review and archival\nsrc line 0008: returning buffered data from the worker pool for review and archival\nsrc line 0009: returning buffered data from the worker pool for review and archival\nsrc line 0010: returning buffered data from the worker pool for review and archival\nsrc line 0011: returning buffered data from the worker pool for review and archival\nsrc line 0012: returning buffered data from the worker pool for review and archival\nsrc line 0013: returning buffered data from the worker pool for review and archival\nsrc line 0014: returning buffered data from the worker pool for review and archival\nsrc line 0015: returning buffered data from the worker pool for review and archival\nsrc line 0016: returning buffered data from the worker pool for review and archival\nsrc line 0017: returning buffered data from the worker pool for review and archival\nsrc line 0018: returning buffered data from the worker pool for review and archival\nsrc line 0019: returning buffered data from the worker pool for review and archival\nsrc line 0020: returning buffered data from the worker pool for review and archival\nsrc line 0021: returning buffered data from the worker pool for review and archival\nsrc line 0022: returning buffered data from the worker pool for review and archival\nsrc line 0023: returning buffered data from the worker pool for review and archival\nsrc line 0024: returning buffered data from the worker pool for review and archival\nsrc line 0025: returning buffered data from the worker pool for review and archival\nsrc line 0026: returning buffered data from the worker pool for review and archival\nsrc line 0027: returning buffered data from the worker pool for review and archival\nsrc line 0028: returning buffered data from the worker pool for review and archival\nsrc line 0029: returning buffered data from the worker pool for review and archival\nsrc line 0030: returning buffered data from the worker pool for review and archival\nsrc line 0031: returning buffered data from the worker pool for review and archival\nsrc line 0032: returning buffered data from the worker pool for review and archival\nsrc line 0033: returning buffered data from the worker pool for review and archival\nsrc line 0034: returning buffered data from the worker pool for review and archival\nsrc line 0035: returning buffered data from the worker pool for review and archival\nsrc line 0036: returning buffered data from the worker pool for review and archival\nsrc line 0037: returning buffered data from the worker pool for review and archival\nsrc line 0038: returning buffered data from the worker pool for review and archival\nsrc line 0039: returning buffered data from the worker pool for review and archival\nsrc line 0040: returning buffered data from the worker pool for review and archival\nsrc line 0041: returning buffered data from the worker pool for review and archival\nsrc line 0042: returning buffered data from the worker pool for review and archival\nsrc line 0043: returning buffered data from the worker pool for review and archival\nsrc line 0044: returning buffered data from the worker pool for review and archival\nsrc line 0045: returning buffered data from the worker pool for review and archival\nsrc line 0046: returning buffered data from the worker pool for review and archival\nsrc line 0047: returning buffered data from the worker pool for review and archival\nsrc line 0048: returning buffered data from the worker pool for review and archival\nsrc line 0049: returning buffered data from the worker pool for review and archival\nsrc line 0050: returning buffered data from the worker pool for review and archival\nsrc line 0051: returning buffered data from the worker pool for review and archival\nsrc line 0052: returning buffered data from the worker pool for review and archival\nsrc line 0053: returning buffered data from the worker pool for review and archival\nsrc line 0054: returning buffered data from the worker pool for review and archival\nsrc line 0055: returning buffered data from the worker pool for review and archival\nsrc line 0056: returning buffered data from the worker pool for review and archival\nsrc line 0057: returning buffered data from the worker pool for review and archival\nsrc line 0058: returning buffered data from the worker pool for review and archival\nsrc line 0059: returning buffered data from the worker pool for review and archival\nsrc line 0060: returning buffered data from the worker pool for review and archival\nsrc line 0061: returning buffered data from the worker pool for review and archival\nsrc line 0062: returning buffered data from the worker pool for review and archival\nsrc line 0063: returning buffered data from the worker pool for review and archival\nsrc line 0064: returning buffered data from the worker pool for review and archival\nsrc line 0065: returning buffered data from the worker pool for review and archival\nsrc line 0066: returning buffered data from the worker pool for review and archival\nsrc line 0067: returning buffered data from the worker pool for review and archival\nsrc line 0068: returning buffered data from the worker pool for review and archival\nsrc line 0069: returning buffered data from the worker pool for review and archival\nsrc line 0070: returning buffered data from the worker pool for review and archival\nsrc line 0071: returning buffered data from the worker pool for review and archival\nsrc line 0072: returning buffered data from the worker pool for review and archival\nsrc line 0073: returning buffered data from the worker pool for review and archival\nsrc line 0074: returning buffered data from the worker pool for review and archival\nsrc line 0075: returning buffered data from the worker pool for review and archival\nsrc line 0076: returning buffered data from the worker pool for review and archival\nsrc line 0077: returning buffered data from the worker pool for review and archival\nsrc line 0078: returning buffered data from the worker pool for review and archival\nsrc line 0079: returning buffered data from the worker pool for review and archival\nsrc line 0080: returning buffered data from the worker pool for review and archival\nsrc line 0081: returning buffered data from the worker pool for review and archival\nsrc line 0082: returning buffered data from the worker pool for review and archival\nsrc line 0083: returning buffered data from the worker pool for review and archival\nsrc line 0084: returning buffered data from the worker pool for review and archival\nsrc line 0085: returning buffered data from the worker pool for review and archival\nsrc line 0086: returning buffered data from the worker pool for review and archival\nsrc line 0087: returning buffered data from the worker pool for review and archival\nsrc line 0088: returning buffered data from the worker pool for review and archival\nsrc line 0089: returning buffered data from the worker pool for review and archival\nsrc line 0090: returning buffered data from the worker pool for review and archival\nsrc line 0091: returning buffered data from the worker pool for review and archival\nsrc line 0092: returning buffered data from the worker pool for review and archival\nsrc line 0093: returning buffered data from the worker pool for review and archival\nsrc line 0094: returning buffered data from the worker pool for review and archival\nsrc line 0095: returning buffered data from the worker pool for review and archival\nsrc line 0096: returning buffered data from the worker pool for review and archival\nsrc line 0097: returning buffered data from the worker pool for review and archival\nsrc line 0098: returning buffered data from the worker pool for review and archival\nsrc line 0099: returning buffered data from the worker pool for review and archival\nsrc line 0100: returning buffered data from the worker pool for review and archival\nsrc line 0101: returning buffered data from the worker pool for review and archival\nsrc line 0102: returning buffered data from the worker pool for review and archival\nsrc line 0103: returning buffered data from the worker pool for review and archival\nsrc line 0104: returning buffered data from the worker pool for review and archival\nsrc line 0105: returning buffered data from the worker pool for review and archival\nsrc line 0106: returning buffered data from the worker pool for review and archival\nsrc line 0107: returning buffered data from the worker pool for review and archival\nsrc line 0108: returning buffered data from the worker pool for review and archival\nsrc line 0109: returning buffered data from the worker pool for review and archival\nsrc line 0110: returning buffered data from the worker pool for review and archival\nsrc line 0111: returning buffered data from the worker pool for review and archival\nsrc line 0112: returning buffered data from the worker pool for review and archival\nsrc line 0113: returning buffered data from the worker pool for review and archival\nsrc line 0114: returning buffered data from the worker pool for review and archival\nsrc line 0115: returning buffered data from the worker pool for review and archival\nsrc line 0116: returning buffered data from the worker pool for review and archival\nsrc line 0117: returning buffered data from the worker pool for review and archival\nsrc line 0118: returning buffered data from the worker pool for review and archival\nsrc line 0119: returning buffered data from the worker pool for review and archival\nsrc line 0120: returning buffered data from the worker pool for review and archival\nsrc line 0121: returning buffered data from the worker pool for review and archival\nsrc line 0122: returning buffered data from the worker pool for review and archival\nsrc line 0123: returning buffered data from the worker pool for review and archival\nsrc line 0124: returning buffered data from the worker pool for review and archival\nsrc line 0125: returning buffered data from the worker pool for review and archival\nsrc line 0126: returning buffered data from the worker pool for review and archival\nsrc line 0127: returning buffered data from the worker pool for review and archival\nsrc line 0128: returning buffered data from the worker pool for review and archival\nsrc line 0129: returning buffered data from the worker pool for review and archival\nsrc line 0130: returning buffered data from the worker pool for review and archival\nsrc line 0131: returning buffered data from the worker pool for review and archival\nsrc line 0132: returning buffered data from the worker pool for review and archival\nsrc line 0133: returning buffered data from the worker pool for review and archival\nsrc line 0134: returning buffered data from the worker pool for review and archival\nsrc line 0135: returning buffered data from the worker pool for review and archival\nsrc line 0136: returning buffered data from the worker pool for review and archival\nsrc line 0137: returning buffered data from the worker pool for review and archival\nsrc line 0138: returning buffered data from the worker pool for review and archival\nsrc line 0139: returning buffered data from the worker pool for review and archival\nsrc line 0140: returning buffered data from the worker pool for review and archival\nsrc line 0141: returning buffered data from the worker pool for review and archival\nsrc line 0142: returning buffered data from the worker pool for review and archival\nsrc line 0143: returning buffered data from the worker pool for review and archival\nsrc line 0144: returning buffered data from the worker pool for review and archival\nsrc line 0145: returning buffered data from the worker pool for review and archival\nsrc line 0146: returning buffered data from the worker pool for review and archival\nsrc line 0147: returning buffered data from the worker pool for review and archival\nsrc line 0148: returning buffered data from the worker pool for review and archival\nsrc line 0149: returning buffered data from the worker pool for review and archival\nsrc line 0150: returning buffered data from the worker pool for review and archival\nsrc line 0151: returning buffered data from the worker pool for review and archival\nsrc line 0152: returning buffered data from the worker pool for review and archival\nsrc line 0153: returning buffered data from the worker pool for review and archival\nsrc line 0154: returning buffered data from the worker pool for review and archival\nsrc line 0155: returning buffered data from the worker pool for review and archival\nsrc line 0156: returning buffered data from the worker pool for review and archival\nsrc line 0157: returning buffered data from the worker pool for review and archival\nsrc line 0158: returning buffered data from the worker pool for review and archival\nsrc line 0159: returning buffered data from the worker pool for review and archival\nsrc line 0160: returning buffered data from the worker pool for review and archival\nsrc line 0161: returning buffered data from the worker pool for review and archival\nsrc line 0162: returning buffered data from the worker pool for review and archival\nsrc line 0163: returning buffered data from the worker pool for review and archival\nsrc line 0164: returning buffered data from the worker pool for review and archival\nsrc line 0165: returning buffered data from the worker pool for review and archival\nsrc line 0166: returning buffered data from the worker pool for review and archival\nsrc line 0167: returning buffered data from the worker pool for review and archival\nsrc line 0168: returning buffered data from the worker pool for review and archival\nsrc line 0169: returning buffered data from the worker pool for review and archival\nsrc line 0170: returning buffered data from the worker pool for review and archival\nsrc line 0171: returning buffered data from the worker pool for review and archival\nsrc line 0172: returning buffered data from the worker pool for review and archival\nsrc line 0173: returning buffered data from the worker pool for review and archival\nsrc line 0174: returning buffered data from the worker pool for review and archival\nsrc line 0175: returning buffered data from the worker pool for review and archival\nsrc line 0176: returning buffered data from the worker pool for review and archival\nsrc line 0177: returning buffered data from the worker pool for review and archival\nsrc line 0178: returning buffered data from the worker pool for review and archival\nsrc line 0179: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1004
+    },
+    {
+      "role": "user",
+      "content": "Always use four-space indentation in YAML configs.",
+      "_row_id": 1005
+    },
+    {
+      "role": "user",
+      "content": "Never push directly to main.",
+      "_row_id": 1006
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1008,
+      "content": "Patching the refresh path.",
+      "tool_calls": [
+        {
+          "id": "call_1007",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/src/refresh.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "ok",
+      "_row_id": 1009
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1011,
+      "content": "Writing the client.",
+      "tool_calls": [
+        {
+          "id": "call_1010",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/src/token_client.py\", \"content\": \"...\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "ok",
+      "_row_id": 1012
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1014,
+      "content": "Capturing the runbook.",
+      "tool_calls": [
+        {
+          "id": "call_1013",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/docs/runbook.md\", \"content\": \"...\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "ok",
+      "_row_id": 1015
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1017,
+      "content": "Committing.",
+      "tool_calls": [
+        {
+          "id": "call_1016",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git add -A && git commit -m \\\"fix token refresh race in middleware\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 7c1f40a] fix token refresh race in middleware\n 2 files changed",
+      "_row_id": 1018
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1020,
+      "content": "Running tests.",
+      "tool_calls": [
+        {
+          "id": "call_1019",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"pytest tests/test_refresh.py -q\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "FAILED tests/test_refresh.py::test_race - AssertionError: stale token returned\n1 failed in 0.41s",
+      "_row_id": 1021
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1022,
+      "content": "The refresh middleware still fails the race test — need to serialize the refresh call."
+    },
+    {
+      "role": "user",
+      "content": "Leave the trace ID REQ-4471 in the final report.",
+      "_row_id": 1023
+    },
+    {
+      "role": "user",
+      "content": "Before we continue, note that the compliance reviewer asked for a full audit trail of every token mutation in this service, and they will cross-check against ledger exports from the billing side later this week, so keep the churn visible. The ticket they filed is REQ-9902.",
+      "_row_id": 1024
+    },
+    {
+      "role": "user",
+      "content": "Actually, switch to python-jose for the decode step.",
+      "_row_id": 1025
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1027,
+      "content": "Reading the decoder.",
+      "tool_calls": [
+        {
+          "id": "call_1026",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/src/decode.py\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "read_file",
+      "content": "def decode(jwt): ...",
+      "_row_id": 1028
+    },
+    {
+      "role": "user",
+      "content": "Add retry with exponential backoff to the token refresh client.",
+      "_row_id": 1029
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1031,
+      "content": "Patching decoder.",
+      "tool_calls": [
+        {
+          "id": "call_1030",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/rain/projects/authgate/src/decode.py\", \"old_string\": \"a\", \"new_string\": \"b\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "ok",
+      "_row_id": 1032
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1034,
+      "content": "Full suite.",
+      "tool_calls": [
+        {
+          "id": "call_1033",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"pytest tests/test_refresh.py tests/test_decode.py -q\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "5 passed in 1.02s",
+      "_row_id": 1035
+    },
+    {
+      "role": "user",
+      "content": "ok",
+      "_row_id": 1036
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1037,
+      "content": "Done: retry with backoff is in, full suite green."
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Port the OAuth refresh flow into the authgate service"
+    },
+    {
+      "id": "read-1",
+      "category": "read_file",
+      "text": "src/refresh.py"
+    },
+    {
+      "id": "pref-1",
+      "category": "preference",
+      "text": "Always use four-space indentation in YAML configs"
+    },
+    {
+      "id": "pref-2",
+      "category": "preference",
+      "text": "Never push directly to main"
+    },
+    {
+      "id": "mod-1",
+      "category": "modified_file",
+      "text": "src/refresh.py"
+    },
+    {
+      "id": "mod-2",
+      "category": "modified_file",
+      "text": "src/token_client.py"
+    },
+    {
+      "id": "created-1",
+      "category": "created_file",
+      "text": "docs/runbook.md"
+    },
+    {
+      "id": "commit-1",
+      "category": "commit",
+      "text": "fix token refresh race in middleware",
+      "hash": "7c1f40a"
+    },
+    {
+      "id": "fail-1",
+      "category": "failed_command",
+      "text": "pytest tests/test_refresh.py"
+    },
+    {
+      "id": "blocker-1",
+      "category": "blocker",
+      "text": "still fails the race test"
+    },
+    {
+      "id": "ident-1",
+      "category": "identifier",
+      "text": "REQ-4471"
+    },
+    {
+      "id": "ident-clipped",
+      "category": "identifier",
+      "text": "REQ-9902",
+      "note": "past USER_TEXT_CLIP=256 — known v0 gap"
+    },
+    {
+      "id": "scope-1",
+      "category": "scope_change",
+      "text": "switch to python-jose for the decode step"
+    },
+    {
+      "id": "goal-2",
+      "category": "goal",
+      "text": "Add retry with exponential backoff to the token refresh client"
+    },
+    {
+      "id": "mod-3",
+      "category": "modified_file",
+      "text": "src/decode.py"
+    },
+    {
+      "id": "tracked-1",
+      "category": "tracked_command",
+      "text": "pytest tests/test_refresh.py tests/test_decode.py"
+    }
+  ],
+  "track_commands": [
+    "pytest"
+  ]
+}
