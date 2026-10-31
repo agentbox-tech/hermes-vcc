@@ -1,5 +1,15 @@
 {
   "floors": {
+    "arabic-workshop:pure": {
+      "recall": 1.0,
+      "reduction": 0.795,
+      "determinism": true
+    },
+    "arabic-workshop:engine": {
+      "recall": 1.0,
+      "reduction": 0.679,
+      "determinism": true
+    },
     "big-refactor-100:pure": {
       "recall": 0.98,
       "reduction": 0.946
@@ -7,6 +17,16 @@
     "big-refactor-100:engine": {
       "recall": 0.98,
       "reduction": 0.938
+    },
+    "bilingual-correction:pure": {
+      "recall": 1.0,
+      "reduction": -0.677,
+      "determinism": true
+    },
+    "bilingual-correction:engine": {
+      "recall": 1.0,
+      "reduction": -1.324,
+      "determinism": true
     },
     "chain-big-3rounds:pure": {
       "recall": 0.98,
@@ -48,6 +68,16 @@
       "recall": 0.98,
       "reduction": 0.782
     },
+    "failure-chain:pure": {
+      "recall": 1.0,
+      "reduction": -0.708,
+      "determinism": true
+    },
+    "failure-chain:engine": {
+      "recall": 1.0,
+      "reduction": -1.382,
+      "determinism": true
+    },
     "life-decision:pure": {
       "recall": 0.98,
       "reduction": 0.366
@@ -72,6 +102,16 @@
       "recall": 0.875,
       "reduction": -5.762
     },
+    "noise-adversarial:pure": {
+      "recall": 1.0,
+      "reduction": 0.912,
+      "determinism": true
+    },
+    "noise-adversarial:engine": {
+      "recall": 1.0,
+      "reduction": 0.881,
+      "determinism": true
+    },
     "preference-heavy:pure": {
       "recall": 0.98,
       "reduction": -1.0
@@ -79,7 +119,27 @@
     "preference-heavy:engine": {
       "recall": 0.98,
       "reduction": -2.623
+    },
+    "research-web:pure": {
+      "recall": 1.0,
+      "reduction": 0.933,
+      "determinism": true
+    },
+    "research-web:engine": {
+      "recall": 1.0,
+      "reduction": 0.914,
+      "determinism": true
+    },
+    "resume-seeded:pure": {
+      "recall": 1.0,
+      "reduction": -0.222,
+      "determinism": true
+    },
+    "resume-seeded:engine": {
+      "recall": 1.0,
+      "reduction": -1.104,
+      "determinism": true
     }
   },
-  "note": "floors = measured recall/reduction minus 0.02; re-bless only with a stated reason in the commit message"
+  "note": "floors = measured recall/reduction minus 0.02 by --bless; exact-measured entries (recall==measured, no slack) are hand-hardened: structural-regime fixtures and any path Rain has directed strict on. Re-bless only with a stated reason in the commit message."
 }

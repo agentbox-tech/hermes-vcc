@@ -1,0 +1,437 @@
+{
+  "name": "arabic-workshop",
+  "description": "~35-round Arabic-narration session workshopping a German client email; language coverage map.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "أحتاج مساعدتك في صياغة عرض سعر للعميل الألماني بخصوص تجديد المطبخ.",
+      "_row_id": 1631
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1632,
+      "content": "Of course — let's draft the quote."
+    },
+    {
+      "role": "user",
+      "content": "تمام",
+      "_row_id": 1633
+    },
+    {
+      "role": "user",
+      "content": "دائماً حافظ على نبرة رسمية وودودة في رسائل العميل.",
+      "_row_id": 1634
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1635
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1636,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1637,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1638,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1640,
+      "content": "Draft v2.",
+      "tool_calls": [
+        {
+          "id": "call_1639",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/layla/angebote/angebot.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "angebot line 0000: returning buffered data from the worker pool for review and archival\nangebot line 0001: returning buffered data from the worker pool for review and archival\nangebot line 0002: returning buffered data from the worker pool for review and archival\nangebot line 0003: returning buffered data from the worker pool for review and archival\nangebot line 0004: returning buffered data from the worker pool for review and archival\nangebot line 0005: returning buffered data from the worker pool for review and archival\nangebot line 0006: returning buffered data from the worker pool for review and archival\nangebot line 0007: returning buffered data from the worker pool for review and archival\nangebot line 0008: returning buffered data from the worker pool for review and archival\nangebot line 0009: returning buffered data from the worker pool for review and archival\nangebot line 0010: returning buffered data from the worker pool for review and archival\nangebot line 0011: returning buffered data from the worker pool for review and archival\nangebot line 0012: returning buffered data from the worker pool for review and archival\nangebot line 0013: returning buffered data from the worker pool for review and archival\nangebot line 0014: returning buffered data from the worker pool for review and archival\nangebot line 0015: returning buffered data from the worker pool for review and archival\nangebot line 0016: returning buffered data from the worker pool for review and archival\nangebot line 0017: returning buffered data from the worker pool for review and archival\nangebot line 0018: returning buffered data from the worker pool for review and archival\nangebot line 0019: returning buffered data from the worker pool for review and archival\nangebot line 0020: returning buffered data from the worker pool for review and archival\nangebot line 0021: returning buffered data from the worker pool for review and archival\nangebot line 0022: returning buffered data from the worker pool for review and archival\nangebot line 0023: returning buffered data from the worker pool for review and archival\nangebot line 0024: returning buffered data from the worker pool for review and archival\nangebot line 0025: returning buffered data from the worker pool for review and archival\nangebot line 0026: returning buffered data from the worker pool for review and archival\nangebot line 0027: returning buffered data from the worker pool for review and archival\nangebot line 0028: returning buffered data from the worker pool for review and archival\nangebot line 0029: returning buffered data from the worker pool for review and archival\nangebot line 0030: returning buffered data from the worker pool for review and archival\nangebot line 0031: returning buffered data from the worker pool for review and archival\nangebot line 0032: returning buffered data from the worker pool for review and archival\nangebot line 0033: returning buffered data from the worker pool for review and archival\nangebot line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1641
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1642,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1643,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1644
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1645,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1646,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "vielen Dank für Ihre Anfrage zum Angebot 4711 — bitte bestätigen Sie den Termin.",
+      "_row_id": 1647
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1648,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1649,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1650,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1651
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1652,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1654,
+      "content": "Draft v2.",
+      "tool_calls": [
+        {
+          "id": "call_1653",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/layla/angebote/angebot.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "angebot line 0000: returning buffered data from the worker pool for review and archival\nangebot line 0001: returning buffered data from the worker pool for review and archival\nangebot line 0002: returning buffered data from the worker pool for review and archival\nangebot line 0003: returning buffered data from the worker pool for review and archival\nangebot line 0004: returning buffered data from the worker pool for review and archival\nangebot line 0005: returning buffered data from the worker pool for review and archival\nangebot line 0006: returning buffered data from the worker pool for review and archival\nangebot line 0007: returning buffered data from the worker pool for review and archival\nangebot line 0008: returning buffered data from the worker pool for review and archival\nangebot line 0009: returning buffered data from the worker pool for review and archival\nangebot line 0010: returning buffered data from the worker pool for review and archival\nangebot line 0011: returning buffered data from the worker pool for review and archival\nangebot line 0012: returning buffered data from the worker pool for review and archival\nangebot line 0013: returning buffered data from the worker pool for review and archival\nangebot line 0014: returning buffered data from the worker pool for review and archival\nangebot line 0015: returning buffered data from the worker pool for review and archival\nangebot line 0016: returning buffered data from the worker pool for review and archival\nangebot line 0017: returning buffered data from the worker pool for review and archival\nangebot line 0018: returning buffered data from the worker pool for review and archival\nangebot line 0019: returning buffered data from the worker pool for review and archival\nangebot line 0020: returning buffered data from the worker pool for review and archival\nangebot line 0021: returning buffered data from the worker pool for review and archival\nangebot line 0022: returning buffered data from the worker pool for review and archival\nangebot line 0023: returning buffered data from the worker pool for review and archival\nangebot line 0024: returning buffered data from the worker pool for review and archival\nangebot line 0025: returning buffered data from the worker pool for review and archival\nangebot line 0026: returning buffered data from the worker pool for review and archival\nangebot line 0027: returning buffered data from the worker pool for review and archival\nangebot line 0028: returning buffered data from the worker pool for review and archival\nangebot line 0029: returning buffered data from the worker pool for review and archival\nangebot line 0030: returning buffered data from the worker pool for review and archival\nangebot line 0031: returning buffered data from the worker pool for review and archival\nangebot line 0032: returning buffered data from the worker pool for review and archival\nangebot line 0033: returning buffered data from the worker pool for review and archival\nangebot line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1655
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1656,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1657,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1658,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "المبلغ ٤٧١١ يورو يشمل التركيب.",
+      "_row_id": 1659
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1660,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1661
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1662,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1663,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1664,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1666,
+      "content": "Draft v2.",
+      "tool_calls": [
+        {
+          "id": "call_1665",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/layla/angebote/angebot.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "angebot line 0000: returning buffered data from the worker pool for review and archival\nangebot line 0001: returning buffered data from the worker pool for review and archival\nangebot line 0002: returning buffered data from the worker pool for review and archival\nangebot line 0003: returning buffered data from the worker pool for review and archival\nangebot line 0004: returning buffered data from the worker pool for review and archival\nangebot line 0005: returning buffered data from the worker pool for review and archival\nangebot line 0006: returning buffered data from the worker pool for review and archival\nangebot line 0007: returning buffered data from the worker pool for review and archival\nangebot line 0008: returning buffered data from the worker pool for review and archival\nangebot line 0009: returning buffered data from the worker pool for review and archival\nangebot line 0010: returning buffered data from the worker pool for review and archival\nangebot line 0011: returning buffered data from the worker pool for review and archival\nangebot line 0012: returning buffered data from the worker pool for review and archival\nangebot line 0013: returning buffered data from the worker pool for review and archival\nangebot line 0014: returning buffered data from the worker pool for review and archival\nangebot line 0015: returning buffered data from the worker pool for review and archival\nangebot line 0016: returning buffered data from the worker pool for review and archival\nangebot line 0017: returning buffered data from the worker pool for review and archival\nangebot line 0018: returning buffered data from the worker pool for review and archival\nangebot line 0019: returning buffered data from the worker pool for review and archival\nangebot line 0020: returning buffered data from the worker pool for review and archival\nangebot line 0021: returning buffered data from the worker pool for review and archival\nangebot line 0022: returning buffered data from the worker pool for review and archival\nangebot line 0023: returning buffered data from the worker pool for review and archival\nangebot line 0024: returning buffered data from the worker pool for review and archival\nangebot line 0025: returning buffered data from the worker pool for review and archival\nangebot line 0026: returning buffered data from the worker pool for review and archival\nangebot line 0027: returning buffered data from the worker pool for review and archival\nangebot line 0028: returning buffered data from the worker pool for review and archival\nangebot line 0029: returning buffered data from the worker pool for review and archival\nangebot line 0030: returning buffered data from the worker pool for review and archival\nangebot line 0031: returning buffered data from the worker pool for review and archival\nangebot line 0032: returning buffered data from the worker pool for review and archival\nangebot line 0033: returning buffered data from the worker pool for review and archival\nangebot line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1667
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1668,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1669,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1670
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1671,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1672,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1673,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1674,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1675,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1676
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1677,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1679,
+      "content": "Draft v2.",
+      "tool_calls": [
+        {
+          "id": "call_1678",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/layla/angebote/angebot.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "angebot line 0000: returning buffered data from the worker pool for review and archival\nangebot line 0001: returning buffered data from the worker pool for review and archival\nangebot line 0002: returning buffered data from the worker pool for review and archival\nangebot line 0003: returning buffered data from the worker pool for review and archival\nangebot line 0004: returning buffered data from the worker pool for review and archival\nangebot line 0005: returning buffered data from the worker pool for review and archival\nangebot line 0006: returning buffered data from the worker pool for review and archival\nangebot line 0007: returning buffered data from the worker pool for review and archival\nangebot line 0008: returning buffered data from the worker pool for review and archival\nangebot line 0009: returning buffered data from the worker pool for review and archival\nangebot line 0010: returning buffered data from the worker pool for review and archival\nangebot line 0011: returning buffered data from the worker pool for review and archival\nangebot line 0012: returning buffered data from the worker pool for review and archival\nangebot line 0013: returning buffered data from the worker pool for review and archival\nangebot line 0014: returning buffered data from the worker pool for review and archival\nangebot line 0015: returning buffered data from the worker pool for review and archival\nangebot line 0016: returning buffered data from the worker pool for review and archival\nangebot line 0017: returning buffered data from the worker pool for review and archival\nangebot line 0018: returning buffered data from the worker pool for review and archival\nangebot line 0019: returning buffered data from the worker pool for review and archival\nangebot line 0020: returning buffered data from the worker pool for review and archival\nangebot line 0021: returning buffered data from the worker pool for review and archival\nangebot line 0022: returning buffered data from the worker pool for review and archival\nangebot line 0023: returning buffered data from the worker pool for review and archival\nangebot line 0024: returning buffered data from the worker pool for review and archival\nangebot line 0025: returning buffered data from the worker pool for review and archival\nangebot line 0026: returning buffered data from the worker pool for review and archival\nangebot line 0027: returning buffered data from the worker pool for review and archival\nangebot line 0028: returning buffered data from the worker pool for review and archival\nangebot line 0029: returning buffered data from the worker pool for review and archival\nangebot line 0030: returning buffered data from the worker pool for review and archival\nangebot line 0031: returning buffered data from the worker pool for review and archival\nangebot line 0032: returning buffered data from the worker pool for review and archival\nangebot line 0033: returning buffered data from the worker pool for review and archival\nangebot line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1680
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1681,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1682,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1683,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1684,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1685
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1686,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1687,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1688,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1690,
+      "content": "Draft v2.",
+      "tool_calls": [
+        {
+          "id": "call_1689",
+          "type": "function",
+          "function": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"/home/layla/angebote/angebot.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "write_file",
+      "content": "angebot line 0000: returning buffered data from the worker pool for review and archival\nangebot line 0001: returning buffered data from the worker pool for review and archival\nangebot line 0002: returning buffered data from the worker pool for review and archival\nangebot line 0003: returning buffered data from the worker pool for review and archival\nangebot line 0004: returning buffered data from the worker pool for review and archival\nangebot line 0005: returning buffered data from the worker pool for review and archival\nangebot line 0006: returning buffered data from the worker pool for review and archival\nangebot line 0007: returning buffered data from the worker pool for review and archival\nangebot line 0008: returning buffered data from the worker pool for review and archival\nangebot line 0009: returning buffered data from the worker pool for review and archival\nangebot line 0010: returning buffered data from the worker pool for review and archival\nangebot line 0011: returning buffered data from the worker pool for review and archival\nangebot line 0012: returning buffered data from the worker pool for review and archival\nangebot line 0013: returning buffered data from the worker pool for review and archival\nangebot line 0014: returning buffered data from the worker pool for review and archival\nangebot line 0015: returning buffered data from the worker pool for review and archival\nangebot line 0016: returning buffered data from the worker pool for review and archival\nangebot line 0017: returning buffered data from the worker pool for review and archival\nangebot line 0018: returning buffered data from the worker pool for review and archival\nangebot line 0019: returning buffered data from the worker pool for review and archival\nangebot line 0020: returning buffered data from the worker pool for review and archival\nangebot line 0021: returning buffered data from the worker pool for review and archival\nangebot line 0022: returning buffered data from the worker pool for review and archival\nangebot line 0023: returning buffered data from the worker pool for review and archival\nangebot line 0024: returning buffered data from the worker pool for review and archival\nangebot line 0025: returning buffered data from the worker pool for review and archival\nangebot line 0026: returning buffered data from the worker pool for review and archival\nangebot line 0027: returning buffered data from the worker pool for review and archival\nangebot line 0028: returning buffered data from the worker pool for review and archival\nangebot line 0029: returning buffered data from the worker pool for review and archival\nangebot line 0030: returning buffered data from the worker pool for review and archival\nangebot line 0031: returning buffered data from the worker pool for review and archival\nangebot line 0032: returning buffered data from the worker pool for review and archival\nangebot line 0033: returning buffered data from the worker pool for review and archival\nangebot line 0034: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1691
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1692,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1693,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "حسناً، لنكمل الصياغة.",
+      "_row_id": 1694
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1695,
+      "content": "Refining the draft."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1696,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1697,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "في الواقع، المبلغ النهائي 5200 وليس 4711.",
+      "_row_id": 1698
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1699,
+      "content": "Noted — final amount 5200."
+    },
+    {
+      "role": "user",
+      "content": "أرسل المسودة إلى layla@example.de بعد المراجعة.",
+      "_row_id": 1700
+    },
+    {
+      "role": "user",
+      "content": "الموعد المقترح ١٥ ديسمبر ٢٠٢٦ صباحاً.",
+      "_row_id": 1701
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-ar",
+      "category": "goal",
+      "text": "أحتاج مساعدتك في صياغة عرض سعر للعميل الألماني بخصوص تجديد المطبخ",
+      "note": "goal capture is length-based — full Arabic request becomes a Session Goal verbatim"
+    },
+    {
+      "id": "pref-ar-gap",
+      "category": "preference",
+      "text": "دائماً حافظ على نبرة رسمية وودودة في رسائل العميل",
+      "note": "Arabic pref: whitelist is English-only — zero header coverage; survives ONLY as verbatim tail"
+    },
+    {
+      "id": "de-snippet",
+      "category": "identifier",
+      "text": "4711",
+      "score": false,
+      "note": "mid-session German email body: refs inside unparsed prose — pre-brief-tail measured drop"
+    },
+    {
+      "id": "arabic-indic",
+      "category": "identifier",
+      "text": "٤٧١١",
+      "score": false,
+      "note": "Arabic-Indic digits: all ID idioms are ASCII — unrecoverable once pre-tail (measured drop)"
+    },
+    {
+      "id": "ar-correction",
+      "category": "identifier",
+      "text": "5200",
+      "note": "Arabic-worded correction: no English scope marker — no scope section; survives via verbatim tail"
+    },
+    {
+      "id": "email-ar-turn",
+      "category": "identifier",
+      "text": "layla@example.de",
+      "note": "EMAIL_RE is ASCII — email inside Arabic turn still extracted/tailed"
+    },
+    {
+      "id": "arabic-month",
+      "category": "identifier",
+      "text": "١٥ ديسمبر ٢٠٢٦",
+      "note": "Arabic month name + Arabic-Indic digits — no idiom matches; survives ONLY verbatim tail"
+    }
+  ]
+}

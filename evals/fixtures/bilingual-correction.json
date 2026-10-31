@@ -1,0 +1,474 @@
+{
+  "name": "bilingual-correction",
+  "description": "~50-round DE/EN session with numeric supersession: stale-fact persistence + language coverage gaps.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Help me plan the kitchen renovation budget.\n\nIch möchte alles in einem Rutsch durchgehen.",
+      "_row_id": 1548
+    },
+    {
+      "role": "user",
+      "content": "Benutze immer Celsius und nie Fahrenheit.",
+      "_row_id": 1549
+    },
+    {
+      "role": "user",
+      "content": "Always use metric units in the plan.",
+      "_row_id": 1550
+    },
+    {
+      "role": "user",
+      "content": "The working budget is 1800 euro.",
+      "_row_id": 1551
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1552
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1553,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1554
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1555,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1556
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1557,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish. Alles gut soweit.",
+      "_row_id": 1558
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1559,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1560
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1561,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1562
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1563,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1564
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1565,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1566
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1567,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly. Alles gut soweit.",
+      "_row_id": 1568
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1569,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1570
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1571,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1572
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1573,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1574
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1575,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1576
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1577,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish. Alles gut soweit.",
+      "_row_id": 1578
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1579,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1580
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1581,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1582
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1583,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1584
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1585,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1586
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1587,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly. Alles gut soweit.",
+      "_row_id": 1588
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1589,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "Actually, make the budget 1600 instead of 1800.",
+      "_row_id": 1590
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1591
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1592,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1593
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1594,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1595
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1596,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1597
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1598,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish. Alles gut soweit.",
+      "_row_id": 1599
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1600,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1601
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1602,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1603
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1604,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1605
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1606,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1607
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1608,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly. Alles gut soweit.",
+      "_row_id": 1609
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1610,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "Fertig braucht es einen Termin bis zum 15.12.2026.",
+      "_row_id": 1611
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1612
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1613,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1614
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1615,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1616
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1617,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1618
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1619,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish. Alles gut soweit.",
+      "_row_id": 1620
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1621,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1622
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1623,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1624
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1625,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1626
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1627,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Confirm the appointment by 2026-12-15.",
+      "_row_id": 1628
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1629
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1630,
+      "content": "Done — next step."
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Help me plan the kitchen renovation budget"
+    },
+    {
+      "id": "goal-de",
+      "category": "goal",
+      "text": "Ich möchte alles in einem Rutsch durchgehen.",
+      "note": "goal capture is length-based, language-blind — German second line became a Session Goal verbatim"
+    },
+    {
+      "id": "pref-de-gap",
+      "category": "preference",
+      "text": "Benutze immer Celsius und nie Fahrenheit",
+      "note": "German pref: pref verbs are English-only — no header entry ever; survives ONLY as verbatim tail"
+    },
+    {
+      "id": "pref-en",
+      "category": "preference",
+      "text": "Always use metric units in the plan"
+    },
+    {
+      "id": "budget-stale",
+      "category": "identifier",
+      "text": "1800",
+      "note": "SUPERSEDED value still recalled: verbatim tail + the correction line itself quotes 1800 — engine has no supersession surface (amendment design exhibit, board 197)"
+    },
+    {
+      "id": "correction",
+      "category": "scope_change",
+      "text": "Actually, make the budget 1600 instead of 1800.",
+      "note": "'Actually' scope marker + 'make' whitelist — survives as scope/goal AND tail"
+    },
+    {
+      "id": "budget-fixed",
+      "category": "identifier",
+      "text": "1600"
+    },
+    {
+      "id": "date-de",
+      "category": "identifier",
+      "text": "15.12.2026",
+      "note": "German date idiom unmached in header (ISO pattern only) — survives via verbatim tail"
+    },
+    {
+      "id": "date-iso-late",
+      "category": "identifier",
+      "text": "2026-12-15",
+      "note": "ISO date, late — brief tail verbatim"
+    }
+  ]
+}

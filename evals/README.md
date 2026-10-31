@@ -108,6 +108,15 @@ commit message.
 | preference-heavy | 100% | −260% | 100% | −1158% |
 | big-refactor-100 (~200 rnd) | **100%** | **95.8%** (10,022c) | 97.2% — drops one tracked pytest | 83.4% (39,073c) |
 | chain-big-3rounds (~475 msg) | **100%** | **96.5%** (9,215c) | 100% | 82.7% (46,099c) |
+| email-draft | 100% | 40.8% (11,223c) | not run | — |
+| conflict-talk | 100% | 6.0% (16,440c) | not run | — |
+| life-decision | 100% | 30.2% (16,343c) | not run | — |
+| research-web | 100% | 93.4% (6,762c) | not run | — |
+| failure-chain | 100% | −136% (6,848c) | not run | — |
+| resume-seeded | 100% | −108% (4,620c) | not run | — |
+| noise-adversarial | 100% | 90.1% (6,233c) | not run | — |
+| bilingual-correction | 100% | −130% (6,964c) | not run | — |
+| arabic-workshop | 100% | 69.9% (5,069c) | not run | — |
 
 Baseline numbers vary run-to-run (it is the LLM); recall misses recur,
 sizes drift a few percent.
@@ -155,6 +164,13 @@ normalizes both.
 | prev Outstanding Context | multi-compact-chain `prev-blocker` | dropped — fresh-only policy by design |
 | skipForProviders / skipCustomTypes | not ported; no v0 knob exists | anything non-synthetic compiles |
 | touched-not-recallable-as-set | v0 ships zero engine tools (Rain 2026-10-08) | file set survives only as header/ brief lines; no query surface |
+| pref whitelist is English-only | `pref-de-gap`, `pref-ar-gap` | German/ Arabic preferences never reach the header — survive only as verbatim tail until rollover |
+| non-ASCII identifiers | `arabic-indic` (٤٧١١) | all ID idioms are ASCII — unrecoverable once pre-tail |
+| no supersession of values | `budget-stale` (1800) vs `budget-fixed` (1600) | corrected AND superseded values both remain; engine has no contradiction-resolution surface — exhibit for the amendment design (board 197) |
+| guards are header-only | `guard-synth`/`guard-xml` dropped ✓ but `secret-in-fence`, `slash-nongoal`, `q-ident` ride the tail | synthetic-prefix, XML-strip, NON_GOAL and question guards never touch the verbatim tail — fenced secrets persist there |
+| one preference per user block | `pref-in-table2` | second whitelist pref in the same message is dropped |
+| tracked buckets carry no outcome | `fail-tracked-e8` vs `failed-test-e8` | bucket keeps THAT pytest ran, not that it failed; error identity survives only via tail prose |
+| tail lines are clipped too | `ident-past-clip` (REQ-5000) | `USER_TEXT_CLIP=256` cuts the tail line mid-sentence — fact unrecoverable from header AND tail |
 
 Reduction on tiny fact-dense fixtures (multi-compact-chain, preference-heavy)
 is negative — the summary legitimately exceeds a thin input. The `big`

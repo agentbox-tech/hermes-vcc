@@ -1,0 +1,390 @@
+{
+  "name": "resume-seeded",
+  "description": "host-resume shape: seeded previous_summary + guard blocks; tests merge integrity + drop guards.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Picking up where we left off — Kafka port. First, the DLQ design: dead-letter topics for parse failures.\n\nDLQ-2200 is the ticket.",
+      "_row_id": 1391
+    },
+    {
+      "role": "user",
+      "content": "The paperwork side of it is quieter than I expected.",
+      "_row_id": 1392
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1394,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1393",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 2)",
+      "_row_id": 1395
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1396,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "People around me keep asking and I keep giving short answers.",
+      "_row_id": 1397
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1399,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1398",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 3)",
+      "_row_id": 1400
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1401,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Some mornings it feels decided and some it doesn't.",
+      "_row_id": 1402
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1404,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1403",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 4)",
+      "_row_id": 1405
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1406,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "I keep drafting open tabs I never finish.",
+      "_row_id": 1407
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1409,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1408",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 5)",
+      "_row_id": 1410
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1411,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "The timing overlaps with everything else on the calendar.",
+      "_row_id": 1412
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1414,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1413",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 6)",
+      "_row_id": 1415
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1416,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "I asked two friends and got opposite answers.",
+      "_row_id": 1417
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1419,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1418",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 7)",
+      "_row_id": 1420
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1421,
+      "content": "Working on it."
+    },
+    {
+      "role": "user",
+      "content": "There's a small admin task I keep postponing every day.",
+      "_row_id": 1422
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1424,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1423",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 8)",
+      "_row_id": 1425
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1426,
+      "content": "Makes sense."
+    },
+    {
+      "role": "user",
+      "content": "Most of it is fine day to day; it's the edges that fray.",
+      "_row_id": 1427
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1429,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1428",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 9)",
+      "_row_id": 1430
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1431,
+      "content": "Done — next step."
+    },
+    {
+      "role": "user",
+      "content": "It keeps circling back to the same two things honestly.",
+      "_row_id": 1432
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1434,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1433",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 10)",
+      "_row_id": 1435
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1436,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "user",
+      "content": "I went over the whole thread again last night.",
+      "_row_id": 1437
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1439,
+      "content": "Working on it.",
+      "tool_calls": [
+        {
+          "id": "call_1438",
+          "type": "function",
+          "function": {
+            "name": "patch",
+            "arguments": "{\"path\": \"/home/ivn/ingest/worker.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "patch",
+      "content": "patched worker.py ok (round 11)",
+      "_row_id": 1440
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1441,
+      "content": "That checks out."
+    },
+    {
+      "role": "user",
+      "content": "[CONTEXT COMPACTION — REFERENCE ONLY] The staging host staging-7.example stays flaky.",
+      "_row_id": 1442
+    },
+    {
+      "role": "user",
+      "content": "Reference the flaky host staging-8.example in the runbook notes.\n\n<memory-context>secret token ZL-555 ignored</memory-context>",
+      "_row_id": 1443
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-new",
+      "category": "goal",
+      "text": "Picking up where we left off — Kafka port."
+    },
+    {
+      "id": "dlq-2200",
+      "category": "identifier",
+      "text": "DLQ-2200",
+      "note": "survives twice: whole first message became a Session Goal line AND the tail"
+    },
+    {
+      "id": "guard-synth",
+      "category": "identifier",
+      "text": "staging-7.example",
+      "score": false,
+      "note": "synthetic-prefix guard: whole block dropped before extraction — measured absent"
+    },
+    {
+      "id": "guard-xml",
+      "category": "identifier",
+      "text": "ZL-555",
+      "score": false,
+      "note": "XML block stripped by _XML_BLOCK_RE before extraction — measured absent"
+    },
+    {
+      "id": "plain-late",
+      "category": "identifier",
+      "text": "staging-8.example",
+      "note": "non-guarded part of same message — late, brief tail"
+    },
+    {
+      "id": "prev-goal",
+      "category": "goal",
+      "text": "Port the ingest worker to Kafka.",
+      "note": "seeded previous_summary — merge keeps prior goals first"
+    },
+    {
+      "id": "prev-commit",
+      "category": "commit",
+      "text": "pin kafka client",
+      "hash": "a1b2c3d",
+      "note": "seeded commit: hash AND subject survive the merge"
+    },
+    {
+      "id": "prev-pref",
+      "category": "preference",
+      "text": "Always run the contract suite before merging.",
+      "note": "seeded whitelist pref — header merge retains"
+    },
+    {
+      "id": "prev-file",
+      "category": "modified_file",
+      "text": "worker.py",
+      "note": "seeded file merged ahead of new patches"
+    }
+  ],
+  "previous_summary": "[Session Goal]\n- Port the ingest worker to Kafka.\n\n[User Preferences]\n- Always run the contract suite before merging.\n\n[Commits]\n- a1b2c3d: pin kafka client\n\n[Files And Changes]\n- Modified: worker.py\n"
+}

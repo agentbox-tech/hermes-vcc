@@ -1,0 +1,1895 @@
+{
+  "name": "research-web",
+  "description": "~50-round invented web-research session: URL/citation surfaces, multi-name tracked buckets.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Compare scheduler libraries for the fernpost ingest rewrite.\n\nI need benchmark numbers, not vibes.",
+      "_row_id": 1001
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1003,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1002",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 1\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-001: notes and measured throughput\n- fernrepo.example/lib/dask-001: notes and measured throughput\n- fernrepo.example/lib/luigi-001: notes and measured throughput",
+      "_row_id": 1004
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1005,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1007,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1006",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 2\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-002: notes and measured throughput\n- fernrepo.example/lib/dask-002: notes and measured throughput\n- fernrepo.example/lib/luigi-002: notes and measured throughput",
+      "_row_id": 1008
+    },
+    {
+      "role": "user",
+      "content": "Early lead: fernrepo.example/early — looks promising.",
+      "_row_id": 1009
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1010,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1012,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1011",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 3\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-003: notes and measured throughput\n- fernrepo.example/lib/dask-003: notes and measured throughput\n- fernrepo.example/lib/luigi-003: notes and measured throughput",
+      "_row_id": 1013
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1015,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1014",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-003\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1016
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1017,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1019,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1018",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 4\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-004: notes and measured throughput\n- fernrepo.example/lib/dask-004: notes and measured throughput\n- fernrepo.example/lib/luigi-004: notes and measured throughput",
+      "_row_id": 1020
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1021,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1023,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1022",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 5\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-005: notes and measured throughput\n- fernrepo.example/lib/dask-005: notes and measured throughput\n- fernrepo.example/lib/luigi-005: notes and measured throughput",
+      "_row_id": 1024
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1025,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1027,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1026",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 6\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-006: notes and measured throughput\n- fernrepo.example/lib/dask-006: notes and measured throughput\n- fernrepo.example/lib/luigi-006: notes and measured throughput",
+      "_row_id": 1028
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1030,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1029",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-006\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1031
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1032,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1034,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1033",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 7\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-007: notes and measured throughput\n- fernrepo.example/lib/dask-007: notes and measured throughput\n- fernrepo.example/lib/luigi-007: notes and measured throughput",
+      "_row_id": 1035
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-107: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1036
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1037,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1039,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1038",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 8\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-008: notes and measured throughput\n- fernrepo.example/lib/dask-008: notes and measured throughput\n- fernrepo.example/lib/luigi-008: notes and measured throughput",
+      "_row_id": 1040
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1042,
+      "content": "Probing the endpoint.",
+      "tool_calls": [
+        {
+          "id": "call_1041",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"curl -s https://bench.example/8\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "json line 0000: returning buffered data from the worker pool for review and archival\njson line 0001: returning buffered data from the worker pool for review and archival\njson line 0002: returning buffered data from the worker pool for review and archival\njson line 0003: returning buffered data from the worker pool for review and archival\njson line 0004: returning buffered data from the worker pool for review and archival\njson line 0005: returning buffered data from the worker pool for review and archival\njson line 0006: returning buffered data from the worker pool for review and archival\njson line 0007: returning buffered data from the worker pool for review and archival\njson line 0008: returning buffered data from the worker pool for review and archival\njson line 0009: returning buffered data from the worker pool for review and archival\njson line 0010: returning buffered data from the worker pool for review and archival\njson line 0011: returning buffered data from the worker pool for review and archival\njson line 0012: returning buffered data from the worker pool for review and archival\njson line 0013: returning buffered data from the worker pool for review and archival\njson line 0014: returning buffered data from the worker pool for review and archival\njson line 0015: returning buffered data from the worker pool for review and archival\njson line 0016: returning buffered data from the worker pool for review and archival\njson line 0017: returning buffered data from the worker pool for review and archival\njson line 0018: returning buffered data from the worker pool for review and archival\njson line 0019: returning buffered data from the worker pool for review and archival\njson line 0020: returning buffered data from the worker pool for review and archival\njson line 0021: returning buffered data from the worker pool for review and archival\njson line 0022: returning buffered data from the worker pool for review and archival\njson line 0023: returning buffered data from the worker pool for review and archival\njson line 0024: returning buffered data from the worker pool for review and archival\njson line 0025: returning buffered data from the worker pool for review and archival\njson line 0026: returning buffered data from the worker pool for review and archival\njson line 0027: returning buffered data from the worker pool for review and archival\njson line 0028: returning buffered data from the worker pool for review and archival\njson line 0029: returning buffered data from the worker pool for review and archival\njson line 0030: returning buffered data from the worker pool for review and archival\njson line 0031: returning buffered data from the worker pool for review and archival\njson line 0032: returning buffered data from the worker pool for review and archival\njson line 0033: returning buffered data from the worker pool for review and archival\njson line 0034: returning buffered data from the worker pool for review and archival\njson line 0035: returning buffered data from the worker pool for review and archival\njson line 0036: returning buffered data from the worker pool for review and archival\njson line 0037: returning buffered data from the worker pool for review and archival\njson line 0038: returning buffered data from the worker pool for review and archival\njson line 0039: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1043
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1044,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1046,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1045",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 9\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-009: notes and measured throughput\n- fernrepo.example/lib/dask-009: notes and measured throughput\n- fernrepo.example/lib/luigi-009: notes and measured throughput",
+      "_row_id": 1047
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1049,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1048",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-009\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1050
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1051,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1053,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1052",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 10\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-010: notes and measured throughput\n- fernrepo.example/lib/dask-010: notes and measured throughput\n- fernrepo.example/lib/luigi-010: notes and measured throughput",
+      "_row_id": 1054
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1055,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1057,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1056",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 11\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-011: notes and measured throughput\n- fernrepo.example/lib/dask-011: notes and measured throughput\n- fernrepo.example/lib/luigi-011: notes and measured throughput",
+      "_row_id": 1058
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1059,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1061,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1060",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 12\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-012: notes and measured throughput\n- fernrepo.example/lib/dask-012: notes and measured throughput\n- fernrepo.example/lib/luigi-012: notes and measured throughput",
+      "_row_id": 1062
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1064,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1063",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-012\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1065
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1067,
+      "content": "Saving notes.",
+      "tool_calls": [
+        {
+          "id": "call_1066",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"research notes 1\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 00abcdc] research notes",
+      "_row_id": 1068
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1069,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1071,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1070",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 13\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-013: notes and measured throughput\n- fernrepo.example/lib/dask-013: notes and measured throughput\n- fernrepo.example/lib/luigi-013: notes and measured throughput",
+      "_row_id": 1072
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1073,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1075,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1074",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 14\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-014: notes and measured throughput\n- fernrepo.example/lib/dask-014: notes and measured throughput\n- fernrepo.example/lib/luigi-014: notes and measured throughput",
+      "_row_id": 1076
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-114: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1077
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1078,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1080,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1079",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 15\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-015: notes and measured throughput\n- fernrepo.example/lib/dask-015: notes and measured throughput\n- fernrepo.example/lib/luigi-015: notes and measured throughput",
+      "_row_id": 1081
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1083,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1082",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-015\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1084
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1085,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1087,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1086",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 16\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-016: notes and measured throughput\n- fernrepo.example/lib/dask-016: notes and measured throughput\n- fernrepo.example/lib/luigi-016: notes and measured throughput",
+      "_row_id": 1088
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1089,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1091,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1090",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 17\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-017: notes and measured throughput\n- fernrepo.example/lib/dask-017: notes and measured throughput\n- fernrepo.example/lib/luigi-017: notes and measured throughput",
+      "_row_id": 1092
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1093,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1095,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1094",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 18\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-018: notes and measured throughput\n- fernrepo.example/lib/dask-018: notes and measured throughput\n- fernrepo.example/lib/luigi-018: notes and measured throughput",
+      "_row_id": 1096
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1098,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1097",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-018\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1099
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1100,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1102,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1101",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 19\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-019: notes and measured throughput\n- fernrepo.example/lib/dask-019: notes and measured throughput\n- fernrepo.example/lib/luigi-019: notes and measured throughput",
+      "_row_id": 1103
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1104,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1106,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1105",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 20\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-020: notes and measured throughput\n- fernrepo.example/lib/dask-020: notes and measured throughput\n- fernrepo.example/lib/luigi-020: notes and measured throughput",
+      "_row_id": 1107
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1108,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1110,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1109",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 21\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-021: notes and measured throughput\n- fernrepo.example/lib/dask-021: notes and measured throughput\n- fernrepo.example/lib/luigi-021: notes and measured throughput",
+      "_row_id": 1111
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1113,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1112",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-021\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1114
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-121: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1115
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1116,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1118,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1117",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 22\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-022: notes and measured throughput\n- fernrepo.example/lib/dask-022: notes and measured throughput\n- fernrepo.example/lib/luigi-022: notes and measured throughput",
+      "_row_id": 1119
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1120,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1122,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1121",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 23\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-023: notes and measured throughput\n- fernrepo.example/lib/dask-023: notes and measured throughput\n- fernrepo.example/lib/luigi-023: notes and measured throughput",
+      "_row_id": 1123
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1124,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1126,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1125",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 24\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-024: notes and measured throughput\n- fernrepo.example/lib/dask-024: notes and measured throughput\n- fernrepo.example/lib/luigi-024: notes and measured throughput",
+      "_row_id": 1127
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1129,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1128",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-024\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1130
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1132,
+      "content": "Saving notes.",
+      "tool_calls": [
+        {
+          "id": "call_1131",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"research notes 2\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 00abce8] research notes",
+      "_row_id": 1133
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1134,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1136,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1135",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 25\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-025: notes and measured throughput\n- fernrepo.example/lib/dask-025: notes and measured throughput\n- fernrepo.example/lib/luigi-025: notes and measured throughput",
+      "_row_id": 1137
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1138,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1140,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1139",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 26\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-026: notes and measured throughput\n- fernrepo.example/lib/dask-026: notes and measured throughput\n- fernrepo.example/lib/luigi-026: notes and measured throughput",
+      "_row_id": 1141
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1142,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1144,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1143",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 27\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-027: notes and measured throughput\n- fernrepo.example/lib/dask-027: notes and measured throughput\n- fernrepo.example/lib/luigi-027: notes and measured throughput",
+      "_row_id": 1145
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1147,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1146",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-027\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1148
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1149,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1151,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1150",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 28\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-028: notes and measured throughput\n- fernrepo.example/lib/dask-028: notes and measured throughput\n- fernrepo.example/lib/luigi-028: notes and measured throughput",
+      "_row_id": 1152
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-128: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1153
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1154,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1156,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1155",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 29\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-029: notes and measured throughput\n- fernrepo.example/lib/dask-029: notes and measured throughput\n- fernrepo.example/lib/luigi-029: notes and measured throughput",
+      "_row_id": 1157
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1158,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1160,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1159",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 30\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-030: notes and measured throughput\n- fernrepo.example/lib/dask-030: notes and measured throughput\n- fernrepo.example/lib/luigi-030: notes and measured throughput",
+      "_row_id": 1161
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1163,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1162",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-030\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1164
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1165,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1167,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1166",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 31\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-031: notes and measured throughput\n- fernrepo.example/lib/dask-031: notes and measured throughput\n- fernrepo.example/lib/luigi-031: notes and measured throughput",
+      "_row_id": 1168
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1169,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1171,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1170",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 32\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-032: notes and measured throughput\n- fernrepo.example/lib/dask-032: notes and measured throughput\n- fernrepo.example/lib/luigi-032: notes and measured throughput",
+      "_row_id": 1172
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1173,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1175,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1174",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 33\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-033: notes and measured throughput\n- fernrepo.example/lib/dask-033: notes and measured throughput\n- fernrepo.example/lib/luigi-033: notes and measured throughput",
+      "_row_id": 1176
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1178,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1177",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-033\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1179
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1180,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1182,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1181",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 34\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-034: notes and measured throughput\n- fernrepo.example/lib/dask-034: notes and measured throughput\n- fernrepo.example/lib/luigi-034: notes and measured throughput",
+      "_row_id": 1183
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1184,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1186,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1185",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 35\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-035: notes and measured throughput\n- fernrepo.example/lib/dask-035: notes and measured throughput\n- fernrepo.example/lib/luigi-035: notes and measured throughput",
+      "_row_id": 1187
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-135: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1188
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1189,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1191,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1190",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 36\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-036: notes and measured throughput\n- fernrepo.example/lib/dask-036: notes and measured throughput\n- fernrepo.example/lib/luigi-036: notes and measured throughput",
+      "_row_id": 1192
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1194,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1193",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-036\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1195
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1197,
+      "content": "Saving notes.",
+      "tool_calls": [
+        {
+          "id": "call_1196",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"research notes 3\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 00abcf4] research notes",
+      "_row_id": 1198
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1199,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1201,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1200",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 37\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-037: notes and measured throughput\n- fernrepo.example/lib/dask-037: notes and measured throughput\n- fernrepo.example/lib/luigi-037: notes and measured throughput",
+      "_row_id": 1202
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1203,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1205,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1204",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 38\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-038: notes and measured throughput\n- fernrepo.example/lib/dask-038: notes and measured throughput\n- fernrepo.example/lib/luigi-038: notes and measured throughput",
+      "_row_id": 1206
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1207,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1209,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1208",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 39\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-039: notes and measured throughput\n- fernrepo.example/lib/dask-039: notes and measured throughput\n- fernrepo.example/lib/luigi-039: notes and measured throughput",
+      "_row_id": 1210
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1212,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1211",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-039\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1213
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1214,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1216,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1215",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 40\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-040: notes and measured throughput\n- fernrepo.example/lib/dask-040: notes and measured throughput\n- fernrepo.example/lib/luigi-040: notes and measured throughput",
+      "_row_id": 1217
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1218,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1220,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1219",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 41\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-041: notes and measured throughput\n- fernrepo.example/lib/dask-041: notes and measured throughput\n- fernrepo.example/lib/luigi-041: notes and measured throughput",
+      "_row_id": 1221
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1222,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1224,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1223",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 42\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-042: notes and measured throughput\n- fernrepo.example/lib/dask-042: notes and measured throughput\n- fernrepo.example/lib/luigi-042: notes and measured throughput",
+      "_row_id": 1225
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1227,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1226",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-042\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1228
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-142: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1229
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1230,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1232,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1231",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 43\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-043: notes and measured throughput\n- fernrepo.example/lib/dask-043: notes and measured throughput\n- fernrepo.example/lib/luigi-043: notes and measured throughput",
+      "_row_id": 1233
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1234,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1236,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1235",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 44\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-044: notes and measured throughput\n- fernrepo.example/lib/dask-044: notes and measured throughput\n- fernrepo.example/lib/luigi-044: notes and measured throughput",
+      "_row_id": 1237
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1239,
+      "content": "Suite check.",
+      "tool_calls": [
+        {
+          "id": "call_1238",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"pytest tests/ingest -q\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "17 passed in 4.21s",
+      "_row_id": 1240
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1241,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1243,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1242",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 45\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-045: notes and measured throughput\n- fernrepo.example/lib/dask-045: notes and measured throughput\n- fernrepo.example/lib/luigi-045: notes and measured throughput",
+      "_row_id": 1244
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1246,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1245",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-045\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1247
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1248,
+      "content": "Noted — continuing."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1250,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1249",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 46\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-046: notes and measured throughput\n- fernrepo.example/lib/dask-046: notes and measured throughput\n- fernrepo.example/lib/luigi-046: notes and measured throughput",
+      "_row_id": 1251
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1252,
+      "content": "That checks out."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1254,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1253",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 47\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-047: notes and measured throughput\n- fernrepo.example/lib/dask-047: notes and measured throughput\n- fernrepo.example/lib/luigi-047: notes and measured throughput",
+      "_row_id": 1255
+    },
+    {
+      "role": "user",
+      "content": "Always include the source URL next to every claim in the writeup.",
+      "_row_id": 1256
+    },
+    {
+      "role": "user",
+      "content": "Always cite the failing benchmark with a CIT number.",
+      "_row_id": 1257
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1258,
+      "content": "Working on it."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1260,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1259",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 48\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-048: notes and measured throughput\n- fernrepo.example/lib/dask-048: notes and measured throughput\n- fernrepo.example/lib/luigi-048: notes and measured throughput",
+      "_row_id": 1261
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1263,
+      "content": "Pulling the top page.",
+      "tool_calls": [
+        {
+          "id": "call_1262",
+          "type": "function",
+          "function": {
+            "name": "web_extract",
+            "arguments": "{\"url\": \"https://fernrepo.example/lib/dask-048\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_extract",
+      "content": "## Throughput\nbench line 0000: returning buffered data from the worker pool for review and archival\nbench line 0001: returning buffered data from the worker pool for review and archival\nbench line 0002: returning buffered data from the worker pool for review and archival\nbench line 0003: returning buffered data from the worker pool for review and archival\nbench line 0004: returning buffered data from the worker pool for review and archival\nbench line 0005: returning buffered data from the worker pool for review and archival\nbench line 0006: returning buffered data from the worker pool for review and archival\nbench line 0007: returning buffered data from the worker pool for review and archival\nbench line 0008: returning buffered data from the worker pool for review and archival\nbench line 0009: returning buffered data from the worker pool for review and archival\nbench line 0010: returning buffered data from the worker pool for review and archival\nbench line 0011: returning buffered data from the worker pool for review and archival\nbench line 0012: returning buffered data from the worker pool for review and archival\nbench line 0013: returning buffered data from the worker pool for review and archival\nbench line 0014: returning buffered data from the worker pool for review and archival\nbench line 0015: returning buffered data from the worker pool for review and archival\nbench line 0016: returning buffered data from the worker pool for review and archival\nbench line 0017: returning buffered data from the worker pool for review and archival\nbench line 0018: returning buffered data from the worker pool for review and archival\nbench line 0019: returning buffered data from the worker pool for review and archival\nbench line 0020: returning buffered data from the worker pool for review and archival\nbench line 0021: returning buffered data from the worker pool for review and archival\nbench line 0022: returning buffered data from the worker pool for review and archival\nbench line 0023: returning buffered data from the worker pool for review and archival\nbench line 0024: returning buffered data from the worker pool for review and archival\nbench line 0025: returning buffered data from the worker pool for review and archival\nbench line 0026: returning buffered data from the worker pool for review and archival\nbench line 0027: returning buffered data from the worker pool for review and archival\nbench line 0028: returning buffered data from the worker pool for review and archival\nbench line 0029: returning buffered data from the worker pool for review and archival\nbench line 0030: returning buffered data from the worker pool for review and archival\nbench line 0031: returning buffered data from the worker pool for review and archival\nbench line 0032: returning buffered data from the worker pool for review and archival\nbench line 0033: returning buffered data from the worker pool for review and archival\nbench line 0034: returning buffered data from the worker pool for review and archival\nbench line 0035: returning buffered data from the worker pool for review and archival\nbench line 0036: returning buffered data from the worker pool for review and archival\nbench line 0037: returning buffered data from the worker pool for review and archival\nbench line 0038: returning buffered data from the worker pool for review and archival\nbench line 0039: returning buffered data from the worker pool for review and archival\nbench line 0040: returning buffered data from the worker pool for review and archival\nbench line 0041: returning buffered data from the worker pool for review and archival\nbench line 0042: returning buffered data from the worker pool for review and archival\nbench line 0043: returning buffered data from the worker pool for review and archival\nbench line 0044: returning buffered data from the worker pool for review and archival\nbench line 0045: returning buffered data from the worker pool for review and archival\nbench line 0046: returning buffered data from the worker pool for review and archival\nbench line 0047: returning buffered data from the worker pool for review and archival\nbench line 0048: returning buffered data from the worker pool for review and archival\nbench line 0049: returning buffered data from the worker pool for review and archival\nbench line 0050: returning buffered data from the worker pool for review and archival\nbench line 0051: returning buffered data from the worker pool for review and archival\nbench line 0052: returning buffered data from the worker pool for review and archival\nbench line 0053: returning buffered data from the worker pool for review and archival\nbench line 0054: returning buffered data from the worker pool for review and archival\nbench line 0055: returning buffered data from the worker pool for review and archival\nbench line 0056: returning buffered data from the worker pool for review and archival\nbench line 0057: returning buffered data from the worker pool for review and archival\nbench line 0058: returning buffered data from the worker pool for review and archival\nbench line 0059: returning buffered data from the worker pool for review and archival",
+      "_row_id": 1264
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1266,
+      "content": "Saving notes.",
+      "tool_calls": [
+        {
+          "id": "call_1265",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\": \"git commit -m \\\"research notes 4\\\"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "terminal",
+      "content": "[main 00abd00] research notes",
+      "_row_id": 1267
+    },
+    {
+      "role": "user",
+      "content": "Best candidate so far: fernrepo.example/lib/dask-048, ref CIT-148.",
+      "_row_id": 1268
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1269,
+      "content": "Makes sense."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1271,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1270",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark celery round 49\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-049: notes and measured throughput\n- fernrepo.example/lib/dask-049: notes and measured throughput\n- fernrepo.example/lib/luigi-049: notes and measured throughput",
+      "_row_id": 1272
+    },
+    {
+      "role": "user",
+      "content": "Note CIT-149: the article claims 41% faster on ingest-heavy load.",
+      "_row_id": 1273
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1274,
+      "content": "Done — next step."
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1276,
+      "content": "Searching.",
+      "tool_calls": [
+        {
+          "id": "call_1275",
+          "type": "function",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fernpost scheduler benchmark dask round 50\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_name": "web_search",
+      "content": "- fernrepo.example/lib/celery-050: notes and measured throughput\n- fernrepo.example/lib/dask-050: notes and measured throughput\n- fernrepo.example/lib/luigi-050: notes and measured throughput",
+      "_row_id": 1277
+    },
+    {
+      "role": "assistant",
+      "_row_id": 1278,
+      "content": "Noted — continuing."
+    }
+  ],
+  "facts": [
+    {
+      "id": "goal-1",
+      "category": "goal",
+      "text": "Compare scheduler libraries for the fernpost ingest rewrite"
+    },
+    {
+      "id": "url-early",
+      "category": "read_file",
+      "text": "fernsrepo.example/early",
+      "score": false,
+      "note": "round 2 — URLs have no extractor; pre-brief-tail — measured drop"
+    },
+    {
+      "id": "cit-early",
+      "category": "identifier",
+      "text": "CIT-107",
+      "score": false,
+      "note": "round 7 — pre-brief-tail — measured drop"
+    },
+    {
+      "id": "pref-include",
+      "category": "preference",
+      "text": "Always include the source URL next to every claim in the writeup",
+      "note": "whitelist 'always include' — survives header"
+    },
+    {
+      "id": "pref-cite-gap",
+      "category": "preference",
+      "text": "Always cite the failing benchmark with a CIT number",
+      "note": "'always cite' NOT on pref verb whitelist — no header entry; survives ONLY as verbatim tail (#1257)"
+    },
+    {
+      "id": "url-late",
+      "category": "read_file",
+      "text": "fernsrepo.example/lib/dask-048",
+      "note": "late — verbatim brief tail"
+    },
+    {
+      "id": "cit-late",
+      "category": "identifier",
+      "text": "CIT-148",
+      "note": "late — verbatim brief tail"
+    },
+    {
+      "id": "tracked-git",
+      "category": "tracked_command",
+      "text": "git commit -m \"research notes 1\"",
+      "note": "multi-name bucket: git survives alongside pytest"
+    },
+    {
+      "id": "tracked-pytest",
+      "category": "tracked_command",
+      "text": "pytest tests/ingest -q"
+    },
+    {
+      "id": "curl-untracked",
+      "category": "tracked_command",
+      "text": "curl -s https://bench.example/8",
+      "score": false,
+      "note": "curl not in track_commands — untracked, pre-tail — measured drop"
+    }
+  ],
+  "track_commands": [
+    "git",
+    "pytest"
+  ]
+}
