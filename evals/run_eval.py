@@ -8,10 +8,13 @@ same symmetric checker over three candidate producers:
   engine   VccEngine._generate_summary — the shipped engine path (host redaction
            + summary prefix), requires the Hermes tree importable
   baseline host ContextCompressor._generate_summary — the built-in LLM pipeline
-           (opt-in --baseline; one aux call per fixture against live config)
+           (opt-in --baseline; one aux call per fixture ROUND — chain
+           fixtures fold iteratively over one instance — live config)
 
-Facts come from fixtures (planted, hand-annotated) or, with --real, from live
-sessions via the symmetric generic extractor in fact_bank.
+Facts come only from fixtures (planted by gen_fixtures.py / gen_big_fixtures.py
+and annotated with where each should survive). The harness never reads live
+session transcripts — that is a deliberate policy (Rain, 2026-10-31); live
+size/latency economics are measured separately by scripts/replay_eval.py.
 
 Determinism is asserted on pure+engine (byte-identical re-run). focus_topic
 is probed as a documented v0 no-op. --gate compares recall/reduction against
@@ -21,7 +24,6 @@ Usage (pxl):
     ~/.hermes/hermes-agent/venv/bin/python evals/run_eval.py            # pure+engine over fixtures
     ~/.hermes/hermes-agent/venv/bin/python evals/run_eval.py --baseline # + LLM baseline
     ~/.hermes/hermes-agent/venv/bin/python evals/run_eval.py --gate     # regression gate
-    ~/.hermes/hermes-agent/venv/bin/python evals/run_eval.py --real 3   # live-session replay scoring
 """
 from __future__ import annotations
 
@@ -57,6 +59,12 @@ import fact_bank  # noqa: E402
 import vcc_core  # noqa: E402
 
 
+def _segments(fx):
+    """A fixture is either one transcript or an ordered list of `rounds`
+    segments compacted ITERATIVELY (chain fixtures)."""
+    return fx.get("rounds") or [fx["messages"]]
+
+
 def input_chars(messages) -> int:
     total = 0
     for m in messages:
@@ -78,8 +86,10 @@ def run_pure(fx):
         track_commands=tuple(fx.get("track_commands") or ()),)
     outs = []
     for _ in range(2):
-        outs.append(vcc_core.compile_summary(list(fx["messages"]),
-                                              fx.get("previous_summary"), opts) or "")
+        prev = fx.get("previous_summary")
+        for seg in _segments(fx):
+            prev = vcc_core.compile_summary(list(seg), prev, opts) or prev
+        outs.append(prev or "")
     return outs[0], outs[0] == outs[1]
 
 
@@ -124,7 +134,10 @@ def run_engine(fx):
                 track_commands=tuple(fx.get("track_commands") or ()))
         if fx.get("previous_summary"):
             e._previous_summary = fx["previous_summary"]
-        outs.append(e._generate_summary(list(fx["messages"])) or "")
+        text = ""
+        for seg in _segments(fx):
+            text = e._generate_summary(list(seg)) or text
+        outs.append(text or "")
     return outs[0], outs[0] == outs[1]
 
 
@@ -133,8 +146,10 @@ def focus_probe(fx):
     True == confirmed no-op (byte-identical to the unfocused summary)."""
     a = get_engine(); a.update_model(model="m", context_length=256000)
     b = get_engine(); b.update_model(model="m", context_length=256000)
-    plain = a._generate_summary(list(fx["messages"])) or ""
-    focused = b._generate_summary(list(fx["messages"]), focus_topic="token refresh retry") or ""
+    plain = focused = ""
+    for seg in _segments(fx):
+        plain = a._generate_summary(list(seg)) or plain
+        focused = b._generate_summary(list(seg), focus_topic="token refresh retry") or focused
     return plain == focused
 
 
@@ -167,23 +182,32 @@ def baseline_runtime():
 
 
 def run_baseline(fx, rt):
+    """Built-in pipeline on the same transcript. For chain fixtures this
+    folds over ONE compressor instance — each round sees the prior round's
+    LLM summary, exactly the host's iterative-compaction contract (this is
+    where rewrite-drift shows up)."""
     from agent.context_compressor import ContextCompressor
     c = ContextCompressor(model=rt["model"], provider=rt["provider"],
                           base_url=rt["base_url"], api_key=rt["api_key"],
                           api_mode=rt["api_mode"], config_context_length=rt["context_length"],
                           quiet_mode=True)
-    out = c._generate_summary(list(fx["messages"]))
-    if not out:
-        raise RuntimeError(f"baseline produced nothing: {getattr(c, '_last_summary_error', '?')}")
-    return out
+    text = ""
+    for seg in _segments(fx):
+        out = c._generate_summary(list(seg))
+        if not out:
+            raise RuntimeError(f"baseline produced nothing: {getattr(c, '_last_summary_error', '?')}")
+        text = out
+    return text
 
 
 # ─────────────────────────────────────────────────────────────────── report
 
 def eval_fixture(fx, paths, rt):
     facts = fact_bank.parse_facts(fx)
-    in_chars = input_chars(fx["messages"])
-    row = {"name": fx["name"], "facts": len([f for f in facts if f.score]), "paths": {}}
+    in_chars = sum(input_chars(seg) for seg in _segments(fx))
+    rounds = len(_segments(fx))
+    row = {"name": fx["name"], "facts": len([f for f in facts if f.score]),
+           "rounds": rounds, "paths": {}}
     for path in paths:
         try:
             if path == "pure":
@@ -211,7 +235,8 @@ def eval_fixture(fx, paths, rt):
 
 
 def print_row(row):
-    print(f"\n── {row['name']} ({row['facts']} scored facts)")
+    r = f", {row['rounds']} rounds" if row.get("rounds", 1) > 1 else ""
+    print(f"\n── {row['name']} ({row['facts']} scored facts{r})")
     for path, sc in row["paths"].items():
         if "error" in sc:
             print(f"   {path:8s} ERROR {sc['error']}")
@@ -238,7 +263,6 @@ def main():
     ap.add_argument("--baseline", action="store_true", help="also score the built-in LLM pipeline")
     ap.add_argument("--gate", action="store_true", help="fail on gate.json floor violations")
     ap.add_argument("--bless", action="store_true", help="rewrite gate.json from measured values")
-    ap.add_argument("--real", type=int, default=0, help="also replay N live sessions (read-only)")
     ap.add_argument("--json", help="write full results JSON here")
     args = ap.parse_args()
 
@@ -253,26 +277,6 @@ def main():
     results = [eval_fixture(fx, paths, rt) for fx in fixtures]
     for r in results:
         print_row(r)
-
-    if args.real:
-        print(f"\n── live-session replay ({args.real} sessions, generic symmetric extractor)")
-        sys.path.insert(0, AGENT)
-        from hermes_state import SessionDB
-        db = SessionDB()
-        rows = db._conn.execute(
-            "SELECT session_id FROM messages WHERE active=1 GROUP BY session_id "
-            "HAVING COUNT(*)>=150 ORDER BY MAX(timestamp) DESC LIMIT ?", (args.real,)).fetchall()
-        for (sid,) in rows:
-            msgs = db.get_messages(sid)
-            facts = fact_bank.extract_real_facts(msgs)
-            if not facts:
-                print(f"   {sid[:16]}: no extractable facts, skipped")
-                continue
-            text = vcc_core.compile_summary(list(msgs), None,
-                                            vcc_core.VccOptions(track_commands=("git", "pytest")))
-            sc = fact_bank.score(facts, text or "")
-            print(f"   {sid[:16]}: {len(msgs)} msgs -> {len(text or '')}c, "
-                  f"recall={sc['recall']*100:.1f}% ({sc['earned_weight']}/{sc['total_weight']}w)")
 
     ok = True
     if args.gate or args.bless:

@@ -58,6 +58,7 @@ class Fact:
     hash: Optional[str] = None       # commit facts: short hash paired with subject
     score: bool = True               # False = diagnostic only (not in recall)
     note: str = ""
+    round: Optional[int] = None      # chain fixtures: which compaction round planted it
 
     @property
     def weight(self) -> int:
@@ -95,9 +96,11 @@ def recalled(fact: Fact, summary_text: str) -> bool:
 def load_fixture(path: str) -> Dict[str, Any]:
     with open(path, encoding="utf-8") as fh:
         fx = json.load(fh)
-    for req in ("name", "messages", "facts"):
+    for req in ("name", "facts"):
         if req not in fx:
             raise ValueError(f"{path}: missing key {req!r}")
+    if "messages" not in fx and not fx.get("rounds"):
+        raise ValueError(f"{path}: needs 'messages' or non-empty 'rounds'")
     for f in fx["facts"]:
         if f.get("category") not in WEIGHTS:
             raise ValueError(f"{path}: fact {f.get('id')} has unknown category {f.get('category')!r}")
@@ -106,20 +109,24 @@ def load_fixture(path: str) -> Dict[str, Any]:
 
 def parse_facts(fx: Dict[str, Any]) -> List[Fact]:
     return [Fact(id=f["id"], category=f["category"], text=f["text"],
-                 hash=f.get("hash"), score=f.get("score", True), note=f.get("note", ""))
+                 hash=f.get("hash"), score=f.get("score", True), note=f.get("note", ""),
+                 round=f.get("round"))
             for f in fx["facts"]]
 
 
 def score(facts: List[Fact], summary_text: str) -> Dict[str, Any]:
-    """Weighted recall + per-category breakdown over scored facts."""
+    """Weighted recall + per-category (+ per-round, chain fixtures) breakdown."""
     scored = [f for f in facts if f.score]
     total_w = sum(f.weight for f in scored) or 1
     got_w = 0
     misses: List[Dict[str, str]] = []
     per_cat: Dict[str, List[bool]] = {}
+    per_round: Dict[int, List[bool]] = {}
     for f in scored:
         hit = recalled(f, summary_text)
         per_cat.setdefault(f.category, []).append(hit)
+        if f.round is not None:
+            per_round.setdefault(f.round, []).append(hit)
         if hit:
             got_w += f.weight
         else:
@@ -127,7 +134,9 @@ def score(facts: List[Fact], summary_text: str) -> Dict[str, Any]:
                           "known_gap": f.id in KNOWN_GAP_IDS, "text": f.text[:80]})
     cats = {c: {"n": len(h), "recalled": sum(h),
                 "recall": round(sum(h) / len(h), 3)} for c, h in per_cat.items()}
-    return {
+    rounds = {str(r): {"n": len(h), "recalled": sum(h),
+                       "recall": round(sum(h) / len(h), 3)} for r, h in sorted(per_round.items())}
+    out = {
         "recall": round(got_w / total_w, 4),
         "earned_weight": got_w,
         "total_weight": total_w,
@@ -135,92 +144,13 @@ def score(facts: List[Fact], summary_text: str) -> Dict[str, Any]:
         "misses": misses,
         "categories": cats,
     }
-
-
-# ───────────────────────────────── real-session symmetric extractor (--real)
-# Deliberately generic text-level extraction over raw OpenAI-format messages:
-# the same strings the engine extracts, parsed independently, matched as
-# substrings against any candidate summary.
-
-_COMMIT_RE = re.compile(r"git\s+commit[^\n]*?-m\s+\"((?:[^\"\\]|\\.)*)\"")
-_FAIL_RE = re.compile(r"\b(FAILED|error:|Traceback|fatal:)\b", re.I)
-
-
-def extract_real_facts(messages: List[Dict[str, Any]], cap_per_cat: int = 20) -> List[Fact]:
-    """Ground-truth facts from a raw session transcript (no engine code)."""
-    buckets: Dict[str, List[Fact]] = {c: [] for c in
-        ("modified_file", "created_file", "read_file", "commit", "failed_command")}
-    n = 0
-    for i, m in enumerate(messages):
-        if not isinstance(m, dict):
-            continue
-        n += 1
-        if m.get("role") == "assistant":
-            for call in m.get("tool_calls") or []:
-                fn = (call or {}).get("function") or {}
-                name = str(fn.get("name") or "").lower()
-                raw = fn.get("arguments")
-                try:
-                    args = json.loads(raw) if isinstance(raw, str) else (raw or {})
-                except ValueError:
-                    args = {}
-                if not isinstance(args, dict):
-                    args = {}
-                path = args.get("path") or args.get("file_path") or ""
-                if not isinstance(path, str) or not path:
-                    continue
-                cat = None
-                if name == "read_file":
-                    cat = "read_file"
-                elif name in ("patch",):
-                    cat = "modified_file"
-                elif name == "write_file":
-                    cat = "created_file"
-                if cat and len(buckets[cat]) < cap_per_cat:
-                    buckets[cat].append(Fact(f"real-{cat}-{n}", cat, path))
-            for call in m.get("tool_calls") or []:
-                fn = (call or {}).get("function") or {}
-                if str(fn.get("name") or "").lower() not in ("terminal", "execute_code"):
-                    continue
-                raw = fn.get("arguments")
-                try:
-                    args = json.loads(raw) if isinstance(raw, str) else (raw or {})
-                except ValueError:
-                    args = {}
-                cmd = str((args or {}).get("command") or (args or {}).get("code") or "")
-                cm = _COMMIT_RE.search(cmd)
-                if cm and len(buckets["commit"]) < cap_per_cat:
-                    subject = cm.group(1).replace('\\"', '"').split("\n")[0].strip()
-                    h = None
-                    for j in range(i + 1, min(len(messages), i + 4)):
-                        nxt = messages[j]
-                        if isinstance(nxt, dict) and nxt.get("role") == "tool":
-                            hm = re.search(r"\[\S+\s+([0-9a-f]{7,12})\]", str(nxt.get("content") or ""))
-                            if hm:
-                                h = hm.group(1)
-                                break
-                    if subject:
-                        buckets["commit"].append(Fact(f"real-commit-{n}", "commit", subject[:60], hash=h))
-        if m.get("role") == "tool" and _FAIL_RE.search(str(m.get("content") or "")):
-            j = i - 1
-            while j >= 0:
-                pj = messages[j]
-                if isinstance(pj, dict) and pj.get("role") == "assistant" and pj.get("tool_calls"):
-                    call = pj["tool_calls"][0]
-                    fn = (call or {}).get("function") or {}
-                    if str(fn.get("name") or "").lower() in ("terminal", "execute_code"):
-                        raw = fn.get("arguments")
-                        try:
-                            args = json.loads(raw) if isinstance(raw, str) else (raw or {})
-                        except ValueError:
-                            args = {}
-                        cmd = str((args or {}).get("command") or (args or {}).get("code") or "").strip()
-                        if cmd and len(buckets["failed_command"]) < cap_per_cat:
-                            buckets["failed_command"].append(
-                                Fact(f"real-fail-{i}", "failed_command", cmd[:40]))
-                    break
-                j -= 1
-    out: List[Fact] = []
-    for b in buckets.values():
-        out.extend(b)
+    if rounds:
+        out["rounds"] = rounds
     return out
+
+
+# SYNTHETIC-ONLY POLICY (Rain, 2026-10-31): the harness never consumes live
+# session transcripts. Ground truth = facts planted by gen_fixtures.py /
+# gen_big_fixtures.py, matched by the symmetric checker above. Live-session
+# economics are measured by scripts/replay_eval.py (replay gate), which
+# reports sizes/latency only — never fact claims about real conversations.

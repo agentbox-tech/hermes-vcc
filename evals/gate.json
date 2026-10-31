@@ -1,5 +1,21 @@
 {
   "floors": {
+    "big-refactor-100:pure": {
+      "recall": 0.98,
+      "reduction": 0.946
+    },
+    "big-refactor-100:engine": {
+      "recall": 0.98,
+      "reduction": 0.938
+    },
+    "chain-big-3rounds:pure": {
+      "recall": 0.98,
+      "reduction": 0.953
+    },
+    "chain-big-3rounds:engine": {
+      "recall": 0.98,
+      "reduction": 0.945
+    },
     "coding-session:pure": {
       "recall": 0.945,
       "reduction": 0.815
