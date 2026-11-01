@@ -1,0 +1,52 @@
+{
+ "name": "cjk-punctuation-probe",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "总结我的搬家待办事项，涉及租房、运输和押金。",
+   "_row_id": 2932
+  },
+  {
+   "role": "user",
+   "content": "재개발 관련 서류를 준비하고 번역본도 확인해야 한다는 이야기를 여러 번 했는데 재개발 관련 서류를 준비하고 번역본도 확인해야 한다는 이야기를 여러 번 했는데 재개발 관련 서류를 준비하고 번역본도 확인해야 한다는 이야기를 여러 번 했는데 재개발 관련 서류를 준비하고 번역본도 확인해야 한다는 이야기를 여러 번 했는데 요약하면 마감은 다음 주이고 참조 번호 INT-9950입니다。",
+   "_row_id": 2933
+  },
+  {
+   "role": "user",
+   "content": "要約すると引っ越しは 2026-11-20 に確定。",
+   "_row_id": 2934
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2935,
+   "content": "Noted."
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-zh-cjk",
+   "category": "goal",
+   "text": "总结我的搬家待办事项，涉及租房、运输和押金",
+   "score": false,
+   "note": "20 chars < _GOAL_MIN_LEN=40 — the substantive-length gate is character-counted and English-biased (CJK carries meaning denser) | MEASURED: survives via header"
+  },
+  {
+   "id": "cjk-past-clip",
+   "category": "identifier",
+   "text": "INT-9950",
+   "score": false,
+   "note": "ASCII id at the far end of a CJK turn longer than USER_TEXT_CLIP=256 — clip_sentence has no CJK boundary awareness (expected drop, re-probe) | MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "cjk-date-ja",
+   "category": "identifier",
+   "text": "2026-11-20",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

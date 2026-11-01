@@ -1,0 +1,412 @@
+{
+ "name": "topic-interleave-mix",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Renew my visa before it lapses on 2026-12-01.",
+   "_row_id": 4367
+  },
+  {
+   "role": "user",
+   "content": "Der Lärm der Werkstatt nach 22 Uhr muss aufhören — ich reiche die Beschwerde ein.",
+   "_row_id": 4368
+  },
+  {
+   "role": "user",
+   "content": "خطط لهدية الذكرى السنوية لحفل الافتتاح.",
+   "_row_id": 4369
+  },
+  {
+   "role": "user",
+   "content": "Kargo cuma gününe kadar gelmeli, takip numarası K-33-21.",
+   "_row_id": 4370
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4371
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4372,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4373
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4374,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4375
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4376,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4377
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4378,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4379
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4380,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4381
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4382,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4383
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4384,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4385
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4386,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4387
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4388,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4389
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4390,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4391
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4392,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4393
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4394,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4395
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4396,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4397
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4398,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4399
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4400,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4401
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4402,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4403
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4404,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4405
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4406,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4407
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4408,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4409
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4410,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4411
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4412,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4413
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4414,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4415
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4416,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4417
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4418,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4419
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4420,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4421
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4422,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4423
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4424,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4425
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4426,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 4427
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4428,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
+   "_row_id": 4429
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4430,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "الميزانية تبقى تحت 400.",
+   "_row_id": 4431
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4432,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Etiket bedeli 45 Euro'yu geçmesin.",
+   "_row_id": 4433
+  },
+  {
+   "role": "assistant",
+   "_row_id": 4434,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Scope change: die Beschwerde pausiert, fokussiert Visa, Geschenk und Kargo.",
+   "_row_id": 4435
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-en",
+   "category": "goal",
+   "text": "Renew my visa before it lapses on 2026-12-01.",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "goal-de",
+   "category": "goal",
+   "text": "Der Lärm der Werkstatt nach 22 Uhr muss aufhören",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "goal-ar",
+   "category": "goal",
+   "text": "خطط لهدية الذكرى السنوية لحفل الافتتاح.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "goal-tr",
+   "category": "goal",
+   "text": "Kargo cuma gününe kadar gelmeli, takip numarası K-33-21.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "scope-mix",
+   "category": "scope_change",
+   "text": "fokussiert Visa, Geschenk und Kargo",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "note-ar",
+   "category": "identifier",
+   "text": "الميزانية تبقى تحت 400",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "note-tr",
+   "category": "identifier",
+   "text": "takip numarası K-33-21",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "note-de",
+   "category": "identifier",
+   "text": "Mieter heißt Wehrlein",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

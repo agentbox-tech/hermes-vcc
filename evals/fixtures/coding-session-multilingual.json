@@ -1,0 +1,1600 @@
+{
+ "name": "coding-session-multilingual",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Refactoriza el scheduler de facturación.",
+   "_row_id": 2936
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2938,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2937",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2939
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2941,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2940",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2942
+  },
+  {
+   "role": "user",
+   "content": "Рефакторі планувальник billing.",
+   "_row_id": 2943
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2945,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2944",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2946
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2948,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2947",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2949
+  },
+  {
+   "role": "user",
+   "content": "Refaktorera schemaläggaren för fakturering.",
+   "_row_id": 2950
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2952,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2951",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2953
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2955,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2954",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2956
+  },
+  {
+   "role": "user",
+   "content": "El test falla, la conversión de moneda está rota.",
+   "_row_id": 2957
+  },
+  {
+   "role": "user",
+   "content": "Uudelleenkirjoita laskutuksen ajastin.",
+   "_row_id": 2958
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2960,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2959",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2961
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2963,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2962",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2964
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2966,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_2965",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "3 failed, 37 passed",
+   "_row_id": 2967
+  },
+  {
+   "role": "user",
+   "content": "عدّل مجدولة الفوترة وأصلح البوابة.",
+   "_row_id": 2968
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2970,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2969",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2971
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2973,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2972",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2974
+  },
+  {
+   "role": "user",
+   "content": "Refaktoriere den Billing-Scheduler.",
+   "_row_id": 2975
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2977,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2976",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2978
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2980,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2979",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2981
+  },
+  {
+   "role": "user",
+   "content": "重构计费调度器。",
+   "_row_id": 2982
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2984,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2983",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2985
+  },
+  {
+   "role": "user",
+   "content": "Тест не проходить, конвертація валюти зламана.",
+   "_row_id": 2986
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2988,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2987",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2989
+  },
+  {
+   "role": "user",
+   "content": "請求スケジューラをリファクタリングして。",
+   "_row_id": 2990
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2992,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2991",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2993
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2995,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2994",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 2996
+  },
+  {
+   "role": "user",
+   "content": "결제 스케줄러를 리팩터링해줘.",
+   "_row_id": 2997
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2999,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_2998",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3000
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3002,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_3001",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "3 failed, 37 passed",
+   "_row_id": 3003
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3005,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3004",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3006
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3008,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3007",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3009
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3011,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3010",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3012
+  },
+  {
+   "role": "user",
+   "content": "Testet slår fel, valutakonverteringen är trasig.",
+   "_row_id": 3013
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3015,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3014",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3016
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3018,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3017",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3019
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3021,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3020",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3022
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3024,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3023",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3025
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3027,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3026",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3028
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3030,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3029",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3031
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3033,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_3032",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "3 failed, 37 passed",
+   "_row_id": 3034
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3036,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3035",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3037
+  },
+  {
+   "role": "user",
+   "content": "Testi epäonnistuu, valuutan muunnos on rikki.",
+   "_row_id": 3038
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3040,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3039",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3041
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3043,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3042",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3044
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3046,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3045",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3047
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3049,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3048",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3050
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3052,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3051",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3053
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3055,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3054",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3056
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3058,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3057",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3059
+  },
+  {
+   "role": "user",
+   "content": "测试挂了，汇率转换坏了。",
+   "_row_id": 3060
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3062,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3061",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3063
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3065,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_3064",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "3 failed, 37 passed",
+   "_row_id": 3066
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3068,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3067",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3069
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3071,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3070",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3072
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3074,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3073",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3075
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3077,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3076",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3078
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3080,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3079",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3081
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3083,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3082",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3084
+  },
+  {
+   "role": "user",
+   "content": "テストが落ちる、通貨変換が壊れている。",
+   "_row_id": 3085
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3087,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3086",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3088
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3090,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3089",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3091
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3093,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3092",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3094
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3096,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_3095",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "40 passed in 4.1s",
+   "_row_id": 3097
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3099,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3098",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3100
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3102,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3101",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3103
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3105,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3104",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3106
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3108,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3107",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3109
+  },
+  {
+   "role": "user",
+   "content": "테스트 실패, 통화 변환이 깨졌어.",
+   "_row_id": 3110
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3112,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3111",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3113
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3115,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3114",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3116
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3118,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3117",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3119
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3121,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3120",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3122
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3124,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3123",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3125
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3127,
+   "content": "Run.",
+   "tool_calls": [
+    {
+     "id": "call_3126",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"pytest tests/billing -q\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "40 passed in 4.1s",
+   "_row_id": 3128
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3130,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3129",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3131
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3133,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3132",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3134
+  },
+  {
+   "role": "user",
+   "content": "El test falla: INT-9912 en rojo.",
+   "_row_id": 3135
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3137,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3136",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3138
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3140,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3139",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3141
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3143,
+   "content": "Continuing.",
+   "tool_calls": [
+    {
+     "id": "call_3142",
+     "type": "function",
+     "function": {
+      "name": "patch",
+      "arguments": "{\"path\": \"/home/mila/billing/scheduler.py\", \"old_string\": \"x\", \"new_string\": \"y\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "patch",
+   "content": "patched ok",
+   "_row_id": 3144
+  },
+  {
+   "role": "assistant",
+   "_row_id": 3146,
+   "content": "Committed.",
+   "tool_calls": [
+    {
+     "id": "call_3145",
+     "type": "function",
+     "function": {
+      "name": "terminal",
+      "arguments": "{\"command\": \"git commit -m \\\"billing fx multiblock\\\"\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_name": "terminal",
+   "content": "[main 00beef0] billing fx multiblock",
+   "_row_id": 3147
+  },
+  {
+   "role": "user",
+   "content": "To restate for the log: refactor billing scheduler, fix currency conversion, deploy gateway.",
+   "_row_id": 3148
+  }
+ ],
+ "facts": [
+  {
+   "id": "intent-es",
+   "category": "goal",
+   "text": "Refactoriza el scheduler de facturación",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "intent-uk",
+   "category": "goal",
+   "text": "Рефакторі планувальник billing",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "intent-sv",
+   "category": "goal",
+   "text": "Refaktorera schemaläggaren för fakturering",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "blocker-es",
+   "category": "blocker",
+   "text": "El test falla, la conversión de moneda está rota.",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "intent-fi",
+   "category": "goal",
+   "text": "Uudelleenkirjoita laskutuksen ajastin",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "intent-ar",
+   "category": "goal",
+   "text": "عدّل مجدولة الفوترة وأصلح البوابة",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "intent-de",
+   "category": "goal",
+   "text": "Refaktoriere den Billing-Scheduler",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "intent-zh",
+   "category": "goal",
+   "text": "重构计费调度器。",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-uk",
+   "category": "blocker",
+   "text": "Тест не проходить, конвертація валюти зламана.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "intent-ja",
+   "category": "goal",
+   "text": "請求スケジューラをリファクタリングして。",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "intent-ko",
+   "category": "goal",
+   "text": "결제 스케줄러를 리팩터링해줘",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-sv",
+   "category": "blocker",
+   "text": "Testet slår fel, valutakonverteringen är trasig.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-fi",
+   "category": "blocker",
+   "text": "Testi epäonnistuu, valuutan muunnos on rikki.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-zh",
+   "category": "blocker",
+   "text": "测试挂了，汇率转换坏了。",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-ja",
+   "category": "blocker",
+   "text": "テストが落ちる、通貨変換が壊れている。",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-ko",
+   "category": "blocker",
+   "text": "테스트 실패, 통화 변환이 깨졌어.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "blocker-es-id",
+   "category": "blocker",
+   "text": "El test falla: INT-9912 en rojo.",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "commit-en",
+   "category": "commit",
+   "text": "billing fx multiblock",
+   "hash": "00beef0",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "restated-en",
+   "category": "goal",
+   "text": "refactor billing scheduler, fix currency conversion, deploy gateway",
+   "note": "late English restatement — control for the six native intents | MEASURED: survives via header",
+   "score": true
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

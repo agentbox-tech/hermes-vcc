@@ -66,6 +66,9 @@ class Fact:
 
 
 def norm(text: str) -> str:
+    # language-neutral matching: casefold (folds ß->ss), collapse whitespace,
+    # drop Arabic diacritics/tatweel so planted and rendered forms meet.
+    text = re.sub(r"[\u064B-\u0652\u0670\u0640]", "", text)
     return re.sub(r"\s+", " ", text).strip().casefold()
 
 

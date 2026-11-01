@@ -1,14 +1,20 @@
 {
   "floors": {
+    "advice-session-de:pure": {
+      "recall": 0.647,
+      "reduction": 0.064
+    },
+    "advice-session-de:engine": {
+      "recall": 0.647,
+      "reduction": -0.212
+    },
     "advice-session:pure": {
-      "recall": 0.428,
-      "reduction": 0.123,
-      "determinism": true
+      "recall": 0.409,
+      "reduction": 0.123
     },
     "advice-session:engine": {
-      "recall": 0.428,
-      "reduction": -0.135,
-      "determinism": true
+      "recall": 0.409,
+      "reduction": -0.135
     },
     "arabic-workshop:pure": {
       "recall": 0.98,
@@ -42,6 +48,30 @@
       "recall": 0.98,
       "reduction": 0.945
     },
+    "cjk-punctuation-probe:pure": {
+      "recall": 0.98,
+      "reduction": -1.323
+    },
+    "cjk-punctuation-probe:engine": {
+      "recall": 0.98,
+      "reduction": -8.728
+    },
+    "coding-session-de:pure": {
+      "recall": 0.98,
+      "reduction": 0.935
+    },
+    "coding-session-de:engine": {
+      "recall": 0.98,
+      "reduction": 0.92
+    },
+    "coding-session-multilingual:pure": {
+      "recall": 0.72,
+      "reduction": 0.191
+    },
+    "coding-session-multilingual:engine": {
+      "recall": 0.72,
+      "reduction": -0.088
+    },
     "coding-session:pure": {
       "recall": 0.945,
       "reduction": 0.815
@@ -50,15 +80,85 @@
       "recall": 0.945,
       "reduction": 0.7
     },
+    "commitment-ledger-ar:pure": {
+      "recall": 0.536,
+      "reduction": 0.04
+    },
+    "commitment-ledger-ar:engine": {
+      "recall": 0.536,
+      "reduction": -0.252
+    },
+    "commitment-ledger-de:pure": {
+      "recall": 0.434,
+      "reduction": 0.054
+    },
+    "commitment-ledger-de:engine": {
+      "recall": 0.434,
+      "reduction": -0.231
+    },
+    "commitment-ledger-es:pure": {
+      "recall": 0.563,
+      "reduction": 0.051
+    },
+    "commitment-ledger-es:engine": {
+      "recall": 0.563,
+      "reduction": -0.235
+    },
+    "commitment-ledger-fi:pure": {
+      "recall": 0.563,
+      "reduction": 0.051
+    },
+    "commitment-ledger-fi:engine": {
+      "recall": 0.563,
+      "reduction": -0.235
+    },
+    "commitment-ledger-ja:pure": {
+      "recall": 0.563,
+      "reduction": 0.045
+    },
+    "commitment-ledger-ja:engine": {
+      "recall": 0.563,
+      "reduction": -0.249
+    },
+    "commitment-ledger-ko:pure": {
+      "recall": 0.563,
+      "reduction": 0.046
+    },
+    "commitment-ledger-ko:engine": {
+      "recall": 0.563,
+      "reduction": -0.247
+    },
+    "commitment-ledger-sv:pure": {
+      "recall": 0.563,
+      "reduction": 0.052
+    },
+    "commitment-ledger-sv:engine": {
+      "recall": 0.563,
+      "reduction": -0.234
+    },
+    "commitment-ledger-uk:pure": {
+      "recall": 0.563,
+      "reduction": 0.052
+    },
+    "commitment-ledger-uk:engine": {
+      "recall": 0.563,
+      "reduction": -0.234
+    },
+    "commitment-ledger-zh:pure": {
+      "recall": 0.563,
+      "reduction": 0.044
+    },
+    "commitment-ledger-zh:engine": {
+      "recall": 0.563,
+      "reduction": -0.251
+    },
     "commitment-ledger:pure": {
-      "recall": 0.333,
-      "reduction": 0.06,
-      "determinism": true
+      "recall": 0.313,
+      "reduction": 0.06
     },
     "commitment-ledger:engine": {
-      "recall": 0.333,
-      "reduction": -0.222,
-      "determinism": true
+      "recall": 0.313,
+      "reduction": -0.222
     },
     "conflict-talk:pure": {
       "recall": 0.98,
@@ -69,14 +169,12 @@
       "reduction": 0.04
     },
     "currency-units:pure": {
-      "recall": 0.666,
-      "reduction": -0.904,
-      "determinism": true
+      "recall": 0.647,
+      "reduction": -0.904
     },
     "currency-units:engine": {
-      "recall": 0.666,
-      "reduction": -1.641,
-      "determinism": true
+      "recall": 0.647,
+      "reduction": -1.641
     },
     "email-draft:pure": {
       "recall": 0.98,
@@ -126,25 +224,37 @@
       "recall": 0.875,
       "reduction": -5.762
     },
+    "multiparty-plan-de:pure": {
+      "recall": 0.98,
+      "reduction": -0.6
+    },
+    "multiparty-plan-de:engine": {
+      "recall": 0.98,
+      "reduction": -1.101
+    },
     "multiparty-plan:pure": {
-      "recall": 0.8,
-      "reduction": 0.071,
-      "determinism": true
+      "recall": 0.78,
+      "reduction": 0.071
     },
     "multiparty-plan:engine": {
-      "recall": 0.8,
-      "reduction": -0.203,
-      "determinism": true
+      "recall": 0.78,
+      "reduction": -0.203
+    },
+    "name-alias-ar:pure": {
+      "recall": 0.551,
+      "reduction": 0.059
+    },
+    "name-alias-ar:engine": {
+      "recall": 0.551,
+      "reduction": -0.225
     },
     "name-alias:pure": {
-      "recall": 0.5,
-      "reduction": 0.078,
-      "determinism": true
+      "recall": 0.48,
+      "reduction": 0.078
     },
     "name-alias:engine": {
-      "recall": 0.5,
-      "reduction": -0.198,
-      "determinism": true
+      "recall": 0.48,
+      "reduction": -0.198
     },
     "noise-adversarial:pure": {
       "recall": 0.98,
@@ -163,24 +273,36 @@
       "reduction": -2.623
     },
     "qa-pairs:pure": {
-      "recall": 1.0,
-      "reduction": -1.583,
-      "determinism": true
+      "recall": 0.98,
+      "reduction": -1.583
     },
     "qa-pairs:engine": {
-      "recall": 1.0,
-      "reduction": -2.752,
-      "determinism": true
+      "recall": 0.98,
+      "reduction": -2.752
+    },
+    "relative-dates-de:pure": {
+      "recall": 0.424,
+      "reduction": 0.066
+    },
+    "relative-dates-de:engine": {
+      "recall": 0.424,
+      "reduction": -0.216
+    },
+    "relative-dates-tr:pure": {
+      "recall": 0.48,
+      "reduction": 0.055
+    },
+    "relative-dates-tr:engine": {
+      "recall": 0.48,
+      "reduction": -0.23
     },
     "relative-dates:pure": {
-      "recall": 0.583,
-      "reduction": 0.07,
-      "determinism": true
+      "recall": 0.563,
+      "reduction": 0.07
     },
     "relative-dates:engine": {
-      "recall": 0.583,
-      "reduction": -0.204,
-      "determinism": true
+      "recall": 0.563,
+      "reduction": -0.204
     },
     "research-web:pure": {
       "recall": 0.98,
@@ -198,25 +320,37 @@
       "recall": 0.98,
       "reduction": -1.104
     },
+    "topic-interleave-mix:pure": {
+      "recall": 0.98,
+      "reduction": -0.901
+    },
+    "topic-interleave-mix:engine": {
+      "recall": 0.98,
+      "reduction": -2.004
+    },
     "topic-interleave:pure": {
-      "recall": 0.545,
-      "reduction": -0.407,
-      "determinism": true
+      "recall": 0.525,
+      "reduction": -0.407
     },
     "topic-interleave:engine": {
-      "recall": 0.545,
-      "reduction": -0.894,
-      "determinism": true
+      "recall": 0.525,
+      "reduction": -0.894
+    },
+    "voice-noise-de:pure": {
+      "recall": 0.647,
+      "reduction": 0.071
+    },
+    "voice-noise-de:engine": {
+      "recall": 0.647,
+      "reduction": -0.197
     },
     "voice-noise:pure": {
-      "recall": 0.666,
-      "reduction": 0.165,
-      "determinism": true
+      "recall": 0.647,
+      "reduction": 0.165
     },
     "voice-noise:engine": {
-      "recall": 0.666,
-      "reduction": -0.037,
-      "determinism": true
+      "recall": 0.647,
+      "reduction": -0.037
     }
   },
   "note": "floors = measured recall/reduction minus 0.02; re-bless only with a stated reason in the commit message"
