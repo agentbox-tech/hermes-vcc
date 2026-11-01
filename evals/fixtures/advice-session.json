@@ -1,0 +1,1154 @@
+{
+ "name": "advice-session",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "I have three exams in six weeks and I keep freezing up. How should I structure my study?\n\nBe specific — I want something I can follow.",
+   "_row_id": 1245
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1246,
+   "content": "Split the six weeks into three two-week blocks, one subject each, with a final week of mixed recall tests. Study in 40-minute blocks with 10-minute breaks, and every evening write a half-page summary of the day from memory."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1247
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1248,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1249
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1250,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1251
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1252,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1253
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1254,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1255
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1256,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1257
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1258,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1259
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1260,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1261
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1262,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1263
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1264,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1265,
+   "content": "Second rule that matters: never reread passively — every session ends with closed-book recall."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1266
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1267,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1268
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1269,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1270
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1271,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1272
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1273,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1274
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1275,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1276
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1277,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1278
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1279,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1280
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1281,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1282
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1283,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1284
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1285,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1286
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1287,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1288
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1289,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1290
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1291,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The freezing is worst in the mornings.",
+   "_row_id": 1292
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1293,
+   "content": "Then move the hardest subject to the evening this week and start mornings with ten easy flashcards to warm up."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1294
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1295,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1296
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1297,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1298
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1299,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1300
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1301,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1302
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1303,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1304
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1305,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1306
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1307,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1308
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1309,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1310
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1311,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1312
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1313,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1314
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1315,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1316
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1317,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1318
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1319,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1320
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1321,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1322
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1323,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1324
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1325,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1326
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1327,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1328
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1329,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1330
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1331,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1332
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1333,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1334
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1335,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1336
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1337,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1338
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1339,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1340
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1341,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1342
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1343,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1344
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1345,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1346
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1347,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1348
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1349,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1350
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1351,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1352
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1353,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1354
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1355,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1356
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1357,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1358
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1359,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1360
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1361,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1362
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1363,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1364
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1365,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1366
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1367,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1368
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1369,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1370
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1371,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1372
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1373,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1374
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1375,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1376
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1377,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1378
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1379,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1380
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1381,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1382
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1383,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1384
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1385,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1386
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1387,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1388
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1389,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1390
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1391,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1392
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1393,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1394
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1395,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1396
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1397,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1398
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1399,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1400
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1401,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1402
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1403,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1404
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1405,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1406
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1407,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1408
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1409,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1410
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1411,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1412
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1413,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1414
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1415,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1416
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1417,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1418
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1419,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1420
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1421,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1422
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1423,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1424
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1425,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1426
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1427,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1428
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1429,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1430
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1431,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1432
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1433,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1434
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1435,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1436
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1437,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1438
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1439,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1440
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1441,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1442
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1443,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1444
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1445,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The paperwork side of it is quieter than I expected.",
+   "_row_id": 1446
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1447,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "People around me keep asking and I keep giving short answers.",
+   "_row_id": 1448
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1449,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Some mornings it feels decided and some it doesn't.",
+   "_row_id": 1450
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1451,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 1452
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1453,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The timing overlaps with everything else on the calendar.",
+   "_row_id": 1454
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1455,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "I asked two friends and got opposite answers.",
+   "_row_id": 1456
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1457,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "There's a small admin task I keep postponing every day.",
+   "_row_id": 1458
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1459,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Most of it is fine day to day; it's the edges that fray.",
+   "_row_id": 1460
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1461,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 1462
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1463,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "I went over the whole thread again last night.",
+   "_row_id": 1464
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1465,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1466,
+   "content": "Reminder of your plan: subject A by 2026-11-15, subject B by 2026-11-29, mixed recall after that."
+  },
+  {
+   "role": "user",
+   "content": "Great — that's exactly what I needed.",
+   "_row_id": 1467
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-1",
+   "category": "goal",
+   "text": "I have three exams in six weeks and I keep freezing up",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "advice-structure",
+   "category": "preference",
+   "text": "Split the six weeks into three two-week blocks, one subject each",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "advice-recall-rule",
+   "category": "preference",
+   "text": "never reread passively",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "advice-dates",
+   "category": "identifier",
+   "text": "subject A by 2026-11-15",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

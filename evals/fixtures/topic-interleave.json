@@ -1,0 +1,820 @@
+{
+ "name": "topic-interleave",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Renew my visa before it lapses on 2026-12-01.",
+   "_row_id": 1913
+  },
+  {
+   "role": "user",
+   "content": "The neighbor's workshop noise after 22:00 has to stop — file the complaint.",
+   "_row_id": 1914
+  },
+  {
+   "role": "user",
+   "content": "Plan the anniversary gift for the exhibition opening.",
+   "_row_id": 1915
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 1916
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1917,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Topical note to remember for later: the visa income proof comes from last quarter.",
+   "_row_id": 1918
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 1919
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1920,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 1921
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1922,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 1923
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1924,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 1925
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1926,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 1927
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1928,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 1929
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1930,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 1931
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1932,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 1933
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1934,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 1935
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1936,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 1937
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1938,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 1939
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1940,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 1941
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1942,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 1943
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1944,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 1945
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1946,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 1947
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1948,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 1949
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1950,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 1951
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1952,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 1953
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1954,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 1955
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1956,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 1957
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1958,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 1959
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1960,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 1961
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1962,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 1963
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1964,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 1965
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1966,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 1967
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1968,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 1969
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1970,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 1971
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1972,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 1973
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1974,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 1975
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1976,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 1977
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1978,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 1979
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1980,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 1981
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1982,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 1983
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1984,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 1985
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1986,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 1987
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1988,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 1989
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1990,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 1991
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1992,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 1993
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1994,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 1995
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1996,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 1997
+  },
+  {
+   "role": "assistant",
+   "_row_id": 1998,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 1999
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2000,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 2001
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2002,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 2003
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2004,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 2005
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2006,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 2007
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2008,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 2009
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2010,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 2011
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2012,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 2013
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2014,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 2015
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2016,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 2017
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2018,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 2019
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2020,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 2021
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2022,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 2023
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2024,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 2025
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2026,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 2027
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2028,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 2029
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2030,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 2031
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2032,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 2033
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2034,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 2035
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2036,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 2037
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2038,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 2039
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2040,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 2041
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2042,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "The embassy needs the income proof PDF.",
+   "_row_id": 2043
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2044,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Their name on the register is Wehrlein, top floor.",
+   "_row_id": 2045
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2046,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Budget stays under 400.",
+   "_row_id": 2047
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2048,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Appointment slot opens 2026-11-05.",
+   "_row_id": 2049
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2050,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Landlord already knows, he backs the complaint.",
+   "_row_id": 2051
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2052,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Textile archive, not candles.",
+   "_row_id": 2053
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2054,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "user",
+   "content": "Old number B4-88210 must be cited in the form.",
+   "_row_id": 2055
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2056,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Recording from last Tuesday is 71 dB at 22:40.",
+   "_row_id": 2057
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2058,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Card reads simply: zehn Jahre.",
+   "_row_id": 2059
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2060,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Scope change: drop the noise complaint for now, focus visa and gift.",
+   "_row_id": 2061
+  },
+  {
+   "role": "user",
+   "content": "B4-88210 — don't lose that number.",
+   "_row_id": 2062
+  },
+  {
+   "role": "user",
+   "content": "Gift card stays kurz und gut: zehn Jahre.",
+   "_row_id": 2063
+  },
+  {
+   "role": "user",
+   "content": "What's still open in each thread?",
+   "_row_id": 2064
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-visa",
+   "category": "goal",
+   "text": "Renew my visa before it lapses on 2026-12-01.",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "goal-noise",
+   "category": "goal",
+   "text": "The neighbor's workshop noise after 22:00 has to stop",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "goal-gift",
+   "category": "goal",
+   "text": "Plan the anniversary gift for the exhibition opening.",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "visa-proof-mid",
+   "category": "identifier",
+   "text": "the visa income proof comes from last quarter",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "scope-drop-noise",
+   "category": "scope_change",
+   "text": "drop the noise complaint for now, focus visa and gift",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "visa-num-late",
+   "category": "identifier",
+   "text": "B4-88210",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "gift-text-late",
+   "category": "identifier",
+   "text": "zehn Jahre",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

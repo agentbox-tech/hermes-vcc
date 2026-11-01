@@ -1,0 +1,599 @@
+{
+ "name": "qa-pairs",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Tutor me on Roman history — rapid fire, you ask, I answer, correct me.",
+   "_row_id": 2422
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2423,
+   "content": "Who founded Rome according to legend?"
+  },
+  {
+   "role": "user",
+   "content": "Romulus, 753 BC",
+   "_row_id": 2424
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2425,
+   "content": "Correct, moving on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2426,
+   "content": "What year did the Republic fall?"
+  },
+  {
+   "role": "user",
+   "content": "27 BC, Augustus",
+   "_row_id": 2427
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2428,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2429,
+   "content": "Name the river Caesar crossed."
+  },
+  {
+   "role": "user",
+   "content": "Rubicon, 49 BC",
+   "_row_id": 2430
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2431,
+   "content": "Correct, moving on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2432,
+   "content": "What ended the Punic Wars?"
+  },
+  {
+   "role": "user",
+   "content": "Rome destroyed Carthage, 146 BC",
+   "_row_id": 2433
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2434,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2435,
+   "content": "Who was the last of the seven kings?"
+  },
+  {
+   "role": "user",
+   "content": "Tarquinius Superbus",
+   "_row_id": 2436
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2437,
+   "content": "Correct, moving on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2438,
+   "content": "Who founded Rome according to legend?"
+  },
+  {
+   "role": "user",
+   "content": "Romulus, 753 BC",
+   "_row_id": 2439
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2440,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2441,
+   "content": "What year did the Republic fall?"
+  },
+  {
+   "role": "user",
+   "content": "27 BC, Augustus",
+   "_row_id": 2442
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2443,
+   "content": "Correct, moving on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2444,
+   "content": "Name the river Caesar crossed."
+  },
+  {
+   "role": "user",
+   "content": "Rubicon, 49 BC",
+   "_row_id": 2445
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2446,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2447,
+   "content": "What ended the Punic Wars?"
+  },
+  {
+   "role": "user",
+   "content": "Rome destroyed Carthage, 146 BC",
+   "_row_id": 2448
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2449,
+   "content": "Correct, moving on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2450,
+   "content": "Who was the last of the seven kings?"
+  },
+  {
+   "role": "user",
+   "content": "Tarquinius Superbus",
+   "_row_id": 2451
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2452,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2453,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2454,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2455,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2456,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2457,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2458,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2459,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2460,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2461,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2462,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2463,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2464,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2465,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2466,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2467,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2468,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2469,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2470,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2471,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2472,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2473,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2474,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2475,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2476,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2477,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2478,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2479,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2480,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2481,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2482,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2483,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2484,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2485,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2486,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2487,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2488,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2489,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2490,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2491,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2492,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2493,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2494,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2495,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2496,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2497,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2498,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2499,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2500,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2501,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2502,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2503,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2504,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2505,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2506,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2507,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2508,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2509,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2510,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2511,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2512,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2513,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2514,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2515,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2516,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2517,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2518,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2519,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2520,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2521,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2522,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2523,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2524,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2525,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2526,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2527,
+   "content": "Got it."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2528,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2529,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2530,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2531,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2532,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "Recap round winner: you got the Rubicon one right twice.",
+   "_row_id": 2533
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-1",
+   "category": "goal",
+   "text": "Tutor me on Roman history",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "qa-answer-early",
+   "category": "identifier",
+   "text": "Romulus, 753 BC",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "qa-question-early",
+   "category": "identifier",
+   "text": "Who founded Rome according to legend?",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  },
+  {
+   "id": "qa-answer-late",
+   "category": "identifier",
+   "text": "Tarquinius Superbus",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

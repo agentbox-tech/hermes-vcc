@@ -1,0 +1,740 @@
+{
+ "name": "currency-units",
+ "description": "",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Hilf mir, das Budget für die Werkstatt-Sanierung aufzustellen.\n\nBeträge bitte in deutscher Schreibweise.",
+   "_row_id": 2065
+  },
+  {
+   "role": "user",
+   "content": "Kernbudget sind €2.300, Werkzeug €47,50 extra, Anlieferung €180.",
+   "_row_id": 2066
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2067,
+   "content": "Notiert — Kernbudget 2.300 Euro."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2068,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2069
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2070,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2071,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2072,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2073,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2074,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2075
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2076,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "user",
+   "content": "Der US-Lieferant schickt 2,300 USD — achtung, das ist NOT die Eurozahl.",
+   "_row_id": 2077
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2078,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2079,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2080,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2081,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2082
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2083,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2084,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2085,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2086,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2087,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2088
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2089,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2090,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2091,
+   "content": "Right."
+  },
+  {
+   "role": "user",
+   "content": "Actually, kürze das Kernbudget auf €1.900.",
+   "_row_id": 2092
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2093,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2094,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2095
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2096,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2097,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2098,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2099,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2100,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2101
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2102,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2103,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2104,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2105,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2106,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2107
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2108,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2109,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2110,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2111,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2112,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2113
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2114,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2115,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2116,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2117,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2118,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2119
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2120,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2121,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2122,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2123,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2124,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2125
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2126,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2127,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2128,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2129,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2130,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2131
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2132,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2133,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2134,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2135,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2136,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2137
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2138,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2139,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2140,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2141,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2142,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2143
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2144,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2145,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2146,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2147,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2148,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2149
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2150,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2151,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2152,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2153,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2154,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2155
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2156,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2157,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2158,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2159,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2160,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2161
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2162,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2163,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2164,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2165,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2166,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2167
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2168,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2169,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2170,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2171,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2172,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2173
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2174,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2175,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2176,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2177,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2178,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2179
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2180,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2181,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2182,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2183,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2184,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2185
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2186,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2187,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2188,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2189,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2190,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "I keep drafting open tabs I never finish.",
+   "_row_id": 2191
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2192,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2193,
+   "content": "Makes sense."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2194,
+   "content": "Right."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2195,
+   "content": "Okay — go on."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2196,
+   "content": "Got it."
+  },
+  {
+   "role": "user",
+   "content": "It keeps circling back to the same two things honestly.",
+   "_row_id": 2197
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2198,
+   "content": "Noted — continuing."
+  },
+  {
+   "role": "assistant",
+   "_row_id": 2199,
+   "content": "Makes sense."
+  },
+  {
+   "role": "user",
+   "content": "Gesamtbudget €1.900 plus Anlieferung €180 ist final.",
+   "_row_id": 2200
+  }
+ ],
+ "facts": [
+  {
+   "id": "goal-1",
+   "category": "goal",
+   "text": "Hilf mir, das Budget für die Werkstatt-Sanierung aufzustellen",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "eur-de",
+   "category": "identifier",
+   "text": "€2.300",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "cents-de",
+   "category": "identifier",
+   "text": "€47,50",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "usd-trap",
+   "category": "identifier",
+   "text": "2,300 USD",
+   "score": true,
+   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+  },
+  {
+   "id": "budget-cut",
+   "category": "scope_change",
+   "text": "kürze das Kernbudget",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "eur-new",
+   "category": "identifier",
+   "text": "€1.900",
+   "score": true,
+   "note": "MEASURED: survives via header"
+  },
+  {
+   "id": "eur-final",
+   "category": "identifier",
+   "text": "€1.900 plus Anlieferung €180",
+   "score": true,
+   "note": "MEASURED: survives via verbatim tail"
+  }
+ ],
+ "track_commands": [
+  "pytest"
+ ]
+}

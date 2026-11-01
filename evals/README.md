@@ -117,6 +117,26 @@ commit message.
 | noise-adversarial | 100% | 90.1% (6,233c) | not run | — |
 | bilingual-correction | 100% | −130% (6,964c) | not run | — |
 | arabic-workshop | 100% | 69.9% (5,069c) | not run | — |
+| multiparty-plan | 80.0% | -18.3% (8,458c) | not run | — |
+| advice-session | 42.9% | -11.5% (8,437c) | not run | — |
+| relative-dates | 58.3% | -18.4% (8,436c) | not run | — |
+| commitment-ledger | 33.3% | -20.2% (8,353c) | not run | — |
+| topic-interleave | 54.5% | -87.4% (7,519c) | not run | — |
+| currency-units | 66.7% | -162.1% (6,960c) | not run | — |
+| name-alias | 50.0% | -17.8% (8,352c) | not run | — |
+| qa-pairs | 100.0% | -273.2% (6,243c) | not run | — |
+| voice-noise | 66.7% | -1.7% (9,835c) | not run | — |
+
+Human-genre batch 2 (structural-targeted): retention of what humans actually
+need back collapses when it is mid-session — commitment-ledger 33%,
+name-alias 50%, advice-session 43%, relative-dates 58% (every deictic date
+dies; only restated ISO dates survive), topic-interleave 55% (two of three
+thread goals ring out; the header keeps a goal stack but cannot say which
+fact belongs to which thread). German currency notation is preserved
+verbatim-or-not-at-all (unparsed): €2.300 mid-session rings out, late
+€1.900 plus Anlieferung €180 survives byte-exact — locale reformatting is
+a baseline-run hazard, not a vcc one. Floors pin these measured numbers:
+a future extractor upgrade must raise them, never lower them.
 
 Baseline numbers vary run-to-run (it is the LLM); recall misses recur,
 sizes drift a few percent.
