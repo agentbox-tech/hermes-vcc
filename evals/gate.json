@@ -34,11 +34,11 @@
     },
     "bilingual-correction:pure": {
       "recall": 0.98,
-      "reduction": -0.677
+      "reduction": -0.692
     },
     "bilingual-correction:engine": {
       "recall": 0.98,
-      "reduction": -1.324
+      "reduction": -1.338
     },
     "chain-big-3rounds:pure": {
       "recall": 0.98,
@@ -49,12 +49,12 @@
       "reduction": 0.945
     },
     "cjk-length-stress:pure": {
-      "recall": 0.694,
-      "reduction": 0.082
+      "recall": 0.98,
+      "reduction": 0.059
     },
     "cjk-length-stress:engine": {
-      "recall": 0.694,
-      "reduction": -0.175
+      "recall": 0.98,
+      "reduction": -0.199
     },
     "cjk-punctuation-probe:pure": {
       "recall": 0.98,
@@ -90,83 +90,83 @@
     },
     "commitment-ledger-ar:pure": {
       "recall": 0.98,
-      "reduction": 0.015
+      "reduction": 0.009
     },
     "commitment-ledger-ar:engine": {
       "recall": 0.98,
-      "reduction": -0.276
+      "reduction": -0.282
     },
     "commitment-ledger-de:pure": {
       "recall": 0.98,
-      "reduction": -0.001
+      "reduction": -0.008
     },
     "commitment-ledger-de:engine": {
       "recall": 0.98,
-      "reduction": -0.285
+      "reduction": -0.293
     },
     "commitment-ledger-es:pure": {
       "recall": 0.98,
-      "reduction": 0.013
+      "reduction": 0.007
     },
     "commitment-ledger-es:engine": {
       "recall": 0.98,
-      "reduction": -0.271
+      "reduction": -0.277
     },
     "commitment-ledger-fi:pure": {
       "recall": 0.98,
-      "reduction": 0.022
+      "reduction": 0.015
     },
     "commitment-ledger-fi:engine": {
       "recall": 0.98,
-      "reduction": -0.262
+      "reduction": -0.268
     },
     "commitment-ledger-ja:pure": {
       "recall": 0.98,
-      "reduction": 0.029
+      "reduction": 0.026
     },
     "commitment-ledger-ja:engine": {
       "recall": 0.98,
-      "reduction": -0.264
+      "reduction": -0.267
     },
     "commitment-ledger-ko:pure": {
       "recall": 0.98,
-      "reduction": 0.027
+      "reduction": 0.023
     },
     "commitment-ledger-ko:engine": {
       "recall": 0.98,
-      "reduction": -0.265
+      "reduction": -0.269
     },
     "commitment-ledger-sv:pure": {
       "recall": 0.98,
-      "reduction": 0.018
+      "reduction": 0.012
     },
     "commitment-ledger-sv:engine": {
       "recall": 0.98,
-      "reduction": -0.266
+      "reduction": -0.272
     },
     "commitment-ledger-uk:pure": {
       "recall": 0.98,
-      "reduction": 0.015
+      "reduction": 0.007
     },
     "commitment-ledger-uk:engine": {
       "recall": 0.98,
-      "reduction": -0.27
+      "reduction": -0.277
     },
     "commitment-ledger-zh:pure": {
       "recall": 0.98,
-      "reduction": 0.038
+      "reduction": 0.036
     },
     "commitment-ledger-zh:engine": {
       "recall": 0.98,
-      "reduction": -0.256
+      "reduction": -0.259
     },
     "commitment-ledger:pure": {
       "recall": 0.98,
-      "reduction": 0.011
+      "reduction": 0.004
     },
     "commitment-ledger:engine": {
       "recall": 0.98,
-      "reduction": -0.271
+      "reduction": -0.277
     },
     "conflict-talk:pure": {
       "recall": 0.98,
@@ -177,12 +177,12 @@
       "reduction": 0.04
     },
     "currency-units:pure": {
-      "recall": 0.647,
-      "reduction": -0.904
+      "recall": 0.869,
+      "reduction": -0.93
     },
     "currency-units:engine": {
-      "recall": 0.647,
-      "reduction": -1.641
+      "recall": 0.869,
+      "reduction": -1.666
     },
     "email-draft:pure": {
       "recall": 0.98,
@@ -234,35 +234,35 @@
     },
     "multiparty-plan-de:pure": {
       "recall": 0.98,
-      "reduction": -0.6
+      "reduction": -0.614
     },
     "multiparty-plan-de:engine": {
       "recall": 0.98,
-      "reduction": -1.101
+      "reduction": -1.115
     },
     "multiparty-plan:pure": {
-      "recall": 0.78,
-      "reduction": 0.063
+      "recall": 0.98,
+      "reduction": 0.055
     },
     "multiparty-plan:engine": {
-      "recall": 0.78,
-      "reduction": -0.21
+      "recall": 0.98,
+      "reduction": -0.218
     },
     "name-alias-ar:pure": {
-      "recall": 0.551,
-      "reduction": 0.048
+      "recall": 0.694,
+      "reduction": 0.041
     },
     "name-alias-ar:engine": {
-      "recall": 0.551,
-      "reduction": -0.235
+      "recall": 0.694,
+      "reduction": -0.242
     },
     "name-alias:pure": {
-      "recall": 0.48,
-      "reduction": 0.078
+      "recall": 0.647,
+      "reduction": 0.07
     },
     "name-alias:engine": {
-      "recall": 0.48,
-      "reduction": -0.198
+      "recall": 0.647,
+      "reduction": -0.205
     },
     "noise-adversarial:pure": {
       "recall": 0.98,
@@ -289,28 +289,28 @@
       "reduction": -2.752
     },
     "relative-dates-de:pure": {
-      "recall": 0.647,
-      "reduction": 0.053
+      "recall": 0.758,
+      "reduction": 0.047
     },
     "relative-dates-de:engine": {
-      "recall": 0.647,
-      "reduction": -0.228
+      "recall": 0.758,
+      "reduction": -0.235
     },
     "relative-dates-tr:pure": {
-      "recall": 0.48,
-      "reduction": 0.055
+      "recall": 0.647,
+      "reduction": 0.05
     },
     "relative-dates-tr:engine": {
-      "recall": 0.48,
-      "reduction": -0.23
+      "recall": 0.647,
+      "reduction": -0.235
     },
     "relative-dates:pure": {
-      "recall": 0.563,
-      "reduction": 0.057
+      "recall": 0.647,
+      "reduction": 0.051
     },
     "relative-dates:engine": {
-      "recall": 0.563,
-      "reduction": -0.218
+      "recall": 0.647,
+      "reduction": -0.224
     },
     "research-web:pure": {
       "recall": 0.98,
@@ -322,43 +322,43 @@
     },
     "resume-seeded:pure": {
       "recall": 0.98,
-      "reduction": -0.222
+      "reduction": -0.247
     },
     "resume-seeded:engine": {
       "recall": 0.98,
-      "reduction": -1.104
+      "reduction": -1.129
     },
     "topic-interleave-mix:pure": {
       "recall": 0.98,
-      "reduction": -0.901
+      "reduction": -0.948
     },
     "topic-interleave-mix:engine": {
       "recall": 0.98,
-      "reduction": -2.004
+      "reduction": -2.051
     },
     "topic-interleave:pure": {
-      "recall": 0.525,
-      "reduction": -0.407
+      "recall": 0.707,
+      "reduction": -0.426
     },
     "topic-interleave:engine": {
-      "recall": 0.525,
-      "reduction": -0.894
+      "recall": 0.707,
+      "reduction": -0.914
     },
     "voice-noise-de:pure": {
       "recall": 0.647,
-      "reduction": 0.049
+      "reduction": 0.041
     },
     "voice-noise-de:engine": {
       "recall": 0.647,
-      "reduction": -0.218
+      "reduction": -0.227
     },
     "voice-noise:pure": {
       "recall": 0.647,
-      "reduction": 0.165
+      "reduction": 0.156
     },
     "voice-noise:engine": {
       "recall": 0.647,
-      "reduction": -0.037
+      "reduction": -0.046
     }
   },
   "note": "floors = measured recall/reduction minus 0.02; re-bless only with a stated reason in the commit message"

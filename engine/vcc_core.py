@@ -293,7 +293,7 @@ def _is_substantive_goal(text: str) -> bool:
 def extract_goals(blocks: List[Block]) -> List[str]:
     goals: List[str] = []
     latest_scope: Optional[List[str]] = None
-    for b in blocks:
+    for bi, b in enumerate(blocks):
         if b.kind != "user":
             continue
         lines = non_empty_lines(b.text)
@@ -307,6 +307,11 @@ def extract_goals(blocks: List[Block]) -> List[str]:
             continue
         if not goals:
             goals.extend(lines[:6])
+            continue
+        if bi <= 1 and len(goals) < 6:
+            # opening runs may span the first two user blocks — a session
+            # that opens with two goal messages kept only the first
+            goals.extend(lines[:6 - len(goals)])
             continue
         leading = b.text[:200]
         if _GOAL_SCOPE_RE.search(leading):
