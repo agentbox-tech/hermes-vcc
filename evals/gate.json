@@ -18,11 +18,11 @@
     },
     "arabic-workshop:pure": {
       "recall": 0.98,
-      "reduction": 0.795
+      "reduction": 0.787
     },
     "arabic-workshop:engine": {
       "recall": 0.98,
-      "reduction": 0.679
+      "reduction": 0.671
     },
     "big-refactor-100:pure": {
       "recall": 0.98,
@@ -66,11 +66,11 @@
     },
     "coding-session-multilingual:pure": {
       "recall": 0.72,
-      "reduction": 0.191
+      "reduction": 0.182
     },
     "coding-session-multilingual:engine": {
       "recall": 0.72,
-      "reduction": -0.088
+      "reduction": -0.098
     },
     "coding-session:pure": {
       "recall": 0.945,
@@ -82,67 +82,67 @@
     },
     "commitment-ledger-ar:pure": {
       "recall": 0.536,
-      "reduction": 0.04
+      "reduction": 0.03
     },
     "commitment-ledger-ar:engine": {
       "recall": 0.536,
-      "reduction": -0.252
+      "reduction": -0.262
     },
     "commitment-ledger-de:pure": {
       "recall": 0.434,
-      "reduction": 0.054
+      "reduction": 0.04
     },
     "commitment-ledger-de:engine": {
       "recall": 0.434,
-      "reduction": -0.231
+      "reduction": -0.245
     },
     "commitment-ledger-es:pure": {
       "recall": 0.563,
-      "reduction": 0.051
+      "reduction": 0.039
     },
     "commitment-ledger-es:engine": {
       "recall": 0.563,
-      "reduction": -0.235
+      "reduction": -0.247
     },
     "commitment-ledger-fi:pure": {
       "recall": 0.563,
-      "reduction": 0.051
+      "reduction": 0.039
     },
     "commitment-ledger-fi:engine": {
       "recall": 0.563,
-      "reduction": -0.235
+      "reduction": -0.246
     },
     "commitment-ledger-ja:pure": {
       "recall": 0.563,
-      "reduction": 0.045
+      "reduction": 0.039
     },
     "commitment-ledger-ja:engine": {
       "recall": 0.563,
-      "reduction": -0.249
+      "reduction": -0.256
     },
     "commitment-ledger-ko:pure": {
       "recall": 0.563,
-      "reduction": 0.046
+      "reduction": 0.038
     },
     "commitment-ledger-ko:engine": {
       "recall": 0.563,
-      "reduction": -0.247
+      "reduction": -0.255
     },
     "commitment-ledger-sv:pure": {
       "recall": 0.563,
-      "reduction": 0.052
+      "reduction": 0.037
     },
     "commitment-ledger-sv:engine": {
       "recall": 0.563,
-      "reduction": -0.234
+      "reduction": -0.249
     },
     "commitment-ledger-uk:pure": {
       "recall": 0.563,
-      "reduction": 0.052
+      "reduction": 0.041
     },
     "commitment-ledger-uk:engine": {
       "recall": 0.563,
-      "reduction": -0.234
+      "reduction": -0.245
     },
     "commitment-ledger-zh:pure": {
       "recall": 0.563,
@@ -281,12 +281,12 @@
       "reduction": -2.752
     },
     "relative-dates-de:pure": {
-      "recall": 0.424,
-      "reduction": 0.066
+      "recall": 0.647,
+      "reduction": 0.053
     },
     "relative-dates-de:engine": {
-      "recall": 0.424,
-      "reduction": -0.216
+      "recall": 0.647,
+      "reduction": -0.228
     },
     "relative-dates-tr:pure": {
       "recall": 0.48,

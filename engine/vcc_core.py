@@ -253,9 +253,14 @@ _GOAL_TASK_RE = re.compile(
     r"delete|migrate|deploy|test|write|set up|port|install|configure)\b", re.I)
 _GOAL_SCOPE_RE = re.compile(
     r"\b(instead|actually|change of plan|forget that|new task|switch to|now I want|"
-    r"pivot|let'?s do|stop .* and)\b", re.I)
+    r"pivot|let'?s do|stop .* and)\b"
+    r"|\b(eigentlich|stattdessen|en realidad|en vez de|oikeastaan|sen sijaan)\b"
+    r"|(насправді|натомість|実は|代わりに|사실|그 대신|في الواقع|بدلًا)", re.I)
 _NOISE_SHORT_RE = re.compile(
-    r"^(ok|yes|no|sure|yeah|yep|go|hi|hey|thx|thanks|y|n|k)\s*[.!?]*$", re.I)
+    r"^(ok|okay|okey|kk|alright|yes|no|sure|yeah|yep|go|hi|hey|thx|thanks|y|n|k|"
+    r"vale|bueno|claro|sí|dale|ja|okej|okei|kyllä|jee|joo|nej|en|"
+    r"так|гаразд|ні|да|нет|evet|hayır|tamam|"
+    r"好|好的|嗯|是的|对|네|예|好啊|حسنا|حسنًا|ماشي|تمام)\s*[.!?。！？]*$", re.I)
 _NON_GOAL_RE = re.compile(
     r"^\s*[\[│├└─╭╰]|```|^\s*(function |const |let |var |import |export |class )|"
     r"^(https?:|file:|/[A-Za-z])|^\s*For each\b")
@@ -310,6 +315,21 @@ _PREF_PATTERNS = [
                r"delete|include|deploy|send|email)\b", re.I),
     re.compile(r"\bplease (?:use|avoid|keep|make|don'?t|do not|format|write)\b", re.I),
     re.compile(r"\b(?:style|format|language|naming)\s*[:=]\s*\S", re.I),
+    # multilingual shapes (Track 1 purity: patterns of form, not models)
+    re.compile(r"\b(immer|nie|grundsätzlich|generell)\b.*\b(antworten|antworte|benutze|"
+               r"nutze|verwende|schreib|mach|halt|formatier|bleib)\b", re.I),
+    re.compile(r"\b(bitte|vermeide|bevorzuge)\s+\w", re.I),
+    re.compile(r"\b(siempre|nunca|prefiero|evita)\b.*\b(usar|hacer|responder|escribir|"
+               r"enviar|mandar|formato?|poner|guardar)\b", re.I),
+    re.compile(r"(завжди|ніколи|намагаюся|прошу)\s+\w", re.U),
+    re.compile(r"\b(alltid|aldrig|föredrar|undvik)\b.*\b(använd|svara|gör|skriv|"
+               r"skicka|formatera|behåll)\b", re.I),
+    re.compile(r"\b(aina|ei koskaan|suosi?välty?)\b.*\b(käyt|vastaa|tee|kirjoita|"
+               r"lähet|formatoi|pidä)\w*", re.I),
+    re.compile(r"(总是|从不|别用|请用|喜欢用|记住)", re.U),
+    re.compile(r"(いつも|絶対に|避けて|気に入って|覚えておいて)", re.U),
+    re.compile(r"(항상|절대|쓰지 마|써줘|좋아해|记得|기억해)", re.U),
+    re.compile(r"(دائما|أبداً|تجنب|أفضل)\s+\w", re.U),
 ]
 
 
@@ -347,7 +367,11 @@ def dedup_prefs_against_goals(prefs: List[str], goals: List[str]) -> List[str]:
 _BLOCKER_RE = re.compile(
     r"\b(fail(?:ed|s|ure|ing)?|broken|cannot|can't|won't work|does not work|"
     r"doesn't work|still (?:broken|failing|wrong)|blocked|blocker|"
-    r"not (?:fixed|resolved|working)|crash(?:es|ed|ing)?)\b", re.I)
+    r"not (?:fixed|resolved|working)|crash(?:es|ed|ing)?)\b"
+    r"|\b(schlägt fehl|fehlgeschlagen|kaputt|funktioniert nicht|klappt nicht|"
+    r"stürzt ab|falla(?:r|de|tt)?|fel|trasig|funkar inte|kraschar|"
+    r"epäonnistuu|rikki|ei toimi|falla|falló|roto|rota|no funciona)\b"
+    r"|(не працює|зламано|зламана|падає|挂了|坏了|崩溃|실패|깨졌|오류|لا يعمل|عطل)", re.I)
 
 
 def extract_outstanding_context(blocks: List[Block]) -> List[str]:
@@ -360,7 +384,10 @@ def extract_outstanding_context(blocks: List[Block]) -> List[str]:
                 continue
             if re.match(r"^\s*[-*+>]\s", line) or re.match(r"^\s*\(", line):
                 continue
-            if not re.match(r"^\s*[\"'`*_]?[A-Z`]", line):
+            head = re.sub(r"^\s*[\"'`*_]*", "", line)
+            # sentence-start in any script (was [A-Z]-only: dead to lowercase
+            # German, Cyrillic, and CJK sentence openers)
+            if not head or not (head[0].isalpha() or head[0] in "。！？「『（("):
                 continue
             clipped = f"[user] {clip_sentence(line, 150)}" if b.kind == "user" else clip_sentence(line, 150)
             if clipped not in items:
