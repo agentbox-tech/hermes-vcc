@@ -1076,21 +1076,21 @@
    "category": "preference",
    "text": "أعدك بالاتصال بصاحب المنزل قبل الأحد.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "promise-kaia-ar",
    "category": "preference",
    "text": "وعدت كايا بالمساعدة في النقل يوم السبت.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "kaia-revision-ar",
    "category": "scope_change",
    "text": "السبت لا يناسب كايا",
    "score": true,
-   "note": "MEASURED: survives via verbatim tail"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "demo-fixed-ar",

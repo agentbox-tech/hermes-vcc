@@ -1086,7 +1086,7 @@
    "category": "preference",
    "text": "Ich verspreche, den Vermieter bis Montag anzurufen.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "promise-kaya",
@@ -1100,14 +1100,14 @@
    "category": "preference",
    "text": "Ich habe dem Büro eine Demo vor dem 10. versprochen.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "kaya-revision-de",
    "category": "scope_change",
    "text": "Eigentlich passt Samstag nicht mit Kaya",
    "score": true,
-   "note": "MEASURED: survives via verbatim tail"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "demo-fixed-de",

@@ -44,6 +44,7 @@ HEADER_NAMES = (
     "Tracked Commands",
     "Outstanding Context",
     "User Preferences",
+    "Commitments",
 )
 
 # ──────────────────────────────────────────────────────── hermes tool maps
@@ -362,6 +363,48 @@ def extract_preferences(blocks: List[Block]) -> List[str]:
 def dedup_prefs_against_goals(prefs: List[str], goals: List[str]) -> List[str]:
     goal_set = {g.strip().lower() for g in goals}
     return [p for p in prefs if p.strip().lower() not in goal_set]
+
+
+COMMITMENTS_CAP = 10
+
+_COMMIT_RE = re.compile(
+    r"\b(i promise|i promised|i'?ll|i will|i said i'?d|promise to|i'?d better)\b"
+    r"|\bpromise[sd]?\b"
+    r"|\b(ich versprech\w*|versprochen|ich soll|ich werde|ich habe .*gesagt)\b"
+    r"|\b(prometo|promet[íi]|promet[io]|dije.{0,20}que)\b"
+    r"|\b(lovar|lovade|jag ska|sa.{0,25}att jag)\b"
+    r"|\b(lupa\w*|sanoin)\b"
+    r"|(обіця|пообіця|сказав, що|сказала, що)"
+    r"|(答应|保证|我跟.*说|約束|と言った|약속|하기로|다고 했|وعد|أعدك)", re.I)
+_COMMIT_REVISE_RE = re.compile(
+    r"\b(actually|instead|en realidad|eigentlich|oikeastaan)\b"
+    r"|(насправді|其实|実は|사실|في الواقع|改口)", re.I)
+
+
+def extract_commitments(blocks: List[Block]) -> List[str]:
+    """Promises and their revisions, verbatim, in any supported language.
+    A line matching both a commitment stem and a revision marker is marked
+    'Revised:' — the superseded sibling stays (no supersession surface yet,
+    same non-destructive doctrine as corrections)."""
+    items: List[str] = []
+    seen: Set[str] = set()
+    for b in blocks:
+        if b.kind != "user":
+            continue
+        for line in non_empty_lines(b.text):
+            if not (8 <= len(line) <= 200) or line.rstrip().endswith("?"):
+                continue
+            if not _COMMIT_RE.search(line):
+                continue
+            revised = bool(_COMMIT_REVISE_RE.search(line))
+            clipped = clip_sentence(line, 150)
+            rendered = f"Revised: {clipped}" if revised else clipped
+            key = clipped.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            items.append(rendered)
+    return items[:COMMITMENTS_CAP]
 
 
 _BLOCKER_RE = re.compile(
@@ -824,6 +867,7 @@ def compile_summary(messages: List[Dict[str, Any]], previous_summary: Optional[s
             extract_tracked_commands(blocks, list(opts.track_commands))),
         "Outstanding Context": extract_outstanding_context(blocks),
         "User Preferences": prefs,
+        "Commitments": extract_commitments(blocks),
     }
     brief = "\n".join(cap_brief_lines(build_brief_lines(blocks), opts.brief_max_lines))
     fresh = format_summary(sections_map, brief, cap_brief_transcript=False)

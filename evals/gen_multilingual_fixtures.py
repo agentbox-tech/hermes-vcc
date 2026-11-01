@@ -312,8 +312,7 @@ def _ledger_lang(prefix, goal, promises, revision, rev_fid, deictic,
     msgs.append(gf.u(late_abs))
     f.append({"id": "abs-late-" + prefix, "category": "identifier", "text": late_abs[-40:]})
     for line, fid, cat in facts_extra:
-        if fid.endswith("-late") or fid.endswith("-email"):
-            msgs.append(gf.u(line))
+        msgs.append(gf.u(line))
         f.append({"id": fid, "category": cat, "text": line})
     return msgs, f
 

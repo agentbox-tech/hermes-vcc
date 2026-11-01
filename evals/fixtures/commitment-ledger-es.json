@@ -1076,6 +1076,11 @@
    "role": "user",
    "content": "Con fechas reales: cita 2026-11-16, papeles 2026-11-20.",
    "_row_id": 1641
+  },
+  {
+   "role": "user",
+   "content": "Kaya lo escribe tarde, responde a kaya@ejemplo.es.",
+   "_row_id": 1642
   }
  ],
  "facts": [
@@ -1091,21 +1096,21 @@
    "category": "preference",
    "text": "Prometo llamar al casero antes del lunes.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "promise-kaya-es",
    "category": "preference",
    "text": "Le dije a Kaya que la ayudo a mudarse el sábado.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "kaya-rev-es",
    "category": "scope_change",
    "text": "En realidad el sábado no va con Kaya — le prometí el domingo.",
    "score": true,
-   "note": "MEASURED: survives via verbatim tail"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "cita-jueves",
@@ -1133,7 +1138,7 @@
    "category": "identifier",
    "text": "Kaya lo escribe tarde, responde a kaya@ejemplo.es.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via verbatim tail"
   }
  ],
  "track_commands": [
