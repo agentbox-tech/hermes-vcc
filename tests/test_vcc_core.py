@@ -244,6 +244,19 @@ def test_merge_volatile_outstanding_fresh_only():
     assert "Old lint" not in merged and "New blocker" in merged
 
 
+def test_merge_goal_anchor_survives_cap_eviction():
+    # >cap(8) goals: the first real goal is retained in slot one no matter
+    # how much scope churn follows; only later goals may be evicted.
+    goals = ["- Original anchor goal about billing scheduler work"] + \
+            [f"- Pivoted goal number {i} for this session" for i in range(1, 12)]
+    prev = "[Session Goal]\n" + "\n".join(goals)
+    fresh = "[Session Goal]\n- Latest goal eleven revises course now"
+    merged = vcc.merge_sections(prev + "\n\n---\n\n[user] x", fresh)
+    assert "- Original anchor goal about billing scheduler work" in merged
+    assert "- Pivoted goal number 1 for this session" not in merged
+    assert "- Latest goal eleven revises course now" in merged
+
+
 def test_files_union_across_merge():
     prev = "[Files And Changes]\n- Modified: a.py, b.py"
     fresh = "[Files And Changes]\n- Modified: b.py, c.py"

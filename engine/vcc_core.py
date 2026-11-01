@@ -737,7 +737,14 @@ def merge_sections(prev: str, fresh: str) -> str:
             fresh_lines = [l for l in fresh_sec.split("\n") if l.startswith("- ")]
             combined = list(dict.fromkeys(prev_lines + fresh_lines))
             cap = 8 if header in ("Session Goal", "Commits") else 15
-            capped = combined[-cap:] if len(combined) > cap else combined
+            if len(combined) > cap and header == "Session Goal":
+                # Anchor retention: the first real goal is the session's identity;
+                # recency fills the remaining slots, never evicts the anchor.
+                anchor = next((l for l in combined if "[Scope change]" not in l), None)
+                rest = [l for l in combined if l != anchor]
+                capped = ([anchor] if anchor else []) + rest[-(cap - 1):]
+            else:
+                capped = combined[-cap:] if len(combined) > cap else combined
             if capped:
                 merged = f"[{header}]\n" + "\n".join(capped)
             else:
