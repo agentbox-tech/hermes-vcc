@@ -225,3 +225,22 @@ clip. Both were predictions, not measurements — the real substance gate is
 `>5` chars and both facts survived all along. C5 shipped anyway as
 prophylaxis for turn lengths the suite doesn't yet exercise. Lesson: annotate
 from measured output before blessing, never from plausible code reading.
+
+## Human-stress batch (2026-11-01, `gen_human_stress_fixtures.py`)
+
+The shapes a household box must not drop — facts that repeat, change state,
+expire, arrive second-hand, or carry consequence. Suite: 50 fixtures.
+
+| fixture | engine | measured story |
+|---|---|---|
+| three-day-state-chain | **100%** | Mahnung→payment→closure rides three folds intact — chains carry state prose well |
+| quote-forwards | 85.7% | quoted safety instruction survives; the un-repeated time window rings out at tail rollover |
+| safety-diet | 66.7% | allergy/de-vegetarian survive; the DOSE line and the Turkish allergy line are counted misses — safety-critical facts sitting where no v0 extractor reaches |
+| roster-recurring | 55.6% | recurrence ("jeden Dienstag", "stehende Termine") matches nothing; Greek matches nothing; roster entries + swap survive |
+| vent-then-ask | **16.7%** | the suite's worst fixture, by design: 40 low-fact blocks bury the one real request; remember-don't-fix has no shape the engine knows |
+
+Counted misses here are the amendment's acceptance set (board 197): dose
+parsing, recurrence semantics, second-hand attribution, remember-vs-fix.
+One self-caught fixture bug recorded honestly: `goal-forward` was planted as
+a paraphrase, not a substring of the spoken text — unrecoverable by
+construction, fixed at the generator.

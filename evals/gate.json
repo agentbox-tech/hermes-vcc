@@ -288,6 +288,14 @@
       "recall": 0.98,
       "reduction": -2.752
     },
+    "quote-forwards:pure": {
+      "recall": 0.837,
+      "reduction": 0.061
+    },
+    "quote-forwards:engine": {
+      "recall": 0.837,
+      "reduction": -0.21
+    },
     "relative-dates-de:pure": {
       "recall": 0.758,
       "reduction": 0.047
@@ -328,6 +336,30 @@
       "recall": 0.98,
       "reduction": -1.129
     },
+    "roster-recurring:pure": {
+      "recall": 0.536,
+      "reduction": -0.347
+    },
+    "roster-recurring:engine": {
+      "recall": 0.536,
+      "reduction": -0.74
+    },
+    "safety-diet:pure": {
+      "recall": 0.647,
+      "reduction": 0.044
+    },
+    "safety-diet:engine": {
+      "recall": 0.647,
+      "reduction": -0.232
+    },
+    "three-day-state-chain:pure": {
+      "recall": 0.98,
+      "reduction": -0.678
+    },
+    "three-day-state-chain:engine": {
+      "recall": 0.98,
+      "reduction": -1.171
+    },
     "topic-interleave-mix:pure": {
       "recall": 0.98,
       "reduction": -0.948
@@ -343,6 +375,14 @@
     "topic-interleave:engine": {
       "recall": 0.707,
       "reduction": -0.914
+    },
+    "vent-then-ask:pure": {
+      "recall": 0.147,
+      "reduction": 0.285
+    },
+    "vent-then-ask:engine": {
+      "recall": 0.147,
+      "reduction": 0.072
     },
     "voice-noise-de:pure": {
       "recall": 0.647,
