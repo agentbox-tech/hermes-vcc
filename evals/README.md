@@ -197,3 +197,31 @@ is negative — the summary legitimately exceeds a thin input. The `big`
 fixtures are the antidote: at 200-round / 600 KB and 3× iterative-fold scale
 reduction is a real ~96% number, so the gate floors on them (0.94 / 0.95) are
 the ones that mean something.
+
+## Multilingual matrix + engine campaign (2026-11-01, Rain's language set)
+
+Rain's ratified languages: DE AR ES UK SV FI ZH JA KO (+TR).
+`gen_multilingual_fixtures.py` builds 19 fixtures: nine same-shape
+commitment-ledgers authored natively per language, a nine-language technical
+session around an English toolchain, CJK probes, plus per-language
+dates/alias/voice/interleave shapes.
+
+Engine campaign (one change, one eval, one verified diff per commit):
+
+| change | what | measured |
+|---|---|---|
+| C1 `3e69e3f` | Session Goal anchor — first goal never evicted by scope churn | behavior-preserving on suite; proven by unit test (12-goal merge) |
+| C2 `9ba85d9` | multilingual acks/scope/blocker shapes + Unicode sentence starts | relative-dates-de 44.4→66.7%, 0 regressions |
+| C4 `75a50ef` | `[Commitments]` extractor, promise shapes native in ten languages | nine ledgers UP: EN 33.3→100%, AR/ES/FI/JA/SV/UK/ZH 58.3→100%, DE 45.5→100%, KO 58.3→83.3% |
+| C5 | CJK clip boundaries + density-aware length | behavior-preserving — prophylaxis, see correction below |
+
+Known remaining: `promise-kaya-ko` + the late email identifiers ring out at
+tail position (not extraction) — position experiment follows the [People]
+section; supersession chains land with the amendment design (board 197).
+
+CORRECTION, kept in the record: an earlier version of this README claimed
+`_GOAL_MIN_LEN=40` amputated CJK goals and that INT-9950 was lost past a
+clip. Both were predictions, not measurements — the real substance gate is
+`>5` chars and both facts survived all along. C5 shipped anyway as
+prophylaxis for turn lengths the suite doesn't yet exercise. Lesson: annotate
+from measured output before blessing, never from plausible code reading.

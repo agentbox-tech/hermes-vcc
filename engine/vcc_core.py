@@ -112,7 +112,8 @@ def clip(text: str, max_len: int = 200) -> str:
 def clip_sentence(text: str, max_len: int = 200) -> str:
     if len(text) <= max_len:
         return text
-    matches = list(re.finditer(r"[.!?](?:\s|$)", text[:max_len]))
+    # CJK sentence marks (。！？…) end a sentence with no following space
+    matches = list(re.finditer(r"(?:[.!?](?=\s|$)|[。！？…])", text[:max_len]))
     if matches:
         end = matches[-1].end()
         if end >= max_len * 0.5:
@@ -271,9 +272,18 @@ _TEMPLATE_SIGNAL_RE = re.compile(
 _MAX_GOAL_CHARS = 200
 
 
+def _effective_len(text: str) -> int:
+    """Density-aware length: CJK/fullwidth chars count double — the 200-char
+    clip and the substance gates were calibrated for English, where one
+    character carries roughly half the meaning of one ideograph."""
+    dense = len(re.findall(r"[\u3000-\u9fff\u3040-\u30ff\uac00-\ud7af]", text))
+    return len(text) + dense
+
+
 def _is_substantive_goal(text: str) -> bool:
     t = text.strip()
-    if not (5 < len(t) <= _MAX_GOAL_CHARS):
+    eff = _effective_len(t)
+    if not (5 < eff <= _MAX_GOAL_CHARS):
         return False
     return not _NOISE_SHORT_RE.match(t) and not _NON_GOAL_RE.search(t)
 

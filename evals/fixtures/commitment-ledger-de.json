@@ -1093,7 +1093,7 @@
    "category": "preference",
    "text": "Ich habe Kaya gesagt, dass ich ihr am Samstag beim Umzug helfe.",
    "score": true,
-   "note": "MEASURED: DROPPED (known gap) — pre-tail, no matching extractor"
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "promise-demo",

@@ -28,15 +28,15 @@
    "id": "goal-zh-cjk",
    "category": "goal",
    "text": "总结我的搬家待办事项，涉及租房、运输和押金",
-   "score": false,
-   "note": "20 chars < _GOAL_MIN_LEN=40 — the substantive-length gate is character-counted and English-biased (CJK carries meaning denser) | MEASURED: survives via header"
+   "score": true,
+   "note": "MEASURED: survives via header"
   },
   {
    "id": "cjk-past-clip",
    "category": "identifier",
    "text": "INT-9950",
-   "score": false,
-   "note": "ASCII id at the far end of a CJK turn longer than USER_TEXT_CLIP=256 — clip_sentence has no CJK boundary awareness (expected drop, re-probe) | MEASURED: survives via verbatim tail"
+   "note": "ASCII id at the far end of a CJK turn — clip_sentence now snaps at 。 boundaries (was English-punctuation-blind) | MEASURED: survives via verbatim tail",
+   "score": true
   },
   {
    "id": "cjk-date-ja",

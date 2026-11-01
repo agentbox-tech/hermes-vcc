@@ -477,14 +477,11 @@ def cjk_punctuation_probe():
                 * 4) + "요약하면 마감은 다음 주이고 참조 번호 INT-9950입니다。"
     msgs.append(gf.u("总结我的搬家待办事项，涉及租房、运输和押金。"))
     f.append({"id": "goal-zh-cjk", "category": "goal",
-              "text": "总结我的搬家待办事项，涉及租房、运输和押金", "score": False,
-              "note": "20 chars < _GOAL_MIN_LEN=40 — the substantive-length gate is "
-                     "character-counted and English-biased (CJK carries meaning denser)"})
+              "text": "总结我的搬家待办事项，涉及租房、运输和押金"})
     msgs.append(gf.u(long_cjk))
     f.append({"id": "cjk-past-clip", "category": "identifier", "text": "INT-9950",
-              "score": False,
-              "note": "ASCII id at the far end of a CJK turn longer than USER_TEXT_CLIP=256 — "
-                     "clip_sentence has no CJK boundary awareness (expected drop, re-probe)"})
+              "note": "ASCII id at the far end of a CJK turn — clip_sentence now snaps "
+                     "at 。 boundaries (was English-punctuation-blind)"})
     msgs.append(gf.u("要約すると引っ越しは 2026-11-20 に確定。"))
     f.append({"id": "cjk-date-ja", "category": "identifier", "text": "2026-11-20"})
     msgs.append(gf.a("Noted."))
