@@ -5,347 +5,347 @@
   {
    "role": "user",
    "content": "Renew my visa before it lapses on 2026-12-01.",
-   "_row_id": 4374
+   "_row_id": 4593
   },
   {
    "role": "user",
    "content": "Der Lärm der Werkstatt nach 22 Uhr muss aufhören — ich reiche die Beschwerde ein.",
-   "_row_id": 4375
+   "_row_id": 4594
   },
   {
    "role": "user",
    "content": "خطط لهدية الذكرى السنوية لحفل الافتتاح.",
-   "_row_id": 4376
+   "_row_id": 4595
   },
   {
    "role": "user",
    "content": "Kargo cuma gününe kadar gelmeli, takip numarası K-33-21.",
-   "_row_id": 4377
+   "_row_id": 4596
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4378
+   "_row_id": 4597
   },
   {
    "role": "assistant",
-   "_row_id": 4379,
+   "_row_id": 4598,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4380
+   "_row_id": 4599
   },
   {
    "role": "assistant",
-   "_row_id": 4381,
+   "_row_id": 4600,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4382
+   "_row_id": 4601
   },
   {
    "role": "assistant",
-   "_row_id": 4383,
+   "_row_id": 4602,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4384
+   "_row_id": 4603
   },
   {
    "role": "assistant",
-   "_row_id": 4385,
+   "_row_id": 4604,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4386
+   "_row_id": 4605
   },
   {
    "role": "assistant",
-   "_row_id": 4387,
+   "_row_id": 4606,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4388
+   "_row_id": 4607
   },
   {
    "role": "assistant",
-   "_row_id": 4389,
+   "_row_id": 4608,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4390
+   "_row_id": 4609
   },
   {
    "role": "assistant",
-   "_row_id": 4391,
+   "_row_id": 4610,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4392
+   "_row_id": 4611
   },
   {
    "role": "assistant",
-   "_row_id": 4393,
+   "_row_id": 4612,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4394
+   "_row_id": 4613
   },
   {
    "role": "assistant",
-   "_row_id": 4395,
+   "_row_id": 4614,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4396
+   "_row_id": 4615
   },
   {
    "role": "assistant",
-   "_row_id": 4397,
+   "_row_id": 4616,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4398
+   "_row_id": 4617
   },
   {
    "role": "assistant",
-   "_row_id": 4399,
+   "_row_id": 4618,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4400
+   "_row_id": 4619
   },
   {
    "role": "assistant",
-   "_row_id": 4401,
+   "_row_id": 4620,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4402
+   "_row_id": 4621
   },
   {
    "role": "assistant",
-   "_row_id": 4403,
+   "_row_id": 4622,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4404
+   "_row_id": 4623
   },
   {
    "role": "assistant",
-   "_row_id": 4405,
+   "_row_id": 4624,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4406
+   "_row_id": 4625
   },
   {
    "role": "assistant",
-   "_row_id": 4407,
+   "_row_id": 4626,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4408
+   "_row_id": 4627
   },
   {
    "role": "assistant",
-   "_row_id": 4409,
+   "_row_id": 4628,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4410
+   "_row_id": 4629
   },
   {
    "role": "assistant",
-   "_row_id": 4411,
+   "_row_id": 4630,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4412
+   "_row_id": 4631
   },
   {
    "role": "assistant",
-   "_row_id": 4413,
+   "_row_id": 4632,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4414
+   "_row_id": 4633
   },
   {
    "role": "assistant",
-   "_row_id": 4415,
+   "_row_id": 4634,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4416
+   "_row_id": 4635
   },
   {
    "role": "assistant",
-   "_row_id": 4417,
+   "_row_id": 4636,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4418
+   "_row_id": 4637
   },
   {
    "role": "assistant",
-   "_row_id": 4419,
+   "_row_id": 4638,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4420
+   "_row_id": 4639
   },
   {
    "role": "assistant",
-   "_row_id": 4421,
+   "_row_id": 4640,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4422
+   "_row_id": 4641
   },
   {
    "role": "assistant",
-   "_row_id": 4423,
+   "_row_id": 4642,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4424
+   "_row_id": 4643
   },
   {
    "role": "assistant",
-   "_row_id": 4425,
+   "_row_id": 4644,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4426
+   "_row_id": 4645
   },
   {
    "role": "assistant",
-   "_row_id": 4427,
+   "_row_id": 4646,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4428
+   "_row_id": 4647
   },
   {
    "role": "assistant",
-   "_row_id": 4429,
+   "_row_id": 4648,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4430
+   "_row_id": 4649
   },
   {
    "role": "assistant",
-   "_row_id": 4431,
+   "_row_id": 4650,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4432
+   "_row_id": 4651
   },
   {
    "role": "assistant",
-   "_row_id": 4433,
+   "_row_id": 4652,
    "content": "Right."
   },
   {
    "role": "user",
    "content": "The embassy needs the income proof PDF.",
-   "_row_id": 4434
+   "_row_id": 4653
   },
   {
    "role": "assistant",
-   "_row_id": 4435,
+   "_row_id": 4654,
    "content": "Okay — go on."
   },
   {
    "role": "user",
    "content": "Mieter heißt Wehrlein, oberstes Stockwerk.",
-   "_row_id": 4436
+   "_row_id": 4655
   },
   {
    "role": "assistant",
-   "_row_id": 4437,
+   "_row_id": 4656,
    "content": "Got it."
   },
   {
    "role": "user",
    "content": "الميزانية تبقى تحت 400.",
-   "_row_id": 4438
+   "_row_id": 4657
   },
   {
    "role": "assistant",
-   "_row_id": 4439,
+   "_row_id": 4658,
    "content": "Noted — continuing."
   },
   {
    "role": "user",
    "content": "Etiket bedeli 45 Euro'yu geçmesin.",
-   "_row_id": 4440
+   "_row_id": 4659
   },
   {
    "role": "assistant",
-   "_row_id": 4441,
+   "_row_id": 4660,
    "content": "Makes sense."
   },
   {
    "role": "user",
    "content": "Scope change: die Beschwerde pausiert, fokussiert Visa, Geschenk und Kargo.",
-   "_row_id": 4442
+   "_row_id": 4661
   }
  ],
  "facts": [

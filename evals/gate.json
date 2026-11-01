@@ -48,6 +48,14 @@
       "recall": 0.98,
       "reduction": 0.945
     },
+    "cjk-length-stress:pure": {
+      "recall": 0.694,
+      "reduction": 0.082
+    },
+    "cjk-length-stress:engine": {
+      "recall": 0.694,
+      "reduction": -0.175
+    },
     "cjk-punctuation-probe:pure": {
       "recall": 0.98,
       "reduction": -1.323

@@ -282,8 +282,10 @@ def _effective_len(text: str) -> int:
 
 def _is_substantive_goal(text: str) -> bool:
     t = text.strip()
-    eff = _effective_len(t)
-    if not (5 < eff <= _MAX_GOAL_CHARS):
+    # floor is density-aware (an ideograph carries ~2 English chars of
+    # meaning); ceiling stays RAW chars — the summary budget is chars, not
+    # meanings, and densifying the ceiling silently evicted long CJK goals
+    if not (5 < _effective_len(t) and len(t) <= _MAX_GOAL_CHARS):
         return False
     return not _NOISE_SHORT_RE.match(t) and not _NON_GOAL_RE.search(t)
 

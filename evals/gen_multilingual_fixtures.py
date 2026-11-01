@@ -488,6 +488,51 @@ def cjk_punctuation_probe():
     return msgs, f
 
 
+def cjk_length_stress():
+    """Turn lengths the density/clip code paths only exist for: long CJK
+    goals (density ceiling), CJK blockers past the sentence budget, and an
+    ASCII id at the far end of a >256-char tail turn. Deep placement, padded
+    past the tail, so extractor behavior — not tail preservation — is
+    measured."""
+    msgs, f = [], []
+    goal_zh = ("我们需要系统整理这个月所有与房东、搬家、网络安装、保险变更相关的"
+               "承诺和截止日期，并按紧急程度排成可执行的清单，我担心遗漏任何一项都"
+               "会造成额外费用或不便，请务必完整记录每一个细节不要省略。")
+    goal_ko = ("이번 달 집주인, 이사, 인터넷 설치, 보험 변경과 관련해 처리할 모든 사항과 "
+               "마감일을 긴급순위대로 정리해서 실행 가능한 목록으로 만들어줘. 마감일이 "
+               "겹치는 항목은dependencies 순서를 정해줘. 날짜가 불분명한 항목은 물어봐줘. "
+               "비용이 발생하는 항목은 따로 표시해줘. 누락되면 추가 비용이나 불편이 생깁니다.")
+    msgs.append(gf.u(goal_zh))
+    f.append({"id": "goal-zh-long", "category": "goal",
+              "text": goal_zh[:60],
+              "note": "~110 CJK chars — past the density ceiling if effective_len "
+                     "is capped at the English-calibrated 200"})
+    msgs.append(gf.u(goal_ko))
+    f.append({"id": "goal-ko-long", "category": "goal",
+              "text": goal_ko[:50],
+              "note": "commitment-verb-free so only the GOAL path can carry it — "
+                     "tests the density ceiling at eff>200"})
+    pad(msgs, 3, 110)
+    filler40 = " этой重置期间 Daten 的迁移 ".replace(" ", "")  # boundary-free filler
+    blocker_zh = ("计费模块的测试仍然不通过已经查了半天了问题看起来出在汇率转换的小数精度处理上"
+                 "上游接口返回的是日元而本地按美元计算所以每一笔都差了整数部分这个坏了的逻辑必须"
+                 "先修复才能继续部署编号 INT-9960 请优先处理这个")
+    msgs.append(gf.u(blocker_zh))
+    f.append({"id": "blocker-zh-190", "category": "blocker",
+              "text": "这个坏了的逻辑必须先修复才能继续部署编号 INT-9960",
+              "note": "fact span past clip_sentence's 150-char budget — counted loss "
+                     "if the tail does not reach; the 。-snap changes cleanliness only"})
+    msgs.append(gf.u(filler40 * 22 +
+                     " Komisja zamyka sprawę numer INT-9977 przed piątkiem bez dalszych pytań."))
+    f.append({"id": "ident-tail-256", "category": "identifier", "text": "INT-9977",
+              "score": False,
+              "note": "id at far end of >USER_TEXT_CLIP turn — tail head-clip cuts it, "
+                     "the known ident-clipped gap in a boundary-free multilingual turn"})
+    msgs.append(gf.u("晚一点说准确日期：清单截止 2026-11-20。"))
+    f.append({"id": "late-abs-zh", "category": "identifier", "text": "2026-11-20"})
+    return msgs, f
+
+
 BUILDERS = [
     ("commitment-ledger-de", commitment_ledger_de),
     ("commitment-ledger-ar", commitment_ledger_ar),
@@ -499,6 +544,7 @@ BUILDERS = [
     ("commitment-ledger-ja", commitment_ledger_ja),
     ("commitment-ledger-ko", commitment_ledger_ko),
     ("cjk-punctuation-probe", cjk_punctuation_probe),
+    ("cjk-length-stress", cjk_length_stress),
     ("coding-session-multilingual", coding_session_multilingual),
     ("relative-dates-de", relative_dates_de),
     ("relative-dates-tr", relative_dates_tr),
@@ -512,9 +558,19 @@ BUILDERS = [
 
 
 if __name__ == "__main__":
+    import json as _json
     for name, builder in BUILDERS:
         msgs, facts = builder()
         gf.dump(name, msgs, facts, track_commands=["pytest"])
+        if name == "cjk-length-stress":
+            # chain form: goals fold in round 1 (density ceiling exposed),
+            # bulk rolls the tail in rounds 2-3, probes land in the last fold
+            path = f"{gf.HERE}/{name}.json"
+            fx = _json.load(open(path))
+            m = fx.pop("messages")
+            fx["rounds"] = [m[:2], m[2:92], m[92:182], m[182:]]
+            _json.dump(fx, open(path, "w"), indent=2, ensure_ascii=False)
+            print(f"  -> chain: rounds={[len(r) for r in fx['rounds']]}")
         det, misses = measure_and_annotate(name)
         print(f"{name:22s} facts={len(facts):2d} deterministic={det} "
               f"misses={len(misses)} ({','.join(misses[:4])}{'…' if len(misses) > 4 else ''})")
